@@ -9,11 +9,12 @@ import { PurchasesComponent } from './purchases/purchases.component';
 import { SalesComponent } from './sales/sales.component';
 import { SigninComponent } from './signin/signin.component';
 import { WebmanagementComponent } from './webmanagement/webmanagement.component';
-
+// import { SidebarComponent } from './sidebar/sidebar.component';
 const routes: Routes = [
   {
     path: 'admin',
     component: SigninComponent,
+    
   },
   {
     path: 'admin',

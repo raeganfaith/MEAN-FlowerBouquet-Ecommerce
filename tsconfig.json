@@ -3,6 +3,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+          "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"]
+        },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -30,3 +33,11 @@
     "strictTemplates": true
   }
 }
+
+// "compilerOptions": {
+//   //...rest parameters
+
+//   "baseUrl": "./",
+//   "paths": {
+//     "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"]
+//   },

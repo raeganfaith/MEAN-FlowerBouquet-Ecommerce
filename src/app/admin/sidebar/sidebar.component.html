@@ -4,18 +4,20 @@
             <img src="assets/img/mema-logo-blue.png" alt="" height="43"  width="40">
             <h3 class="fw-bold ps-3" style="color: var(--primary-color);">Bloom Inc.</h3>
         </li>
-        <li class="nav-item">  
+        <li class="nav-item">
         <a routerLink="dashboard" class="nav-link" >
             <span>Dashboard</span>
         </a>
         </li>
+
         <li class="nav-item">
-        <a class="nav-link collapsed" routerLink="sales" href="#">
+        <a class="nav-link collapsed" routerLink="../sales">
             <span>Sales</span>
         </a>
         </li>
+
         <li class="nav-item">
-        <a class="nav-link collapsed" routerLink="purchases" href="#">
+        <a class="nav-link collapsed" routerLink="../purchases" href="#">
             <span>Purchases</span>
         </a>
         </li>
@@ -31,9 +33,9 @@
                     <div class="accordion-body p-0">
                         <ul class="sidebar-nav">
                             <li class="nav-item">
-                                <a routerLink="bouquets" class="nav-link collapsed my-2"><span class="ps-3">Bouquets</span></a>
-                                <a routerLink="flowers" class="nav-link collapsed my-2"><span class="ps-3">Flowers</span></a>
-                                <a routerLink="materials" class="nav-link collapsed my-2"><span class="ps-3">Materials</span></a>
+                                <a routerLink="../bouquets" class="nav-link collapsed my-2"><span class="ps-3">Bouquets</span></a>
+                                <a routerLink="../flowers" class="nav-link collapsed my-2"><span class="ps-3">Flowers</span></a>
+                                <a routerLink="../materials" class="nav-link collapsed my-2"><span class="ps-3">Materials</span></a>
                             </li>
                         </ul>
                     </div>
@@ -50,6 +52,5 @@
 </aside>
 
 <router-outlet></router-outlet>
-  
-  
-        
+
+
