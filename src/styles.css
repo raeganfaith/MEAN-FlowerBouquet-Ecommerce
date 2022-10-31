@@ -1,0 +1,36 @@
+:root {
+ --primary-color: #6E85B7;
+ --secondary-color: #B2C8DF;
+ --dark-text: #39445C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px;
+}
+
+.btn-primary:focus, .btn-primary:active {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px;
+}
+
+.btn-outline-secondary {
+    color: var(--primary-color);
+}

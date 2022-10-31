@@ -1,0 +1,33 @@
+main {
+    padding: 20px 30px 20px 350px;
+}
+
+.card {
+    border-radius: 15px;
+    padding: 10px 10px 0 10px;
+}
+
+.card-img-top {
+    border-radius: 10px;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 16px 5px;
+}
+
+.card-footer {
+    background: none;
+    padding: 5px;
+}
+
+.btn-light {
+    background: none;
+    border: none;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}

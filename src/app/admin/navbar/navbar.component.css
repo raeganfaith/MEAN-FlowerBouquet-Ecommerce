@@ -1,0 +1,22 @@
+.navbar {
+    padding-left: 330px;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+@media (max-width: 1199px) {
+    .navbar {
+        padding-left: 20px;
+    }
+  }
+
+.form-control {
+    position: relative;
+    padding-left: 40px;
+}
+
+.icon {
+    position: absolute;
+    top: calc(39%);
+}
+

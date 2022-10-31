@@ -1,0 +1,23 @@
+.navbar {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--primary-color);
+    transition: 0.4s;
+}
+
+.nav-link {
+    font-size: 1.25em;
+}
+
+.nav-link:active, .nav-link:focus, .nav-link:hover {
+    background-color: #39445C;
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color);
+}
+
+.dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover {
+    background-color:  #39445C;
+}
