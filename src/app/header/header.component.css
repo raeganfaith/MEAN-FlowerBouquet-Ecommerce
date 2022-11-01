@@ -2,7 +2,7 @@
     z-index: 997;
     transition: all 0.5s;
     padding: 22px 0;
-    background: #fff;
+    background: white;
 }
 
 #header.header-scrolled {
@@ -21,7 +21,7 @@
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-    color: #222222;
+    color: #39445C;
     text-decoration: none;
 }
 
@@ -55,7 +55,7 @@
     padding: 10px 0 10px 30px;
     font-size: 15px;
     font-weight: 400;
-    color: #555555;
+    color: #39445C;
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -86,7 +86,7 @@
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
     color: #fff;
-    background: #627AAC;
+    background: #B2C8DF;
 }
 
 .navbar .dropdown ul {
@@ -221,7 +221,7 @@
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-    color: #3498db;
+    color: #6E85B7;;
 }
 
 .navbar-mobile .getstarted,

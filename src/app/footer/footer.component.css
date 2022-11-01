@@ -13,8 +13,9 @@
 }
 
 #footer .footer-links a {
-  color: #222222;
+  color: #39445C;
   padding-left: 15px;
+  text-decoration: none;
 }
 
 #footer .footer-links a:first-child {
@@ -22,5 +23,5 @@
 }
 
 #footer .footer-links a:hover {
-  color: #3498db;
+  color: #6E85B7  ;
 }

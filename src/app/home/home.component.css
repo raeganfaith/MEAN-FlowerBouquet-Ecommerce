@@ -1,3 +1,4 @@
+
 #hero {
   width: 100%;
   height: 70vh;
@@ -13,7 +14,7 @@
 }
 
 #hero h2 {
-  color: B2C8DF;
+  color: #39445C;
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -32,8 +33,8 @@
 }
 
 #hero .btn-get-started:hover {
-  background: #B2C8DF;
-  color: #6E85B7;
+  background: #6E85B7;
+  color: #39445C;
 }
 
 #hero .animated {
@@ -110,4 +111,69 @@
   100% {
     transform: translateY(-10px);
   }
+}
+
+/* Bestsellers  */
+.sell{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  color:#39445C;
+}
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 100px;
+}
+.top p:hover{
+  color: #6E85B7;
+  cursor: pointer;
+}
+
+
+.bouquet-items img{
+  border-radius: 5%;
+  max-width: 255px;
+}
+.sell h3{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bouquet-container{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+}
+.bouquet-column{
+  max-width: 17%;
+  padding-right: 50px;
+}
+.bouquet-details{
+  width: 160%;
+}
+.details-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button{
+  width: 255px;
+}
+.bouquet-container .btn{
+  background-color: #6E85B7;
+  align-items: center;
+  color: #39445C;
+}
+
+.bouquet-container .btn:hover{
+  background-color: #B2C8DF;
 }
