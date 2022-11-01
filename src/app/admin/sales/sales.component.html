@@ -1,2 +1,117 @@
+
 <app-sidebar></app-sidebar>
 <app-navbar></app-navbar>
+
+
+
+<main id="main" class="main">
+  
+    <div class="pagetitle">
+      <h1>Pending Orders</h1>
+  
+    </div><!-- End Page Title -->
+
+    
+    <section class="section">
+      <div class="row">
+          <div class="card">
+            <div class="card-body">
+
+              <div class="sales_search-bar">
+                  <form class="search-form d-flex align-items-center" method="POST" action="#">
+                    <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                    <!-- <button type="submit" title="Search"><i class="bi bi-search"></i></button> -->
+                  </form>
+                </div><!-- End Search Bar -->
+
+              
+
+              <!-- Default Table -->
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Order Number</th>
+                    <th scope="col">Order Description</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Start Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Lorem Ipsum</td>
+                    <td>Pending</td>
+                    <td>2016-05-25</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Lorem Ipsum</td>
+                    <td>Pending</td>
+                    <td>2014-12-05</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Lorem Ipsum</td>
+                    <td>Pending</td>
+                    <td>2011-08-12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Lorem Ipsum</td>
+                    <td>Pending</td>
+                    <td>2012-06-11</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Lorem Ipsum</td>
+                    <td>Pending</td>
+                    <td>2011-04-19</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">6</th>
+                      <td>Lorem Ipsum</td>
+                      <td>Pending</td>
+                      <td>2011-04-19</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Lorem Ipsum</td>
+                      <td>Pending</td>
+                      <td>2011-04-19</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>Lorem Ipsum</td>
+                      <td>Pending</td>
+                      <td>2011-04-19</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td>Lorem Ipsum</td>
+                      <td>Pending</td>
+                      <td>2011-04-19</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">10</th>
+                      <td>Lorem Ipsum</td>
+                      <td>Pending</td>
+                      <td>2011-04-19</td>
+                    </tr>
+                </tbody>
+              </table>
+              
+                  <a routerLink="/order-details">
+                      <button class="sales-view-details-btn">View Details</button>
+                  </a> 
+              <!-- End Default Table Example -->
+            </div>
+            
+          </div>
+          
+        
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+

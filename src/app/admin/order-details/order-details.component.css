@@ -1,0 +1,106 @@
+.main{
+    margin: 2% 3% 2% 25%;
+}
+
+.div1{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .div2{
+    width: 45%;
+  }
+  
+  .div3{
+    width: 55%;
+  }
+
+  .search-form{
+    float: right;
+    margin: 10px;
+  }
+
+.order-summary{
+    margin: 10px;
+  }
+  
+  .payment-options , .total{
+    margin-left: 20px;
+  }
+  
+  
+  .customer-detail{
+    background-color:#777777;
+    color: white;
+    padding: 3px 17px;
+    border-radius: 7px;
+    width: 87%;
+  }
+  
+  .order-opt{
+    background-color:#777777;
+    color: white;
+    padding: 3px 17px;
+    border-radius: 7px;
+    width: 23%;
+    margin-right: 10px;
+  }
+  
+  .order-date{
+    background-color:#777777;
+    color: white;
+    padding: 3px 17px;
+    border-radius: 7px;
+    width: 290px;
+  }
+  
+  .address{
+    background-color:#777777;
+    color: white;
+    padding: 3px 17px;
+    border-radius: 7px;
+    width: 87%;
+    height: 100px;
+  }
+  
+  .div-label{
+    width: 80%;
+  
+  }
+  
+  .square {
+    height: 80px;
+    width: 80px;
+    background-color: #555;
+    margin: 0px 10px 0px 0px;
+    border-radius: 15px;
+  }
+  
+  .first-container{
+    display: flex;
+    padding: 20px;
+  }
+  
+  .custom-list{
+    list-style: none;
+    font-size: 14px;
+  }
+  
+  .order-option1{
+    display: flex;
+  }
+  
+  .customer-detail{
+    margin-right: 10px;
+  }
+  
+  .total{
+    display: flex;
+  }
+
+  .sales-view-details-btn{
+    padding: 5px 10px;
+    border-radius: 10px;
+    float: right;
+  }

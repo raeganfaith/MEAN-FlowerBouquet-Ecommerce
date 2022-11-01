@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BouquetsComponent } from './bouquets/bouquets.component';
 import { FlowersComponent } from './flowers/flowers.component';
 import { MaterialsComponent } from './materials/materials.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MaterialsComponent } from './materials/materials.component';
     NavbarComponent,
     BouquetsComponent,
     FlowersComponent,
-    MaterialsComponent
+    MaterialsComponent,
+    OrderDetailsComponent
   ],
   imports: [
     CommonModule,
