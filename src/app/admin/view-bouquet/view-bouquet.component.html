@@ -1,0 +1,141 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+
+<main>
+    <div class="row">
+        <div class="col-6">
+            <a routerLink="../bouquets"><button class="btn btn-primary"><i class="bi bi-caret-left-fill pe-2"></i>Back</button></a>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+            <a routerLink="../edit-bouquet"><button class="btn btn-primary px-4">Edit details</button></a>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="card p-4">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="assets/img/sample-bouquet.jpg" alt="" class="item-pic">
+                    </div>
+                    <div class="col-9">
+                        <form>
+                            <div class="mb-3 row">
+                                <label for="inputID" class="col-2 col-form-label fw-bold d-flex justify-content-end">Bouquet ID</label>
+                                <div class="col-10">
+                                    <input type="type" class="form-control" id="inputID" disabled>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputName" class="col-2 col-form-label fw-bold d-flex justify-content-end">Name</label>
+                                <div class="col-10">
+                                    <input type="type" class="form-control" id="inputName" disabled>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputDesc" class="col-2 col-form-label fw-bold d-flex justify-content-end">Description</label>
+                                <div class="col-10">
+                                    <textarea class="form-control" id="inputDesc" rows="3" disabled></textarea>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="chooseSize" class="col-2 col-form-label fw-bold d-flex justify-content-end">Size</label>
+                                <div class="col-4">
+                                    <input type="radio" class="btn-check" name="size-options" id="small" autocomplete="off" checked disabled>
+                                    <label class="btn btn-outline-primary me-2 px-3" for="small">Small</label>
+
+                                    <input type="radio" class="btn-check" name="size-options" id="medium" autocomplete="off" disabled>
+                                    <label class="btn btn-outline-primary me-2 px-3" for="medium">Medium</label>
+                                    
+                                    <input type="radio" class="btn-check" name="size-options" id="large" autocomplete="off" disabled>
+                                    <label class="btn btn-outline-primary me-2 px-3" for="large">Large</label>
+                                </div>
+                                <label for="chooseSize" class="col-1 col-form-label fw-bold d-flex justify-content-end">Flowers</label>
+                                <div class="col-5">
+                                    <div class="card card-table">
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Quantity</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr class="align-middle">
+                                                <th scope="row" class="w-75">Flower Name</th>
+                                                <td class="w-25"><input class="form-control text-center" type="text" value="10" aria-label="Disabled input example" disabled readonly></td>
+                                              </tr>
+                                              <tr class="align-middle">
+                                                <th scope="row" class="w-75">Flower Name</th>
+                                                <td class="w-25"><input class="form-control text-center" type="text" value="10" aria-label="Disabled input example" disabled readonly></td>
+                                              </tr>
+                                              <tr class="align-middle">
+                                                <th scope="row" class="w-75">Flower Name</th>
+                                                <td class="w-25"><input class="form-control text-center" type="text" value="10" aria-label="Disabled input example" disabled readonly></td>
+                                              </tr>
+                                              <tr class="align-middle">
+                                                <th scope="row" class="w-75">Flower Name</th>
+                                                <td class="w-25"><input class="form-control text-center" type="text" value="10" aria-label="Disabled input example" disabled readonly></td>
+                                              </tr>
+                                              <tr class="align-middle">
+                                                <th scope="row" class="w-75">Flower Name</th>
+                                                <td class="w-25"><input class="form-control text-center" type="text" value="10" aria-label="Disabled input example" disabled readonly></td>
+                                              </tr>
+                                              <tr class="align-middle">
+                                                <th scope="row" class="w-75">Flower Name</th>
+                                                <td class="w-25"><input class="form-control text-center" type="text" value="10" aria-label="Disabled input example" disabled readonly></td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="chooseSize" class="col-2 col-form-label fw-bold d-flex justify-content-end">Cover</label>
+                                <div class="col-4">
+                                    <select class="form-select" aria-label="Default select example" disabled>
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                    </select>
+                                </div>
+                                <label for="chooseSize" class="col-1 col-form-label fw-bold d-flex justify-content-end">Tie</label>
+                                <div class="col-5">
+                                    <select class="form-select" aria-label="Default select example" disabled>
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputPrice" class="col-2 col-form-label fw-bold d-flex justify-content-end">Price</label>
+                                <div class="col-10">
+                                    <input type="type" class="form-control" id="inputPrice" disabled>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputStock" class="col-2 col-form-label fw-bold d-flex justify-content-end">Stock</label>
+                                <div class="col-10">
+                                    <input type="type" class="form-control" id="inputStock" disabled>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="inputVisibility" class="col-2 col-form-label fw-bold d-flex justify-content-end">Visibility</label>
+                                <div class="col-10">
+                                    <input type="radio" class="btn-check" name="visibility-options" id="active" autocomplete="off" checked disabled>
+                                    <label class="btn btn-outline-success me-2 px-3" for="active">Active</label>
+
+                                    <input type="radio" class="btn-check" name="visibility-options" id="inactive" autocomplete="off" disabled>
+                                    <label class="btn btn-outline-danger me-2 px-3" for="inactive">Inactive</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <button class="btn btn-outline-danger px-3">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
