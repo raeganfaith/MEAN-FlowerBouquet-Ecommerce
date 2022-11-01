@@ -1,27 +1,105 @@
-#footer {
-  background: #fff;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px 0;
-  color: #222222;
+.footer {
+  background: #f6f9ff;
+  padding: 0 0 30px 0;
   font-size: 14px;
+  color: #39445c;
 }
 
-#footer .credits {
-  font-size: 13px;
-  padding-top: 5px;
-  color: #222222;
+@media (max-width: 992px) {
+  .footer .footer-top {
+    background-position: center bottom;
+  }
 }
 
-#footer .footer-links a {
+.footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+.footer .footer-top .footer-info .logo {
+  line-height: 0;
+  margin-bottom: 15px;
+}
+
+.footer .footer-top .footer-info .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.footer .footer-top .footer-info .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 3px;
+}
+
+.footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.footer .footer-top .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: rgba(1, 41, 112, 0.5);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .footer-top .social-links a:hover {
   color: #39445C;
-  padding-left: 15px;
+}
+
+.footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6E85B7;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-top .footer-links {
+  margin-bottom: 30px;
+
+}
+
+.footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #d0d4fc;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-top .footer-links ul a {
+  color: #6E85B7;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
   text-decoration: none;
 }
 
-#footer .footer-links a:first-child {
-  padding-left: 0;
+.footer .footer-top .footer-links ul a:hover {
+  color: #39445C;
 }
 
-#footer .footer-links a:hover {
-  color: #6E85B7  ;
+.footer .footer-top .footer-contact p {
+  line-height: 26px;
 }
