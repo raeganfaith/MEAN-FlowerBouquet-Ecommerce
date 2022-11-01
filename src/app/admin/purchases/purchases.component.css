@@ -1,9 +1,11 @@
 main {
     padding: 20px 30px 20px 350px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
+}
+
+@media (max-width: 1199px) {
+    main {
+        padding-left: 20px;
+    }
 }
 
 .card {
