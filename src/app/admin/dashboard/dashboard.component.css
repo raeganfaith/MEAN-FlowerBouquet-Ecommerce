@@ -21,3 +21,24 @@
 .dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover {
     background-color:  #39445C;
 }
+
+/* <!-- Content --> */
+
+main {
+    padding: 20px 30px 20px 350px;
+    color: var(--dark-text);
+ 
+}
+
+.card {
+    border-radius: 15px;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+}
+.table td, .table th {
+    color: var(--dark-text);
+}
+
+
+  
