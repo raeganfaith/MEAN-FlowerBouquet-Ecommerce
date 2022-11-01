@@ -34,3 +34,7 @@ body {
 .btn-outline-secondary {
     color: var(--primary-color);
 }
+
+.btn-success {
+    padding: 10px;
+}
