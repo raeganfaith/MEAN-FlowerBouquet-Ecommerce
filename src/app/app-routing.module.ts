@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { OrderComponent } from './order/order.component';
+import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'order',
     component: OrderComponent,
+  },
+  {
+    path:'arranged-bouquet',
+    component: ArrangedBouquetComponent,
   }
 ];
 

@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { RouterModule } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { OrderComponent } from './order/order.component';
+import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { OrderComponent } from './order/order.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    OrderComponent
+    OrderComponent,
+    ArrangedBouquetComponent
   ],
   imports: [
     BrowserModule,
