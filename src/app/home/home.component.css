@@ -29,7 +29,7 @@
 }
 #hero .btn-get-started:hover {
   background: #6E85B7;
-  color: #39445C;
+  color: white;
 }
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
