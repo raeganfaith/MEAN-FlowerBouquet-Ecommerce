@@ -112,19 +112,19 @@
 
 /* Content CSS */
 .arranged{
-padding-top: 100px;
+  padding-top: 100px;
 }
 .row-detail{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-width: 92%;
-padding-left: 150px;
-padding-bottom: 5px;
-font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 92%;
+  padding-left: 150px;
+  padding-bottom: 5px;
+  font-weight: 500;
 }
 .row-detail h5{
-align-items: stretch;
+  align-items: stretch;
 }
 .card-mode{
   display: flex;
