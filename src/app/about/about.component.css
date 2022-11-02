@@ -1,6 +1,9 @@
 .section-title{
   color: #6E85B7;
 }
+.section-title h2{
+  font-weight: 700;
+}
 .team {
   padding: 60px 0;
   display: flex;
