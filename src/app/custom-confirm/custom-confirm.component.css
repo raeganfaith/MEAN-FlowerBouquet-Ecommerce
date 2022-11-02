@@ -111,9 +111,6 @@
 }
 
 /* Content CSS */
-.arranged{
-  padding-top: 100px;
-}
 .row-detail{
   display: flex;
   flex-direction: row;

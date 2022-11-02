@@ -7,7 +7,6 @@
 .card-stepper {
   z-index: 0
 }
-
 .section-title {
   position: relative;
   display: inline-block;
@@ -15,7 +14,6 @@
   font-weight: bold;
   color: #1C1C1C;
 }
-
 #progressbar-2 {
   color: #455A64;
 }
@@ -127,56 +125,7 @@
 #progressbar-2 li.active:after {
   background: #6E85B7;
 }
-
-
-.arranged{
-padding-top: 100px;
-}
-
-
-.row-detail{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-width: 92%;
-padding-left: 150px;
-padding-bottom: 5px;
-font-weight: 500;
-}
-.row-detail h5{
-align-items: stretch;
-}
-
-.card-mode{
-  display: flex;
-  justify-content: center;
-  width: 55%;
-}
-
-.cust{
-  justify-content: space-around;
-}
-
-.mode-btn{
-  margin-left: 20px;
-}
-
-.form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-  padding-left: 160px;
-  width: 1300px;
-}
-.form-control{
-  width: 500px;
-}
-
-.message{
-  height: 200px;
-}
-
+/* Content */
 .btn-num{
   display: flex;
 }
@@ -201,7 +150,6 @@ align-items: stretch;
   min-width: 17%;
   max-width: 17%;
 }
-
 .bouquet-details1{
   width: 200%;
 }
@@ -220,70 +168,96 @@ align-items: stretch;
 button{
   margin-right: 10px;
 }
-
 .row-details{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 92%;
   font-weight: 500;
-  }
-  .arranged{
-    padding-top: 100px;
-  }
-  .bouquet-items img{
-    border-radius: 5%;
-    max-width: 255px;
-  }
-  .arranged h3{
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-    padding-left: 150px;
-  }
-  .center-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .bouquet-container{
-    display: flex;
-    justify-content:space-between;
-    width: 80%;
-  }
-  .bouquet-column{
-    max-width: 17%;
-    padding-right: 50px;
-  }
-  .bouquet-details{
-    width: 160%;
-  }
-  .details-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  button{
-    width: 255px;
-  }
-  .bouquet-container .btn{
-    background-color: #6E85B7;
-    align-items: center;
-    color: white;
-  }
+}
+.order-list{
+  padding-top: 100px;
+}
+.bouquet-items img{
+  border-radius: 5%;
+  max-width: 255px;
+}
+.order-list h3{
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  padding-left: 150px;
+}
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bouquet-container{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+}
+.bouquet-column{
+  max-width: 17%;
+  padding-right: 50px;
+}
+.bouquet-details{
+  width: 160%;
+}
+.details-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button{
+  margin-right: 10px;
+  width: 255px;
+}
+.btn-num .btn-number:hover  {
+  background-color: white;
+  color: #6E85B7;
+  pointer-events: none;
+}
+.btn-num button{
+  height: 50px;
+  background-color: white;
+  border-color: #6E85B7;
+  border-width: 2px;
+  align-items: center;
+  color: #6E85B7;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.btn-num button:hover{
+  background-color: #6E85B7;
+  color: white;
+}
+.bouquet-container .btn{
+  background-color: #6E85B7;
+  align-items: center;
+  color: white;
+}
+.confirmation{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 93%;
+}
+.confirmation button{
+  height: 50px;
+  background-color: white;
+  border-color: #6E85B7;
+  border-width: 2px;
+  align-items: center;
+  color: #6E85B7;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.confirmation button:hover{
+  background-color: #6E85B7;
+  color: white;
+}
 
-  .confirmation{
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 50px;
-    width: 93%;
-    padding-bottom: 50px;
-  }
-  .button{
-    background-color: #6E85B7;
-    color: white;
-    border-color: #6E85B7;
-    padding: 10px;
-    border-radius: 5px;
-  }
 

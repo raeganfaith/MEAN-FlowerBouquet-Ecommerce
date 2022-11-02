@@ -128,12 +128,13 @@
   background: #6E85B7;
 }
 
-
-.arranged{
+.custom-card{
 padding-top: 100px;
 }
-.arranged h3{
+.custom-card h3{
   display: flex;
+  font-weight: 700;
+  color: #6E85B7;
   justify-content: flex-start;
   padding-bottom: 20px;
   padding-left: 150px;

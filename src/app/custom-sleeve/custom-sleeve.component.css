@@ -120,6 +120,8 @@
 }
 .custom-sleeve h3{
   display: flex;
+  font-weight: 700;
+  color: #6E85B7;
   justify-content: flex-start;
   padding-bottom: 20px;
   padding-left: 150px;
