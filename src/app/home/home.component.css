@@ -15,7 +15,6 @@
   margin-bottom: 50px;
   font-size: 24px;
 }
-
 #hero .btn-get-started {
   font-weight: 500;
   font-size: 16px;
@@ -110,6 +109,12 @@
   margin-left: 150px;
   margin-right: 100px;
 }
+.top a{
+  text-decoration: none;
+  color:#39445C;
+  font-weight: 500;
+  font-size: 16px;
+}
 .top p:hover{
   color: #6E85B7;
   cursor: pointer;
@@ -158,7 +163,7 @@ button{
 }
 .bouquet-container .btn:hover{
   background-color: #6E85B7;
-  color: #39445C;
+  color: white;
 }
 
 /* About CSS */
@@ -190,10 +195,13 @@ button{
   background: #6E85B7;
 }
 .about .btn-read-more span {
-  font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
+}
+.about .btn-read-more:hover {
+  color: #fff;
+  background: #39445C;
 }
 .about .btn-read-more i {
   margin-left: 5px;
