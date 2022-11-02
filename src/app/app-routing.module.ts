@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { OrderComponent } from './order/order.component';
 import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.component';
+import { CustomFlowerComponent } from './custom-flower/custom-flower.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:'arranged-bouquet',
     component: ArrangedBouquetComponent,
+  },
+  {
+    path:'custom-flower',
+    component: CustomFlowerComponent,
   }
 ];
 

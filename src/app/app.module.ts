@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { OrderComponent } from './order/order.component';
 import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.component';
+import { CustomFlowerComponent } from './custom-flower/custom-flower.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.co
     AboutComponent,
     ContactComponent,
     OrderComponent,
-    ArrangedBouquetComponent
+    ArrangedBouquetComponent,
+    CustomFlowerComponent
   ],
   imports: [
     BrowserModule,
