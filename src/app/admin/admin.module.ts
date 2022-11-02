@@ -22,6 +22,7 @@ import { AddMaterialComponent } from './add-material/add-material.component';
 import { ViewMaterialComponent } from './view-material/view-material.component';
 import { OrdersComponent } from './orders/orders.component';
 import { PagesComponent } from './pages/pages.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -45,7 +46,8 @@ import { PagesComponent } from './pages/pages.component';
     EditMaterialComponent,
     AddMaterialComponent,
     ViewMaterialComponent,
-    PagesComponent
+    PagesComponent,
+    OrderDetailsComponent
   ],
   imports: [
     CommonModule,

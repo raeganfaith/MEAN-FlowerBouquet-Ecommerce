@@ -10,6 +10,7 @@ import { EditFlowerComponent } from './edit-flower/edit-flower.component';
 import { EditMaterialComponent } from './edit-material/edit-material.component';
 import { FlowersComponent } from './flowers/flowers.component';
 import { MaterialsComponent } from './materials/materials.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 import { OrdersComponent } from './orders/orders.component';
 import { PagesComponent } from './pages/pages.component';
 import { PurchasesComponent } from './purchases/purchases.component';
@@ -47,6 +48,7 @@ const routes: Routes = [
       { path: 'orders', component: OrdersComponent },
       { path: 'purchases', component: PurchasesComponent },
       { path: 'pages', component: PagesComponent },
+      { path: 'order-details', component: OrderDetailsComponent },
     ]
   }
 ];
