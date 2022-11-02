@@ -17,6 +17,9 @@
   justify-content: center;
   align-items: center;
 }
+.adjust{
+  padding-top: 30px;
+}
 .bouquet-container{
   display: flex;
   justify-content:space-between;
@@ -54,6 +57,15 @@ button{
   justify-content: flex-end;
   padding-top: 50px;
   width: 93%;
+}
+.confirmation button{
+  height: 40px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.confirmation button:hover{
+  background-color: #6E85B7;
+  color: #39445C;
 }
 .button{
   background-color: white;
