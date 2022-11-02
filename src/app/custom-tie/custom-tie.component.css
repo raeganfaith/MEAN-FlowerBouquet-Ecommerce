@@ -3,7 +3,6 @@
 .ml{
   margin-left: 40px;
 }
-
 .card-stepper {
   z-index: 0
 }
@@ -164,10 +163,6 @@ display: flex;
 flex-direction: row;
 justify-content: space-between;
 }
-/* button{
-width: 255px;
-background-color: #6E85B7;
-} */
 
 .bouquet-container .btn{
 align-items: center;
@@ -182,13 +177,19 @@ padding-bottom: 50px;
 width: 93%;
 }
 button{
-width: 255px;
-background-color: #6E85B7;
-color: white;
-border-color: #6E85B7;
-padding: 5px;
-border-radius: 5px;
-
+  width: 255px;
+  height: 40px;
+  background-color: white;
+  border-color: #6E85B7;
+  border-width: 2px;
+  align-items: center;
+  color: #6E85B7;
+  font-weight: 500;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #6E85B7;
+  color: white;
 }
 .add-btn{
 padding-top: 10px;
