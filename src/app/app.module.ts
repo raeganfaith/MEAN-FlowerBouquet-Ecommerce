@@ -16,6 +16,7 @@ import { CustomSleeveComponent } from './custom-sleeve/custom-sleeve.component';
 import { CustomTieComponent } from './custom-tie/custom-tie.component';
 import { CustomCardComponent } from './custom-card/custom-card.component';
 import { CustomConfirmComponent } from './custom-confirm/custom-confirm.component';
+import { OrderListComponent } from './order-list/order-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CustomConfirmComponent } from './custom-confirm/custom-confirm.componen
     CustomSleeveComponent,
     CustomTieComponent,
     CustomCardComponent,
-    CustomConfirmComponent
+    CustomConfirmComponent,
+    OrderListComponent
   ],
   imports: [
     BrowserModule,
