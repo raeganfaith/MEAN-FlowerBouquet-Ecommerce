@@ -198,6 +198,7 @@ button{
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
+  color: white;
 }
 .about .btn-read-more:hover {
   color: #fff;
