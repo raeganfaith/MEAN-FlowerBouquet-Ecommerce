@@ -1,13 +1,11 @@
 /* @import '~mdb-ui-kit/css/mdb.min.css'; */
-
+/* Status Bar CSS */
 .ml{
   margin-left: 40px;
 }
-
 .card-stepper {
   z-index: 0
 }
-
 .section-title {
   position: relative;
   display: inline-block;
@@ -15,11 +13,9 @@
   font-weight: bold;
   color: #1C1C1C;
 }
-
 #progressbar-2 {
   color: #455A64;
 }
-
 #progressbar-2 li {
   list-style-type: none;
   font-size: 13px;
@@ -27,7 +23,6 @@
   float: left;
   position: relative;
 }
-
 #progressbar-2 #step1:before {
   content: '\f058';
   font-family: "Font Awesome 5 Free";
@@ -36,14 +31,12 @@
   margin-left: 0px;
   padding-left: 0px;
 }
-
 #progressbar-2 #step2:before {
   content: '\f111';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
 }
-
 #progressbar-2 #step3:before {
   content: '\f111';
   font-family: "Font Awesome 5 Free";
@@ -52,7 +45,6 @@
   margin-right: 0;
   text-align: center;
 }
-
 #progressbar-2 #step4:before {
   content: '\f111';
   font-family: "Font Awesome 5 Free";
@@ -61,7 +53,6 @@
   margin-right: 0;
   text-align: center;
 }
-
 #progressbar-2 #step5:before {
   content: '\f111';
   font-family: "Font Awesome 5 Free";
@@ -70,7 +61,6 @@
   margin-right: 0;
   text-align: center;
 }
-
 #progressbar-2 li:before {
   line-height: 37px;
   display: block;
@@ -78,7 +68,6 @@
   background: #c5cae9;
   border-radius: 50%;
 }
-
 #progressbar-2 li:after {
   content: '';
   width: 100%;
@@ -90,50 +79,41 @@
   top: 15px;
   z-index: -1;
 }
-
 #progressbar-2 li:nth-child(1):after {
   left: 1%;
   width: 100%
 }
-
 #progressbar-2 li:nth-child(2):after {
   left: 1%;
   width: 100%;
 }
-
 #progressbar-2 li:nth-child(3):after {
   left: 1%;
   width: 100%;
   background: #c5cae9 !important;
 }
-
 #progressbar-2 li:nth-child(4):after {
   left: 1%;
   width: 100%;
   background: #c5cae9 !important;
 }
-
 #progressbar-2 li:nth-child(5) {
   left: 0;
   width: 37px;
 }
-
 #progressbar-2 li:nth-child(5):after {
   left: 0;
   width: 0;
 }
-
 #progressbar-2 li.active:before,
 #progressbar-2 li.active:after {
   background: #6E85B7;
 }
 
-
+/* Content CSS */
 .arranged{
 padding-top: 100px;
 }
-
-
 .row-detail{
 display: flex;
 flex-direction: row;
@@ -146,21 +126,17 @@ font-weight: 500;
 .row-detail h5{
 align-items: stretch;
 }
-
 .card-mode{
   display: flex;
   justify-content: center;
   width: 55%;
 }
-
 .cust{
   justify-content: space-around;
 }
-
 .mode-btn{
   margin-left: 20px;
 }
-
 .form{
   display: flex;
   justify-content: center;
@@ -172,11 +148,9 @@ align-items: stretch;
 .form-control{
   width: 500px;
 }
-
 .message{
   height: 200px;
 }
-
 .btn-num{
   display: flex;
 }
@@ -201,7 +175,6 @@ align-items: stretch;
   min-width: 17%;
   max-width: 17%;
 }
-
 .bouquet-details1{
   width: 200%;
 }
@@ -210,25 +183,17 @@ align-items: stretch;
   flex-direction: row;
   justify-content: space-between;
 }
-.button1{
-  background-color: #92a0be;
-  color: white;
-  border-color: #92a0be;
-  padding: 10px;
-  border-radius: 5px;
-}
-button{
-  margin-right: 10px;
-}
-.arranged{
+.custom-confirm{
   padding-top: 100px;
 }
 .bouquet-items img{
   border-radius: 5%;
   max-width: 255px;
 }
-.arranged h3{
+.custom-confirm h3{
   display: flex;
+  font-weight: 700;
+  color: #6E85B7;
   justify-content: flex-start;
   padding-bottom: 20px;
   padding-left: 150px;
@@ -255,25 +220,62 @@ button{
   flex-direction: row;
   justify-content: space-between;
 }
-button{
-  width: 255px;
-}
+/* Buttons CSS */
 .bouquet-container .btn{
   background-color: #6E85B7;
   align-items: center;
   color: white;
 }
-
 .confirmation{
   display: flex;
   justify-content: flex-end;
   padding-top: 50px;
+  padding-bottom: 50px;
   width: 93%;
 }
 .button{
-  background-color: #6E85B7;
-  color: white;
+  background-color: white;
+  color: #6E85B7;
   border-color: #6E85B7;
   padding: 10px;
   border-radius: 5px;
+}
+.button:hover{
+  background-color: #6E85B7;
+  color: white;
+}
+.button1{
+  background-color: white;
+  color: #6E85B7;
+  border-color: #6E85B7;
+  padding: 10px;
+  border-radius: 5px;
+}
+.button1:hover{
+  background-color: #6E85B7;
+  color: white;
+}
+button{
+  margin-right: 10px;
+  width: 255px;
+}
+.btn-num .btn-number:hover  {
+  background-color: white;
+  color: #6E85B7;
+  pointer-events: none;
+}
+.btn-num button{
+  /* width: 255px; */
+  height: 50px;
+  background-color: white;
+  border-color: #6E85B7;
+  border-width: 2px;
+  align-items: center;
+  color: #6E85B7;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.btn-num button:hover{
+  background-color: #6E85B7;
+  color: white;
 }
