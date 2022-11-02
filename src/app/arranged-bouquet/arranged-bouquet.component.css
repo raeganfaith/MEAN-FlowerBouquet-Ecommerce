@@ -50,7 +50,7 @@ button{
 }
 .bouquet-container .btn:hover{
   background-color: #6E85B7;
-  color: #39445C;
+  color: white;
 }
 .confirmation{
   display: flex;
@@ -65,7 +65,7 @@ button{
 }
 .confirmation button:hover{
   background-color: #6E85B7;
-  color: #39445C;
+  color: white;
 }
 .button{
   background-color: white;
