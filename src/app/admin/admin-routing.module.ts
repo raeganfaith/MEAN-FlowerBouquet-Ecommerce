@@ -11,12 +11,12 @@ import { EditMaterialComponent } from './edit-material/edit-material.component';
 import { FlowersComponent } from './flowers/flowers.component';
 import { MaterialsComponent } from './materials/materials.component';
 import { OrdersComponent } from './orders/orders.component';
+import { PagesComponent } from './pages/pages.component';
 import { PurchasesComponent } from './purchases/purchases.component';
 import { SigninComponent } from './signin/signin.component';
 import { ViewBouquetComponent } from './view-bouquet/view-bouquet.component';
 import { ViewFlowerComponent } from './view-flower/view-flower.component';
 import { ViewMaterialComponent } from './view-material/view-material.component';
-import { WebmanagementComponent } from './webmanagement/webmanagement.component';
 
 const routes: Routes = [
   {
@@ -46,7 +46,7 @@ const routes: Routes = [
       
       { path: 'orders', component: OrdersComponent },
       { path: 'purchases', component: PurchasesComponent },
-      { path: 'webmanagement', component: WebmanagementComponent },
+      { path: 'pages', component: PagesComponent },
     ]
   }
 ];

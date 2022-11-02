@@ -5,7 +5,6 @@ import { AdminRoutingModule } from './admin-routing.module';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PurchasesComponent } from './purchases/purchases.component';
-import { WebmanagementComponent } from './webmanagement/webmanagement.component';
 import { SigninComponent } from './signin/signin.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -22,11 +21,11 @@ import { EditMaterialComponent } from './edit-material/edit-material.component';
 import { AddMaterialComponent } from './add-material/add-material.component';
 import { ViewMaterialComponent } from './view-material/view-material.component';
 import { OrdersComponent } from './orders/orders.component';
+import { PagesComponent } from './pages/pages.component';
 @NgModule({
   declarations: [
     DashboardComponent,
     PurchasesComponent,
-    WebmanagementComponent,
     OrdersComponent,
     SigninComponent,
     SidebarComponent,
@@ -45,7 +44,8 @@ import { OrdersComponent } from './orders/orders.component';
     MaterialsComponent,
     EditMaterialComponent,
     AddMaterialComponent,
-    ViewMaterialComponent
+    ViewMaterialComponent,
+    PagesComponent
   ],
   imports: [
     CommonModule,
