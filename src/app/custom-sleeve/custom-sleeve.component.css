@@ -1,5 +1,5 @@
 /* @import '~mdb-ui-kit/css/mdb.min.css'; */
-
+/* Status Bar CSS */
 .ml{
   margin-left: 40px;
 }
@@ -110,7 +110,7 @@
   background: #6E85B7;
 }
 
-
+/* Content CSS */
 .custom-sleeve{
   padding-top: 100px;
 }
@@ -145,35 +145,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.bouquet-container .btn{
-  align-items: center;
-  color: white;
-}
-
-.confirmation{
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 50px;
-  width: 93%;
-}
-button{
-  width: 255px;
-  height: 40px;
-  background-color: white;
-  border-color: #6E85B7;
-  border-width: 2px;
-  align-items: center;
-  color: #6E85B7;
-  font-weight: 500;
-  border-radius: 5px;
-}
-button:hover{
-  background-color: #6E85B7;
-  color: white;
-}
-.add-btn{
-  padding-top: 10px;
 }
 .wrapper{
   min-height: 30px;
@@ -211,6 +182,33 @@ button:hover{
 .row-detail h5{
   align-items: stretch;
 }
+/* Button CSS */
+.bouquet-container .btn{
+  align-items: center;
+  color: white;
+}
 .confirmation{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+  width: 93%;
   padding-bottom: 50px;
+}
+button{
+  width: 255px;
+  height: 40px;
+  background-color: white;
+  border-color: #6E85B7;
+  border-width: 2px;
+  align-items: center;
+  color: #6E85B7;
+  font-weight: 500;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #6E85B7;
+  color: white;
+}
+.add-btn{
+  padding-top: 10px;
 }
