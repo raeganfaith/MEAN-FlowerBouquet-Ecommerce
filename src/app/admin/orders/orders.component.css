@@ -1,0 +1,49 @@
+/* .main{
+    margin: 2% 3% 2% 25%;
+}
+
+
+  .search-form{
+    float: right;
+    margin: 10px;
+  }
+
+  .sales-view-details-btn{
+    padding: 5px 10px;
+    border-radius: 10px;
+    float: right;
+  } */
+
+
+main {
+    padding: 20px 30px 20px 350px;
+}
+
+@media (max-width: 1199px) {
+    main {
+        padding-left: 20px;
+    }
+}
+
+.card {
+    padding: 20px 0;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+}
+
+.table td, .table th {
+    padding: 10px 20px;
+    color: var(--dark-text);
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.btn-light {
+    background: none;
+    border: none;
+}
+
+  

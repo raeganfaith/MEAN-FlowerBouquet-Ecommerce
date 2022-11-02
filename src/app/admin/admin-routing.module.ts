@@ -10,8 +10,8 @@ import { EditFlowerComponent } from './edit-flower/edit-flower.component';
 import { EditMaterialComponent } from './edit-material/edit-material.component';
 import { FlowersComponent } from './flowers/flowers.component';
 import { MaterialsComponent } from './materials/materials.component';
+import { OrdersComponent } from './orders/orders.component';
 import { PurchasesComponent } from './purchases/purchases.component';
-import { SalesComponent } from './sales/sales.component';
 import { SigninComponent } from './signin/signin.component';
 import { ViewBouquetComponent } from './view-bouquet/view-bouquet.component';
 import { ViewFlowerComponent } from './view-flower/view-flower.component';
@@ -44,7 +44,7 @@ const routes: Routes = [
       { path: 'view-material', component: ViewMaterialComponent },
       { path: 'edit-material', component: EditMaterialComponent },
       
-      { path: 'sales', component: SalesComponent },
+      { path: 'orders', component: OrdersComponent },
       { path: 'purchases', component: PurchasesComponent },
       { path: 'webmanagement', component: WebmanagementComponent },
     ]

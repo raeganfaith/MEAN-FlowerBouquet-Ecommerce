@@ -6,7 +6,6 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PurchasesComponent } from './purchases/purchases.component';
 import { WebmanagementComponent } from './webmanagement/webmanagement.component';
-import { SalesComponent } from './sales/sales.component';
 import { SigninComponent } from './signin/signin.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -22,13 +21,13 @@ import { EditFlowerComponent } from './edit-flower/edit-flower.component';
 import { EditMaterialComponent } from './edit-material/edit-material.component';
 import { AddMaterialComponent } from './add-material/add-material.component';
 import { ViewMaterialComponent } from './view-material/view-material.component';
-
+import { OrdersComponent } from './orders/orders.component';
 @NgModule({
   declarations: [
     DashboardComponent,
     PurchasesComponent,
     WebmanagementComponent,
-    SalesComponent,
+    OrdersComponent,
     SigninComponent,
     SidebarComponent,
     NavbarComponent,
