@@ -10,6 +10,8 @@ import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.co
 import { CustomFlowerComponent } from './custom-flower/custom-flower.component';
 import { CustomSleeveComponent } from './custom-sleeve/custom-sleeve.component';
 import { CustomTieComponent } from './custom-tie/custom-tie.component';
+import { CustomCardComponent } from './custom-card/custom-card.component';
+import { CustomConfirmComponent } from './custom-confirm/custom-confirm.component';
 
 const routes: Routes = [
   {
@@ -51,6 +53,14 @@ const routes: Routes = [
   {
     path:'custom-tie',
     component: CustomTieComponent,
+  },
+  {
+    path:'custom-card',
+    component: CustomCardComponent,
+  },
+  {
+    path:'custom-confirm',
+    component: CustomConfirmComponent,
   }
 ];
 

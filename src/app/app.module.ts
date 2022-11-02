@@ -14,6 +14,8 @@ import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.co
 import { CustomFlowerComponent } from './custom-flower/custom-flower.component';
 import { CustomSleeveComponent } from './custom-sleeve/custom-sleeve.component';
 import { CustomTieComponent } from './custom-tie/custom-tie.component';
+import { CustomCardComponent } from './custom-card/custom-card.component';
+import { CustomConfirmComponent } from './custom-confirm/custom-confirm.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { CustomTieComponent } from './custom-tie/custom-tie.component';
     ArrangedBouquetComponent,
     CustomFlowerComponent,
     CustomSleeveComponent,
-    CustomTieComponent
+    CustomTieComponent,
+    CustomCardComponent,
+    CustomConfirmComponent
   ],
   imports: [
     BrowserModule,
