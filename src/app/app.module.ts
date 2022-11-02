@@ -13,6 +13,7 @@ import { OrderComponent } from './order/order.component';
 import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.component';
 import { CustomFlowerComponent } from './custom-flower/custom-flower.component';
 import { CustomSleeveComponent } from './custom-sleeve/custom-sleeve.component';
+import { CustomTieComponent } from './custom-tie/custom-tie.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CustomSleeveComponent } from './custom-sleeve/custom-sleeve.component';
     OrderComponent,
     ArrangedBouquetComponent,
     CustomFlowerComponent,
-    CustomSleeveComponent
+    CustomSleeveComponent,
+    CustomTieComponent
   ],
   imports: [
     BrowserModule,
