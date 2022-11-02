@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { OrderComponent } from './order/order.component';
 import { ArrangedBouquetComponent } from './arranged-bouquet/arranged-bouquet.component';
 import { CustomFlowerComponent } from './custom-flower/custom-flower.component';
+import { CustomSleeveComponent } from './custom-sleeve/custom-sleeve.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path:'custom-flower',
     component: CustomFlowerComponent,
+  },
+  {
+    path:'custom-sleeve',
+    component: CustomSleeveComponent,
   }
 ];
 

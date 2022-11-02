@@ -128,9 +128,9 @@
   background: #6E85B7;
 }
 
+
 .arranged{
 padding-top: 100px;
-padding-bottom: 50px;
 }
 .bouquet-items img{
 border-radius: 5%;
@@ -229,4 +229,7 @@ font-weight: 500;
 }
 .row-detail h5{
 align-items: stretch;
+}
+.confirmation{
+  padding-bottom: 50px;
 }
