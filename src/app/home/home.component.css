@@ -1,0 +1,208 @@
+#hero {
+  width: 100%;
+  height: 70vh;
+  margin-top: 70px;
+}
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #6E85B7;
+}
+#hero h2 {
+  color: #39445C;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #6E85B7;
+  border: 2px solid #6E85B7;
+  text-decoration: none;
+}
+#hero .btn-get-started:hover {
+  background: #6E85B7;
+  color: #39445C;
+}
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 991px) {
+  #hero {
+    height: 100vh;
+  }
+  #hero .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #hero .hero-img {
+    text-align: center;
+  }
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #hero {
+    margin-top: 20px;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Bestsellers  */
+.sell{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  color:#39445C;
+}
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 100px;
+}
+.top p:hover{
+  color: #6E85B7;
+  cursor: pointer;
+}
+.bouquet-items img{
+  border-radius: 5%;
+  max-width: 255px;
+}
+.sell h3{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bouquet-container{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+}
+.bouquet-column{
+  max-width: 17%;
+  padding-right: 50px;
+}
+.bouquet-details{
+  width: 160%;
+}
+.details-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button{
+  width: 255px;
+}
+.bouquet-container .btn{
+  background-color: white;
+  border-color: #6E85B7;
+  border-width: 2px;
+  align-items: center;
+  color: #6E85B7;
+  font-weight: 500;
+}
+.bouquet-container .btn:hover{
+  background-color: #6E85B7;
+  color: #39445C;
+}
+
+/* About CSS */
+.about .content {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+.about h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6E85B7;
+  text-transform: uppercase;
+}
+.about h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #6E85B7;
+}
+.about p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+}
+.about .btn-read-more {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #6E85B7;
+}
+.about .btn-read-more span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.about .btn-read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.about .btn-read-more:hover i {
+  transform: translateX(5px);
+}
+.text-center a{
+  text-decoration: none;
+}

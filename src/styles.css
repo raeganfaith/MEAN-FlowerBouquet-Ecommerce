@@ -9,6 +9,8 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -38,3 +40,4 @@ body {
 .btn-success {
     padding: 10px;
 }
+
