@@ -1,5 +1,4 @@
-
-.arranged{
+.order{
   padding-top: 100px;
   padding-bottom: 50px;
 }
@@ -7,7 +6,7 @@
   border-radius: 5%;
   max-width: 255px;
 }
-.arranged h3{
+.order h3{
   display: flex;
   justify-content: flex-start;
   padding-bottom: 20px;
@@ -39,11 +38,17 @@ button{
   width: 255px;
 }
 .bouquet-container .btn{
-  background-color: #6E85B7;
+  background-color: white;
+  border-color: #6E85B7;
+  border-width: 2px;
   align-items: center;
-  color: white;
+  color: #6E85B7;
+  font-weight: 500;
 }
-
+.bouquet-container .btn:hover{
+  background-color: #6E85B7;
+  color: #39445C;
+}
 .confirmation{
   display: flex;
   justify-content: flex-end;
@@ -51,9 +56,10 @@ button{
   width: 93%;
 }
 .button{
-  background-color: #6E85B7;
-  color: white;
+  background-color: white;
   border-color: #6E85B7;
-  padding: 10px;
-  border-radius: 5px;
+  border-width: 2px;
+  align-items: center;
+  color: #6E85B7;
+  font-weight: 500;
 }
