@@ -42,19 +42,18 @@
     <label for="chooseSize" class="col-2 col-form-label fw-bold d-flex justify-content-end"></label>
     <div class="col-4">
         <input type="radio" class="btn-check" name="size-options" id="small" autocomplete="off" checked>
-        <label class="btn btn-label me-2" for="small">Small</label>
+        <label class="btn btn-label me-2" for="small" onclick="ChangeSmall()">Small</label>
 
         <input type="radio" class="btn-check" name="size-options" id="medium" autocomplete="off">
-        <label class="btn btn-label me-2" for="medium">Medium</label>
-
+        <label class="btn btn-label me-2" for="medium" onclick="ChangeMedium()">Medium</label>
         <input type="radio" class="btn-check" name="size-options" id="large" autocomplete="off">
-        <label class="btn btn-label me-2" for="large">Large</label>
+        <label class="btn btn-label me-2" for="large" onclick="ChangeLarge()">Large</label>
     </div>
   </div>
 </div>
 <div class="row-detail">
   <h5>Choose your choice of flowers:</h5>
-  <h5>20</h5>
+  <h5 id="change">10</h5>
 </div>
 <div class="center-container">
   <div class="bouquet-container">
@@ -231,7 +230,7 @@
 </div>
 
 <!-- //correct but not working JS -->
-<script>
+<!-- <script>
       const plus = document.querySelector(".plus"),
        minus = document.querySelector(".minus"),
        num = document.querySelector(".num");
@@ -249,7 +248,12 @@
            num.innerText = a;
          }
        });
-</script>
+</script> -->
+<!-- <script>
+  document.querySelector("small-category").onclick = function (){
+    document.getElementById("change").innerHTML = "10";
+  }
+</script> -->
 </section>
 <app-footer></app-footer>
 
