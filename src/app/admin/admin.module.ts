@@ -23,6 +23,7 @@ import { ViewMaterialComponent } from './view-material/view-material.component';
 import { OrdersComponent } from './orders/orders.component';
 import { PagesComponent } from './pages/pages.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
+import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -47,7 +48,8 @@ import { OrderDetailsComponent } from './order-details/order-details.component';
     AddMaterialComponent,
     ViewMaterialComponent,
     PagesComponent,
-    OrderDetailsComponent
+    OrderDetailsComponent,
+    PurchaseDetailsComponent
   ],
   imports: [
     CommonModule,
