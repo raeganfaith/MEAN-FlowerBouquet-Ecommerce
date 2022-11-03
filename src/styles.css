@@ -41,4 +41,31 @@ body {
     padding: 10px;
 }
 
+/* Default button-template for orders */
+.btn-general {
+  font-weight: 500;
+  width: 255px;
+  height: 40px;
+  background-color: white;
+  border-width: 2px;
+  border-radius: 3px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
 
+.btn-general:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* For the See More Hover effects */
+.see-more{
+  color: var(--dark-text);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.see-more:hover{
+  color: var(--primary-color);
+}

@@ -109,16 +109,7 @@
   margin-left: 150px;
   margin-right: 100px;
 }
-.top a{
-  text-decoration: none;
-  color:#39445C;
-  font-weight: 500;
-  font-size: 16px;
-}
-.top p:hover{
-  color: #6E85B7;
-  cursor: pointer;
-}
+
 .bouquet-items img{
   border-radius: 5%;
   max-width: 255px;
@@ -149,21 +140,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-button{
-  width: 255px;
-}
-.bouquet-container .btn{
-  background-color: white;
-  border-color: #6E85B7;
-  border-width: 2px;
-  align-items: center;
-  color: #6E85B7;
-  font-weight: 500;
-}
-.bouquet-container .btn:hover{
-  background-color: #6E85B7;
-  color: white;
 }
 
 /* About CSS */
