@@ -111,6 +111,12 @@
 }
 
 /* Custom Content CSS */
+.row-category{
+  display: flex;
+  width: 100%;
+  padding-left: 100px;
+  flex-direction: column;
+}
 .custom-flower{
   padding-top: 100px;
   padding-bottom: 50px;

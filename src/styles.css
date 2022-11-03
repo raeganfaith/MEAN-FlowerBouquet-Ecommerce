@@ -75,3 +75,15 @@ body {
   font-weight: 700;
 }
 
+/* Label button-template */
+.btn-label {
+  width: 100px;
+  background-color: white;
+  border-width: 2px;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.btn-check:checked + .btn-label {
+  background-color: var(--primary-color);
+  color: white;
+}
