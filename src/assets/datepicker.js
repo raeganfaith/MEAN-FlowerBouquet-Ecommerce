@@ -17,3 +17,17 @@ function ChangeMedium() {
 function ChangeLarge() {
   document.getElementById("change").innerHTML = "30";
 }
+
+// pop-up JavaScript
+function PopUpSleeve1(){
+  document.getElementById("popup-sleeve-1").classList.toggle("active");
+}
+function PopUpSleeve2(){
+  document.getElementById("popup-sleeve-2").classList.toggle("active");
+}
+function PopUpSleeve3(){
+  document.getElementById("popup-sleeve-3").classList.toggle("active");
+}
+function PopUpSleeve4(){
+  document.getElementById("popup-sleeve-4").classList.toggle("active");
+}
