@@ -5,40 +5,40 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container-fluid {
-    padding: 20px;
+  padding: 20px;
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    border: none;
-    padding: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px;
 }
 
 .btn-primary:focus, .btn-primary:active {
-    background-color: var(--primary-color);
-    border: none;
-    padding: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px;
 }
 
 .btn-outline-secondary {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn-success {
-    padding: 10px;
+  padding: 10px;
 }
 
 /* Default button-template for orders */
