@@ -17,9 +17,5 @@ main {
 
 .card-title {
     font-weight: bold;
-}
-
-.table td, .table th {
-    padding: 10px 20px;
-    color: var(--dark-text);
+    text-transform: uppercase;
 }

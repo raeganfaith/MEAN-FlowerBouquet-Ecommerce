@@ -9,17 +9,24 @@ main {
 }
 
 .card {
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 20px;
     border: none;
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-}
-
-.card-title {
-    font-weight: bold;
 }
 
 .table td, .table th {
     padding: 10px 20px;
     color: var(--dark-text);
 }
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.btn-light {
+    background: none;
+    border: none;
+}
+
+  
