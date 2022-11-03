@@ -128,7 +128,7 @@
 }
 
 .custom-card{
-padding-top: 100px;
+  padding-top: 100px;
 }
 .custom-card h3{
   display: flex;
@@ -137,7 +137,7 @@ padding-top: 100px;
   justify-content: flex-start;
   padding-bottom: 20px;
   padding-left: 150px;
-  }
+}
 .row-detail{
   display: flex;
   flex-direction: row;
@@ -160,11 +160,7 @@ padding-top: 100px;
 
 .cust{
   justify-content: center;
-  padding-left: 140px;
-}
-
-.mode-btn{
-  margin-left: 20px;
+  padding-left: 160px;
 }
 
 .form{
