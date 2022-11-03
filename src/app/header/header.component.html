@@ -5,11 +5,11 @@
         </div>
         <nav id="navbar" class="navbar">
         <ul>
-            <li><a class="nav-link scrollto active" routerLink="">Home</a></li>
-            <li><a class="nav-link scrollto" routerLink="/about">About</a></li>
-            <li><a class="nav-link scrollto" routerLink="/order">Order</a></li>
-            <li><a class="nav-link scrollto" routerLink="/contact">Contact Us</a></li>
-            <li><a class="getstarted scrollto" routerLink="purchases"><img src="assets/img/bag.png"></a></li>
+            <li><a class="nav-link scrollto" [routerLinkActive]="'active'" routerLink="/home">Home</a></li>
+            <li><a class="nav-link scrollto" [routerLinkActive]="'active'" routerLink="/about">About</a></li>
+            <li><a class="nav-link scrollto" [routerLinkActive]="'active'" routerLink="/order">Order</a></li>
+            <li><a class="nav-link scrollto" [routerLinkActive]="'active'" routerLink="/contact">Contact Us</a></li>
+            <li><a class="getstarted scrollto" routerLink="/order-list"><img src="assets/img/bag.png"></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

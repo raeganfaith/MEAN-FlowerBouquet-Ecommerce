@@ -15,7 +15,6 @@
   margin-bottom: 50px;
   font-size: 24px;
 }
-
 #hero .btn-get-started {
   font-weight: 500;
   font-size: 16px;
@@ -30,7 +29,7 @@
 }
 #hero .btn-get-started:hover {
   background: #6E85B7;
-  color: #39445C;
+  color: white;
 }
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -110,10 +109,7 @@
   margin-left: 150px;
   margin-right: 100px;
 }
-.top p:hover{
-  color: #6E85B7;
-  cursor: pointer;
-}
+
 .bouquet-items img{
   border-radius: 5%;
   max-width: 255px;
@@ -145,23 +141,11 @@
   flex-direction: row;
   justify-content: space-between;
 }
-button{
-  width: 255px;
-}
-.bouquet-container .btn{
-  background-color: white;
-  border-color: #6E85B7;
-  border-width: 2px;
-  align-items: center;
-  color: #6E85B7;
-  font-weight: 500;
-}
-.bouquet-container .btn:hover{
-  background-color: #6E85B7;
-  color: #39445C;
-}
 
 /* About CSS */
+.about{
+  padding-bottom: 70px;
+}
 .about .content {
   background-color: #f6f9ff;
   padding: 40px;
@@ -190,10 +174,14 @@ button{
   background: #6E85B7;
 }
 .about .btn-read-more span {
-  font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
+  color: white;
+}
+.about .btn-read-more:hover {
+  color: #fff;
+  background: #39445C;
 }
 .about .btn-read-more i {
   margin-left: 5px;
