@@ -201,7 +201,6 @@ button{
 .btn-num .btn-number:hover  {
   background-color: white;
   color: #6E85B7;
-  pointer-events: none;
 }
 .confirmation{
   display: flex;

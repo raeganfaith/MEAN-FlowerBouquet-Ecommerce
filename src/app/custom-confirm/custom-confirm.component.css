@@ -241,20 +241,9 @@
   background-color: #6E85B7;
   color: white;
 }
-.button1{
-  background-color: white;
-  color: #6E85B7;
-  border-color: #6E85B7;
-  padding: 10px;
-  border-radius: 5px;
-}
-.button1:hover{
-  background-color: #6E85B7;
-  color: white;
-}
+
 button{
   margin-right: 10px;
-  width: 255px;
 }
 .btn-num .btn-number:hover  {
   background-color: white;
