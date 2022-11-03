@@ -143,6 +143,9 @@
 }
 
 /* About CSS */
+.about{
+  padding-bottom: 70px;
+}
 .about .content {
   background-color: #f6f9ff;
   padding: 40px;
