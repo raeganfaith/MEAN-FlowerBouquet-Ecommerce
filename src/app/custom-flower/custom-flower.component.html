@@ -37,6 +37,7 @@
       </div>
     </div>
 <!-- Content -->
+<!-- Quantity Sizes -->
 <div class="row-category">
   <div class="pb-5 ps-5">
     <label for="chooseSize" class="col-2 col-form-label fw-bold d-flex justify-content-end"></label>
@@ -66,7 +67,7 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpFlower1()">See More</a></p>
       <div class="wrapper">
         <span class="minus">-</span>
         <span class="num">01</span>
@@ -86,27 +87,7 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <div class="wrapper">
-        <span class="minus">-</span>
-        <span class="num">01</span>
-        <span class="plus">+</span>
-      </div>
-      <div class="add-btn">
-        <button class="btn-bag">add to bag</button>
-      </div>
-    </div>
-  </div>
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/flower1.jpg" alt="">
-    </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>Rose Bouquet</h4>
-        <p>$10</p>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpFlower2()">See More</a></p>
       <div class="wrapper">
         <span class="minus">-</span>
         <span class="num">01</span>
@@ -126,8 +107,27 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <!-- <button class="btn-count">1</button> -->
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpFlower3()">See More</a></p>
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+      <div class="add-btn">
+        <button class="btn-bag">add to bag</button>
+      </div>
+    </div>
+  </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpFlower4()">See More</a></p>
         <div class="wrapper">
           <span class="minus">-</span>
           <span class="num">01</span>
@@ -151,7 +151,7 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpFlower5()">See More</a></p>
       <div class="wrapper">
         <span class="minus">-</span>
         <span class="num">01</span>
@@ -171,27 +171,7 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <div class="wrapper">
-        <span class="minus">-</span>
-        <span class="num">01</span>
-        <span class="plus">+</span>
-      </div>
-      <div class="add-btn">
-        <button class="btn-bag">add to bag</button>
-      </div>
-    </div>
-  </div>
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/flower1.jpg" alt="">
-    </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>Rose Bouquet</h4>
-        <p>$10</p>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpFlower6()">See More</a></p>
       <div class="wrapper">
         <span class="minus">-</span>
         <span class="num">01</span>
@@ -211,8 +191,27 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <!-- <button class="btn-count">1</button> -->
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpFlower7()">See More</a></p>
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+      <div class="add-btn">
+        <button class="btn-bag">add to bag</button>
+      </div>
+    </div>
+  </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpFlower8()">See More</a></p>
         <div class="wrapper">
           <span class="minus">-</span>
           <span class="num">01</span>
@@ -228,32 +227,103 @@
 <div class="confirmation">
   <a href="custom-sleeve"><button class="button">Next</button></a>
 </div>
-
-<!-- //correct but not working JS -->
-<!-- <script>
-      const plus = document.querySelector(".plus"),
-       minus = document.querySelector(".minus"),
-       num = document.querySelector(".num");
-       let a = 1;
-       plus.addEventListener("click", ()=>{
-         a++;
-         a = (a < 10) ? "0" + a : a;
-         num.innerText = a;
-       });
-
-       minus.addEventListener("click", ()=>{
-         if(a > 1){
-           a--;
-           a = (a < 10) ? "0" + a : a;
-           num.innerText = a;
-         }
-       });
-</script> -->
-<!-- <script>
-  document.querySelector("small-category").onclick = function (){
-    document.getElementById("change").innerHTML = "10";
-  }
-</script> -->
+<!-- Flower Popups -->
+<!-- Flower #1 -->
+<div class="popup" id="popup-flower-1">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpFlower1()">&times;</div>
+    <h1 class="page-title">Flower Type #1</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Flower #2 -->
+<div class="popup" id="popup-flower-2">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpFlower2()">&times;</div>
+    <h1 class="page-title">Flower Type #2</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Flower #3 -->
+<div class="popup" id="popup-flower-3">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpFlower3()">&times;</div>
+    <h1 class="page-title">Flower Type #3</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Flower #4 -->
+<div class="popup" id="popup-flower-4">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpFlower4()">&times;</div>
+    <h1 class="page-title">Flower Type #4</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Flower #5 -->
+<div class="popup" id="popup-flower-5">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpFlower5()">&times;</div>
+    <h1 class="page-title">Bouquet Type #5</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Flower #6 -->
+<div class="popup" id="popup-flower-6">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpFlower6()">&times;</div>
+    <h1 class="page-title">Flower Type #6</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Flower #7 -->
+<div class="popup" id="popup-flower-7">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpFlower7()">&times;</div>
+    <h1 class="page-title">Flower Type #7</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Flower #8 -->
+<div class="popup" id="popup-flower-8">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpFlower8()">&times;</div>
+    <h1 class="page-title">Flower Type #8</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
 </section>
 <app-footer></app-footer>
 

@@ -21,16 +21,20 @@ function ChangeLarge() {
 // PopUps JavaScript
 // PopUps for Custom Flower
 function PopUpFlower1(){
-  document.getElementById("popup-sleeve-1").classList.toggle("active");
+  document.getElementById("popup-flower-1").classList.toggle("active");
+  window.scrollTo(0,0);
 }
 function PopUpFlower2(){
   document.getElementById("popup-flower-2").classList.toggle("active");
+  window.scrollTo(0,0);
 }
 function PopUpFlower3(){
   document.getElementById("popup-flower-3").classList.toggle("active");
+  window.scrollTo(0,0);
 }
 function PopUpFlower4(){
   document.getElementById("popup-flower-4").classList.toggle("active");
+  window.scrollTo(0,0);
 }
 function PopUpFlower5(){
   document.getElementById("popup-flower-5").classList.toggle("active");
@@ -52,15 +56,19 @@ function PopUpFlower8(){
 // PopUps for Arranged Flower Bouquet
 function PopUpBouquet1(){
   document.getElementById("popup-bouquet-1").classList.toggle("active");
+  window.scrollTo(0,0);
 }
 function PopUpBouquet2(){
   document.getElementById("popup-bouquet-2").classList.toggle("active");
+  window.scrollTo(0,0);
 }
 function PopUpBouquet3(){
   document.getElementById("popup-bouquet-3").classList.toggle("active");
+  window.scrollTo(0,0);
 }
 function PopUpBouquet4(){
   document.getElementById("popup-bouquet-4").classList.toggle("active");
+  window.scrollTo(0,0);
 }
 function PopUpBouquet5(){
   document.getElementById("popup-bouquet-5").classList.toggle("active");
@@ -79,17 +87,21 @@ function PopUpBouquet8(){
   window.scrollTo(0,0);
 }
 // PopUps for Custom Sleeves
-function PopUpFlower1(){
+function PopUpSleeve1(){
   document.getElementById("popup-sleeve-1").classList.toggle("active");
+  window.scrollTo(0,0);
 }
-function PopUpFlower2(){
+function PopUpSleeve2(){
   document.getElementById("popup-sleeve-2").classList.toggle("active");
+  window.scrollTo(0,0);
 }
-function PopUpFlower3(){
+function PopUpSleeve3(){
   document.getElementById("popup-sleeve-3").classList.toggle("active");
+  window.scrollTo(0,0);
 }
-function PopUpFlower4(){
+function PopUpSleeve4(){
   document.getElementById("popup-sleeve-4").classList.toggle("active");
+  window.scrollTo(0,0);
 }
 
 // See More auto scroll
