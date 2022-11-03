@@ -58,7 +58,7 @@ body {
   color: white;
 }
 
-/* For the See More Hover effects */
+/* For the See More */
 .see-more{
   color: var(--dark-text);
   text-decoration: none;
@@ -69,3 +69,9 @@ body {
 .see-more:hover{
   color: var(--primary-color);
 }
+
+.page-title{
+  color:var(--primary-color);
+  font-weight: 700;
+}
+

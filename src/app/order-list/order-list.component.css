@@ -7,13 +7,6 @@
 .card-stepper {
   z-index: 0
 }
-.section-title {
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1px;
-  font-weight: bold;
-  color: #1C1C1C;
-}
 #progressbar-2 {
   color: #455A64;
 }
@@ -125,6 +118,7 @@
 #progressbar-2 li.active:after {
   background: #6E85B7;
 }
+
 /* Content */
 .btn-num{
   display: flex;
@@ -158,13 +152,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.button1{
-  background-color: #92a0be;
-  color: white;
-  border-color: #92a0be;
-  padding: 10px;
-  border-radius: 5px;
-}
+
 button{
   margin-right: 10px;
 }
@@ -210,33 +198,10 @@ button{
   flex-direction: row;
   justify-content: space-between;
 }
-button{
-  margin-right: 10px;
-  width: 255px;
-}
 .btn-num .btn-number:hover  {
   background-color: white;
   color: #6E85B7;
   pointer-events: none;
-}
-.btn-num button{
-  height: 50px;
-  background-color: white;
-  border-color: #6E85B7;
-  border-width: 2px;
-  align-items: center;
-  color: #6E85B7;
-  font-weight: 500;
-  border-radius: 5px;
-}
-.btn-num button:hover{
-  background-color: #6E85B7;
-  color: white;
-}
-.bouquet-container .btn{
-  background-color: #6E85B7;
-  align-items: center;
-  color: white;
 }
 .confirmation{
   display: flex;
@@ -245,19 +210,6 @@ button{
   padding-bottom: 50px;
   width: 93%;
 }
-.confirmation button{
-  height: 50px;
-  background-color: white;
-  border-color: #6E85B7;
-  border-width: 2px;
-  align-items: center;
-  color: #6E85B7;
-  font-weight: 500;
-  border-radius: 5px;
-}
-.confirmation button:hover{
-  background-color: #6E85B7;
-  color: white;
-}
+
 
 
