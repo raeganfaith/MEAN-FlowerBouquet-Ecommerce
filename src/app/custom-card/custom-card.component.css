@@ -29,7 +29,7 @@
 }
 
 #progressbar-2 #step1:before {
-  content: '\f058';
+  content: '\2714';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
@@ -38,14 +38,14 @@
 }
 
 #progressbar-2 #step2:before {
-  content: '\f111';
+  content: '\2714';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
 }
 
 #progressbar-2 #step3:before {
-  content: '\f111';
+  content: '\2714';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
@@ -54,7 +54,7 @@
 }
 
 #progressbar-2 #step4:before {
-  content: '\f111';
+  content: '\0034';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
@@ -63,7 +63,7 @@
 }
 
 #progressbar-2 #step5:before {
-  content: '\f111';
+  content: '\0035';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
@@ -104,13 +104,13 @@
 #progressbar-2 li:nth-child(3):after {
   left: 1%;
   width: 100%;
-  background: #c5cae9 !important;
+  background: #c5cae9;
 }
 
 #progressbar-2 li:nth-child(4):after {
   left: 1%;
   width: 100%;
-  background: #c5cae9 !important;
+  background: #c5cae9;
 }
 
 #progressbar-2 li:nth-child(5) {
@@ -119,8 +119,9 @@
 }
 
 #progressbar-2 li:nth-child(5):after {
-  left: 0;
-  width: 0;
+  left: 1%;
+  width: 100%;
+  background: #c5cae9 !important;
 }
 
 #progressbar-2 li.active:before,
