@@ -104,4 +104,20 @@ function PopUpSleeve4(){
   window.scrollTo(0,0);
 }
 
-// See More auto scroll
+// PopUps for Custom Tie
+function PopUpTie1(){
+  document.getElementById("popup-tie-1").classList.toggle("active");
+  window.scrollTo(0,0);
+}
+function PopUpTie2(){
+  document.getElementById("popup-tie-2").classList.toggle("active");
+  window.scrollTo(0,0);
+}
+function PopUpTie3(){
+  document.getElementById("popup-tie-3").classList.toggle("active");
+  window.scrollTo(0,0);
+}
+function PopUpTie4(){
+  document.getElementById("popup-tie-4").classList.toggle("active");
+  window.scrollTo(0,0);
+}
