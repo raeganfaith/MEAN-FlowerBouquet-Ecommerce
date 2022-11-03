@@ -10,9 +10,6 @@ export class AppComponent {
   constructor () {
     this.myScriptElement = document.createElement('script');
     this.myScriptElement.src = '......';
-    // this.myScriptElement.type = 'text/javascript';
-    // this.myScriptElement.async = true;
-    // this.myScriptElement.defer = true;
     document.body.appendChild(this.myScriptElement);
   }
   title = 'flower-bouquet';
