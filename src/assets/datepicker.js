@@ -121,3 +121,7 @@ function PopUpTie4(){
   document.getElementById("popup-tie-4").classList.toggle("active");
   window.scrollTo(0,0);
 }
+
+function ScrollTop(){
+  window.scrollTo(0,0);
+}
