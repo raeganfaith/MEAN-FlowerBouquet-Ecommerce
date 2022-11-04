@@ -44,7 +44,11 @@ main {
     background-color: var(--primary-color);
 }
 
-#custom-btn {
-    width: 100%;
+input[type="file"] {
+    display: none;
+}
+
+.form-input label {
+    cursor: pointer;
 }
 

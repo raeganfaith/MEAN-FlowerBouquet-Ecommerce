@@ -35,16 +35,11 @@ main {
     overflow-y: scroll;
 }
 
-.btn-outline-primary {
-    color: var(--primary-color);
+input[type="file"] {
+    display: none;
 }
 
-.btn-outline-primary:hover {
-    color: white;
-    background-color: var(--primary-color);
-}
-
-#custom-btn {
-    width: 100%;
+.form-input label {
+    cursor: pointer;
 }
 

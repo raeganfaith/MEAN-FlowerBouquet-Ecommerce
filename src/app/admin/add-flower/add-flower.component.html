@@ -12,9 +12,13 @@
             <div class="card p-4">
                 <div class="row">
                     <div class="col-3">
-                        <img src="assets/img/sample-bouquet.jpg" alt="" class="item-pic">
-                        <input type="file" id="default-btn">
-                        <button class="btn btn-primary" id="custom-btn">Upload</button>
+                        <div class="form-input">
+                            <div class="preview">
+                              <img id="upload-preview" class="item-pic img-fluid">
+                            </div>
+                            <button class="btn btn-primary w-100 mt-3 fw-bold"><label for="upload" class="w-100">Upload</label></button>
+                            <input type="file" id="upload" accept="image/*" onchange="showPreview(event);">
+                        </div>
                     </div>
                     <div class="col-9">
                         <form>
