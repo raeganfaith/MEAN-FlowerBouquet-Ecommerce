@@ -28,3 +28,11 @@ main {
     background: none;
     border: none;
 }
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.btn-danger {
+    padding: 10px;
+}

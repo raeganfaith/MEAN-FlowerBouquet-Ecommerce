@@ -96,7 +96,7 @@
                                                 <h4 class="fw-bold">Are you sure you want to delete?</h4>
                                                 <p class="px-4">You are about to delete this material. This action cannot be undone. Are you sure you want to continue?</p>
                                                 <div class="choices">
-                                                    <a routerLink="../materials"><button type="button" class="btn btn-danger mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Delete</button></a>
+                                                    <button type="button" class="btn btn-danger mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#deleted-successfully">Delete</button>
                                                     <button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Cancel</button>
                                                 </div>
                                             </div>
@@ -106,6 +106,31 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="modal fade" id="deleted-successfully" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="card p-3 pt-0">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 d-flex justify-content-end">
+                                                <a routerLink="../materials"><i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <i class="bi bi-check-circle" style="color: red; font-size: 5rem;"></i>
+                                                <h4 class="fw-bold">Deleted!</h4>
+                                                <p class="px-4">You've successfully deleted this material.</p>
+                                                <a routerLink="../materials"><button type="button" class="btn btn-primary mt-4 mb-2 px-5 shadow" data-bs-dismiss="modal">OK</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
