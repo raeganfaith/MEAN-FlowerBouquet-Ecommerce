@@ -42,8 +42,10 @@
   </div>
   <div class="card-mode">
     <div class="cust">
-      <button class="button mode-btn">Printed</button>
-      <button class="button mode-btn">Handwritten</button>
+      <input type="radio" class="btn-check" name="size-options" id="small" autocomplete="off" checked>
+      <label class="btn btn-label me-2" for="small">Printed</label>
+      <input type="radio" class="btn-check" name="size-options" id="medium" autocomplete="off">
+      <label class="btn btn-label me-2" for="medium" style="width: 120px;">Handwritten</label>
     </div>
   </div>
   <div class="form">
@@ -65,7 +67,7 @@
     </form>
   </div>
   <div class="confirmation">
-    <a href="custom-confirm"><button class="button">Next</button></a>
+    <a routerLink="/order/custom-confirm"><button class="btn-general">Next</button></a>
   </div>
 </section>
 <app-footer></app-footer>

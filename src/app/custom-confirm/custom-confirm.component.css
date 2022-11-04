@@ -230,49 +230,10 @@
   padding-bottom: 50px;
   width: 93%;
 }
-.button{
-  background-color: white;
-  color: #6E85B7;
-  border-color: #6E85B7;
-  padding: 10px;
-  border-radius: 5px;
-}
-.button:hover{
-  background-color: #6E85B7;
-  color: white;
-}
-.button1{
-  background-color: white;
-  color: #6E85B7;
-  border-color: #6E85B7;
-  padding: 10px;
-  border-radius: 5px;
-}
-.button1:hover{
-  background-color: #6E85B7;
-  color: white;
-}
 button{
   margin-right: 10px;
-  width: 255px;
 }
-.btn-num .btn-number:hover  {
+.btn-number:hover{
   background-color: white;
   color: #6E85B7;
-  pointer-events: none;
-}
-.btn-num button{
-  /* width: 255px; */
-  height: 50px;
-  background-color: white;
-  border-color: #6E85B7;
-  border-width: 2px;
-  align-items: center;
-  color: #6E85B7;
-  font-weight: 500;
-  border-radius: 5px;
-}
-.btn-num button:hover{
-  background-color: #6E85B7;
-  color: white;
 }

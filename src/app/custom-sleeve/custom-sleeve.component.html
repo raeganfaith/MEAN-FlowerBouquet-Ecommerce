@@ -52,8 +52,8 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="btn-bag">add to bag</button>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpSleeve1()">See More</a></p>
+        <button class="btn-general">add to bag</button>
     </div>
   </div>
   <div class="bouquet-column">
@@ -65,8 +65,8 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="btn-bag">add to bag</button>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpSleeve2()">See More</a></p>
+        <button class="btn-general">add to bag</button>
     </div>
   </div>
   <div class="bouquet-column">
@@ -78,8 +78,8 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <button class="btn-bag">add to bag</button>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpSleeve3()">See More</a></p>
+        <button class="btn-general">add to bag</button>
     </div>
   </div>
   <div class="bouquet-column">
@@ -91,33 +91,63 @@
         <h4>Rose Bouquet</h4>
         <p>$10</p>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button class="btn-bag">add to bag</button>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpSleeve4()">See More</a></p>
+          <button class="btn-general">add to bag</button>
     </div>
   </div>
 </div>
 </div>
 <div class="confirmation">
-  <a href="custom-tie"><button class="button">Next</button></a>
+  <a routerLink="/order/custom-tie"><button class="btn-general">Next</button></a>
 </div>
-
-<!-- //correct but not working JS-->
-<script>
-  const plus = document.querySelector(".plus"),
-   minus = document.querySelector(".minus"),
-   num = document.querySelector(".num");
-   let a = 1;
-   plus.addEventListener("click", ()=>{
-     a++;
-     a = (a < 10) ? "0" + a : a;
-     num.innerText = a;
-   });
-   minus.addEventListener("click", ()=>{
-     if(a > 1){
-       a--;
-       a = (a < 10) ? "0" + a : a;
-       num.innerText = a;
-     }
-   });
-</script>
+<!-- Sleeves Popups -->
+<!-- Sleeve #1 -->
+<div class="popup" id="popup-sleeve-1">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpSleeve1()">&times;</div>
+    <h1 class="page-title">Sleeve Type #1</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Sleeve #2 -->
+<div class="popup" id="popup-sleeve-2">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpSleeve2()">&times;</div>
+    <h1 class="page-title">Sleeve Type #2</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Sleeve #3 -->
+<div class="popup" id="popup-sleeve-3">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpSleeve3()">&times;</div>
+    <h1 class="page-title">Sleeve Type #3</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Sleeve #4 -->
+<div class="popup" id="popup-sleeve-4">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpSleeve4()">&times;</div>
+    <h1 class="page-title">Sleeve Type #4</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+</section>
 <app-footer></app-footer>

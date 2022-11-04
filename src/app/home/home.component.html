@@ -7,7 +7,7 @@
         <h1 data-aos="fade-up">A bouquet can say it better!</h1>
         <h2 data-aos="fade-up" data-aos-delay="400">Send flower bouquet to your loved ones now.</h2>
         <div data-aos="fade-up" data-aos-delay="800">
-          <a routerLink="order" class="btn-get-started">ORDER NOW</a>
+          <a routerLink="/order" class="btn-get-started .btn-general">ORDER NOW</a>
         </div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
@@ -19,9 +19,9 @@
 
 <!-- ======= Bestseller Preview ======= -->
 <section class="sell">
-  <div class="top">
+  <div class="top see-more">
     <h1>Check out our Bestsellers!</h1>
-    <a routerLink="arranged-bouquet"><p>See More</p></a>
+    <a class = "see-more" routerLink="/arranged-bouquet"><p>See More</p></a>
   </div>
   <div class="center-container">
     <div class="bouquet-container">
@@ -34,8 +34,8 @@
             <h4>Rose Bouquet</h4>
             <p>$10</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a routerLink="arranged-bouquet"><button class="btn">add to bag</button></a>
+          <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpBouquet1()">See More</a></p>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
         </div>
       </div>
       <div class="bouquet-column">
@@ -47,8 +47,8 @@
             <h4>Rose Bouquet</h4>
             <p>$10</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a routerLink="arranged-bouquet"><button class="btn">add to bag</button></a>
+          <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpBouquet2()">See More</a></p>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
         </div>
       </div>
       <div class="bouquet-column">
@@ -60,8 +60,8 @@
             <h4>Rose Bouquet</h4>
             <p>$10</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a routerLink="arranged-bouquet"><button class="btn">add to bag</button></a>
+          <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpBouquet3()">See More</a></p>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
         </div>
       </div>
       <div class="bouquet-column">
@@ -73,8 +73,8 @@
             <h4>Rose Bouquet</h4>
             <p>$10</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a routerLink="arranged-bouquet"><button class="btn">add to bag</button></a>
+          <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpBouquet4()">See More</a></p>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
         </div>
       </div>
     </div>
@@ -92,8 +92,8 @@
             Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
           </p>
           <div class="text-center text-lg-start">
-            <a routerLink="aboutpage" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-            <a routerLink="about"><span>Read More</span></a>
+            <a class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+            <a routerLink="/about"><span>Read More</span></a>
             <i class="bi bi-arrow-right"></i>
             </a>
           </div>
@@ -105,4 +105,53 @@
     </div>
   </div>
 </section><!-- End About Section -->
+<!-- Bouquet Popups -->
+<!-- Bouquet #1 -->
+<div class="popup" id="popup-bouquet-1">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet1()">&times;</div>
+    <h1 class="page-title">Bouquet Type #1</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Bouquet #2 -->
+<div class="popup" id="popup-bouquet-2">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet2()">&times;</div>
+    <h1 class="page-title">Bouquet Type #2</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Bouquet #3 -->
+<div class="popup" id="popup-bouquet-3">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet3()">&times;</div>
+    <h1 class="page-title">Bouquet Type #3</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Bouquet #4 -->
+<div class="popup" id="popup-bouquet-4">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet4()">&times;</div>
+    <h1 class="page-title">Bouquet Type #4</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>

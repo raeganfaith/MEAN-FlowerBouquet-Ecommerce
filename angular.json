@@ -26,7 +26,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/datepicker.js"
+              "src/assets/datepicker.js",
+              "src/assets/Customer.js"
             ]
           },
           "configurations": {
@@ -99,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

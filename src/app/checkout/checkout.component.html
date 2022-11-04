@@ -1,7 +1,7 @@
 <app-header></app-header>
 <section class="checkout">
 <div class="orderSum">
-    <h2>Order Summary</h2>
+    <h2 class="page-title">Order Summary</h2>
     <div class="column1">
         <div id="order1pic">
             <img src="assets/img/bouquet sample 1.jpg" alt="Flower bouquet picture">
@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="totalAmount">
-        <h2>Total Amount</h2>
+        <h3 class="page-title">Total Amount</h3>
         <div class="totalInfo">
             <p>Subtotal <br><br>
             Delivery Fee</p>
@@ -57,13 +57,13 @@
     </div>
     <div class="buttonPosition">
         <div class="button">
-            <a href="fill-up"><button class="button">Chekout</button></a>
+            <a href="fill-up"><button class="btn-general">Chekout</button></a>
         </div>
     </div>
 </div>
 
 <div class="ShipandBill">
-    <h2>Shipping and Billing to</h2>
+    <h3 class="page-title">Shipping and Billing to</h3>
     <div class="quesInfo">
         <label for="fullname">Full Name</label>
         <br>
@@ -81,15 +81,15 @@
         <br>
         <input type="email" name="email" id="email" size="70" required>
     </div>
-    <h2>Order options</h2>
+    <h3 class="page-title">Order options</h3>
     <div class="order">
         <label for="orderOptions" class="col-2 col-form-label fw-bold d-flex justify-content-end"></label>
         <div class="col-4">
-            <input type="radio" class="btn-check" name="order-options" id="deliver" autocomplete="off" checked>
-            <label class="btn btn-outline-primary me-2 px-3" for="deliver">Deliver</label>
+            <input type="radio" class="btn-check" name="order-options" id="small" autocomplete="off" checked>
+            <label class="btn btn-label me-2" for="small">Deliver</label>
 
-            <input type="radio" class="btn-check" name="order-options" id="pick-up" autocomplete="off">
-            <label class="btn btn-outline-primary me-2 px-3" for="pick-up">Pick-up</label>
+            <input type="radio" class="btn-check" name="order-options" id="medium" autocomplete="off">
+            <label class="btn btn-label me-2" for="medium">Pick-up</label>
         </div>
     </div>
     <div class="date">
@@ -97,10 +97,10 @@
         <br>
         <input type="date" name="choosedate" id="choosedate" min="2022-01-01" max="3022-12-31" required>
     </div>
-    <h2>Payment Options</h2>
+    <h3 class="page-title">Payment Options</h3>
     <div class="payment">
         <label for="paymentOpt"></label>
-            <input type="text" name="paymentOpt" id="paymentOpt" value="Cash On Delivery" readonly> 
+            <input type="text" name="paymentOpt" id="paymentOpt" value="Cash On Delivery" readonly>
     </div>
 </div>
 </section>

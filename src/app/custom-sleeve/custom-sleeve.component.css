@@ -196,21 +196,4 @@
   width: 93%;
   padding-bottom: 50px;
 }
-button{
-  width: 255px;
-  height: 40px;
-  background-color: white;
-  border-color: #6E85B7;
-  border-width: 2px;
-  align-items: center;
-  color: #6E85B7;
-  font-weight: 500;
-  border-radius: 5px;
-}
-button:hover{
-  background-color: #6E85B7;
-  color: white;
-}
-.add-btn{
-  padding-top: 10px;
-}
+
