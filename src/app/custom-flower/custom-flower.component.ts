@@ -11,5 +11,4 @@ export class CustomFlowerComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
