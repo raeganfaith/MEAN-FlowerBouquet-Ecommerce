@@ -1,0 +1,107 @@
+<app-header></app-header>
+<section class="checkout">
+<div class="orderSum">
+    <h2 class="page-title">Order Summary</h2>
+    <div class="column1">
+        <div id="order1pic">
+            <img src="assets/img/bouquet sample 1.jpg" alt="Flower bouquet picture">
+        </div>
+        <div id="order2pic">
+            <img src="assets/img/bouquet sample 2.jpg" alt="Flower bouquet picture">
+        </div>
+    </div>
+    <div class="column2">
+        <div class="orderInfo">
+            <div class="oi1">
+            <p>Custom Bouquet <br>
+            Kraft Paper <br>
+            Black Ribbon <br>
+            Printed Message Card</p>
+            </div>
+            <div class="oi2">
+            <p>Pre-made Bouquet <br>
+            Clear Plastic <br>
+            Twine <br>
+            Handwritten Message Card</p>
+            </div>
+        </div>
+    </div>
+    <div class="column3">
+        <div class="price">
+            <div class="price1">
+                <p>P1700</p>
+            </div>
+            <div class="price2">
+                <p>P1650</p>
+            </div>
+        </div>
+    </div>
+    <div class="totalAmount">
+        <h3 class="page-title">Total Amount</h3>
+        <div class="totalInfo">
+            <p>Subtotal <br><br>
+            Delivery Fee</p>
+        </div>
+        <div class="total">
+            <p>Total</p>
+        </div>
+    </div>
+    <div class="column3Total">
+        <div class="priceTotal">
+            <div class="subtotal">
+                <p>P3350 <br><br>
+                P60 <br><br>
+                P3410</p>
+            </div>
+        </div>
+    </div>
+    <div class="buttonPosition">
+        <div class="button">
+            <a href="fill-up"><button class="btn-general">Chekout</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="ShipandBill">
+    <h3 class="page-title">Shipping and Billing to</h3>
+    <div class="quesInfo">
+        <label for="fullname">Full Name</label>
+        <br>
+        <input type="text" name="fullname" id="fullname" required size="70">
+        <br><br>
+        <label for="phonenum">Phone Number</label>
+        <br>
+        <input type="tel" name="mobile" id="mobile" size="70" pattern="(0-9){4}-(0-9){3}-(0-9){4}" placeholder="0000-000-0000" required>
+        <br><br>
+        <label for="address">Address</label>
+        <br>
+        <input type="text" name="address" id="address" size="70">
+        <br><br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" size="70" required>
+    </div>
+    <h3 class="page-title">Order options</h3>
+    <div class="order">
+        <label for="orderOptions" class="col-2 col-form-label fw-bold d-flex justify-content-end"></label>
+        <div class="col-4">
+            <input type="radio" class="btn-check" name="order-options" id="small" autocomplete="off" checked>
+            <label class="btn btn-label me-2" for="small">Deliver</label>
+
+            <input type="radio" class="btn-check" name="order-options" id="medium" autocomplete="off">
+            <label class="btn btn-label me-2" for="medium">Pick-up</label>
+        </div>
+    </div>
+    <div class="date">
+        <label for="birthday">Choose Date</label>
+        <br>
+        <input type="date" name="choosedate" id="choosedate" min="2022-01-01" max="3022-12-31" required>
+    </div>
+    <h3 class="page-title">Payment Options</h3>
+    <div class="payment">
+        <label for="paymentOpt"></label>
+            <input type="text" name="paymentOpt" id="paymentOpt" value="Cash On Delivery" readonly>
+    </div>
+</div>
+</section>
+<app-footer></app-footer>

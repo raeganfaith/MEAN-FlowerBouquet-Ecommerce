@@ -4,31 +4,49 @@ import { RouterModule } from '@angular/router';
 import { AdminRoutingModule } from './admin-routing.module';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { InventoryComponent } from './inventory/inventory.component';
 import { PurchasesComponent } from './purchases/purchases.component';
-import { WebmanagementComponent } from './webmanagement/webmanagement.component';
-import { SalesComponent } from './sales/sales.component';
 import { SigninComponent } from './signin/signin.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BouquetsComponent } from './bouquets/bouquets.component';
 import { FlowersComponent } from './flowers/flowers.component';
 import { MaterialsComponent } from './materials/materials.component';
+import { AddBouquetComponent } from './add-bouquet/add-bouquet.component';
+import { EditBouquetComponent } from './edit-bouquet/edit-bouquet.component';
+import { ViewBouquetComponent } from './view-bouquet/view-bouquet.component';
+import { ViewFlowerComponent } from './view-flower/view-flower.component';
+import { AddFlowerComponent } from './add-flower/add-flower.component';
+import { EditFlowerComponent } from './edit-flower/edit-flower.component';
+import { EditMaterialComponent } from './edit-material/edit-material.component';
+import { AddMaterialComponent } from './add-material/add-material.component';
+import { ViewMaterialComponent } from './view-material/view-material.component';
+import { OrdersComponent } from './orders/orders.component';
+import { PagesComponent } from './pages/pages.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
-
 @NgModule({
   declarations: [
     DashboardComponent,
-    InventoryComponent,
     PurchasesComponent,
-    WebmanagementComponent,
-    SalesComponent,
+    OrdersComponent,
     SigninComponent,
     SidebarComponent,
     NavbarComponent,
+
     BouquetsComponent,
+    AddBouquetComponent,
+    EditBouquetComponent,
+    ViewBouquetComponent,
+
     FlowersComponent,
+    ViewFlowerComponent,
+    AddFlowerComponent,
+    EditFlowerComponent,
+
     MaterialsComponent,
+    EditMaterialComponent,
+    AddMaterialComponent,
+    ViewMaterialComponent,
+    PagesComponent,
     OrderDetailsComponent
   ],
   imports: [

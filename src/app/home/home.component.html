@@ -1,3 +1,157 @@
 <app-header></app-header>
-<router-outlet></router-outlet>
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h1 data-aos="fade-up">A bouquet can say it better!</h1>
+        <h2 data-aos="fade-up" data-aos-delay="400">Send flower bouquet to your loved ones now.</h2>
+        <div data-aos="fade-up" data-aos-delay="800">
+          <a routerLink="/order" class="btn-get-started .btn-general">ORDER NOW</a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+<!-- ======= Bestseller Preview ======= -->
+<section class="sell">
+  <div class="top see-more">
+    <h1>Check out our Bestsellers!</h1>
+    <a class = "see-more" routerLink="/arranged-bouquet"><p>See More</p></a>
+  </div>
+  <div class="center-container">
+    <div class="bouquet-container">
+      <div class="bouquet-column">
+        <div class="bouquet-items">
+          <img src="assets/img/flower1.jpg" alt="">
+        </div>
+        <div class="bouquet-details">
+          <div class="details-row">
+            <h4>Rose Bouquet</h4>
+            <p>$10</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpBouquet1()">See More</a></p>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
+        </div>
+      </div>
+      <div class="bouquet-column">
+        <div class="bouquet-items">
+          <img src="assets/img/flower1.jpg" alt="">
+        </div>
+        <div class="bouquet-details">
+          <div class="details-row">
+            <h4>Rose Bouquet</h4>
+            <p>$10</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpBouquet2()">See More</a></p>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
+        </div>
+      </div>
+      <div class="bouquet-column">
+        <div class="bouquet-items">
+          <img src="assets/img/flower1.jpg" alt="">
+        </div>
+        <div class="bouquet-details">
+          <div class="details-row">
+            <h4>Rose Bouquet</h4>
+            <p>$10</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpBouquet3()">See More</a></p>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
+        </div>
+      </div>
+      <div class="bouquet-column">
+        <div class="bouquet-items">
+          <img src="assets/img/flower1.jpg" alt="">
+        </div>
+        <div class="bouquet-details">
+          <div class="details-row">
+            <h4>Rose Bouquet</h4>
+            <p>$10</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpBouquet4()">See More</a></p>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+    <div class="row gx-0">
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content">
+          <h3>About Us</h3>
+          <h2>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti reprehenderit.</h2>
+          <p>
+            Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
+          </p>
+          <div class="text-center text-lg-start">
+            <a class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+            <a routerLink="/about"><span>Read More</span></a>
+            <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+        <img src="assets/img/about-hero.png" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section><!-- End About Section -->
+<!-- Bouquet Popups -->
+<!-- Bouquet #1 -->
+<div class="popup" id="popup-bouquet-1">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet1()">&times;</div>
+    <h1 class="page-title">Bouquet Type #1</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Bouquet #2 -->
+<div class="popup" id="popup-bouquet-2">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet2()">&times;</div>
+    <h1 class="page-title">Bouquet Type #2</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Bouquet #3 -->
+<div class="popup" id="popup-bouquet-3">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet3()">&times;</div>
+    <h1 class="page-title">Bouquet Type #3</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Bouquet #4 -->
+<div class="popup" id="popup-bouquet-4">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet4()">&times;</div>
+    <h1 class="page-title">Bouquet Type #4</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>

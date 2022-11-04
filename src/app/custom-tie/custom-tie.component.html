@@ -1,0 +1,153 @@
+<app-header></app-header>
+<section class="custom-tie">
+  <!-- Status Bar -->
+  <h3>CUSTOMIZE YOUR BOUQUET:</h3>
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12">
+        <div class="card-stepper text-black" style="border-radius: 16px;">
+          <div class="card-body p-5">
+            <ul id="progressbar-2" class="d-flex justify-content-between mx-0 mt-0 mb-4 px-0 pt-0 pb-0">
+              <li class="step0 active text-center" id="step1"></li>
+              <li class="step0 active text-center" id="step2"></li>
+              <li class="step0 active text-center" id="step3"></li>
+              <li class="step0 text-center" id="step4"></li>
+              <li class="step0 text-center" id="step5"></li>
+            </ul>
+            <div class="d-flex justify-content-between mt-0 pt-0">
+              <div class="">
+                <p class="">FLOWER</p>
+              </div>
+              <div>
+                <p class="">SLEEVE</p>
+              </div>
+              <div>
+                <p class="ml"> TIE</p>
+              </div>
+              <div>
+                <p class="ml"> CARD</p>
+              </div>
+              <div>
+                <p class="">CONFIRM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="row-detail">
+  <h5>Choose your choice of tie:</h5>
+  <h5>1</h5>
+  </div>
+  <div class="center-container">
+<div class="bouquet-container">
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpTie1()">See More</a></p>
+        <button class="btn-general">add to bag</button>
+    </div>
+  </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpTie2()">See More</a></p>
+        <button class="btn-general">add to bag</button>
+    </div>
+  </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpTie3()">See More</a></p>
+        <button class="btn-general">add to bag</button>
+    </div>
+  </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur.....<a class="see-more" onclick="PopUpTie4()">See More</a></p>
+          <button class="btn-general">add to bag</button>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="confirmation">
+  <a href="custom-card"><button class="btn-general">Next</button></a>
+</div>
+<!-- Tie Popups -->
+<!-- Tie #1 -->
+<div class="popup" id="popup-tie-1">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpTie1()">&times;</div>
+    <h1 class="page-title">Tie Type #1</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Tie #2 -->
+<div class="popup" id="popup-tie-2">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpTie2()">&times;</div>
+    <h1 class="page-title">Tie Type #2</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Tie #3 -->
+<div class="popup" id="popup-tie-3">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpTie3()">&times;</div>
+    <h1 class="page-title">Tie Type #3</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+<!-- Tie #4 -->
+<div class="popup" id="popup-tie-4">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpTie4()">&times;</div>
+    <h1 class="page-title">Tie Type #4</h1>
+    <div class="pop-row">
+      <img src="assets/img/flower1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</div>
+</section>
+<app-footer></app-footer>

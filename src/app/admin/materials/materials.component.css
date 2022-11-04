@@ -2,9 +2,27 @@ main {
     padding: 20px 30px 20px 350px;
 }
 
+@media (max-width: 1199px) {
+    main {
+        padding-left: 20px;
+    }
+}
+
 .card {
     border-radius: 15px;
     padding: 10px 10px 0 10px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+}
+
+.card:hover {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.inventory-item {
+    text-decoration: none;
+    color: black;
 }
 
 .card-img-top {

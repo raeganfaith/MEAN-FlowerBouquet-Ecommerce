@@ -4,28 +4,20 @@
             <img src="assets/img/mema-logo-blue.png" alt="" height="43"  width="40">
             <h3 class="fw-bold ps-3" style="color: var(--primary-color);">Bloom Inc.</h3>
         </li>
-        <li class="nav-item">
-        <a routerLink="../dashboard" class="nav-link collapsed" >
-            <span>Dashboard</span>
-        </a>
+        <li class="nav-item my-2" [routerLinkActive]="'active'">
+            <a class="nav-link" routerLink="../dashboard" >Dashboard</a>
         </li>
-
-        <li class="nav-item">
-        <a class="nav-link collapsed" routerLink="../sales">
-            <span>Sales</span>
-        </a>
+        <li class="nav-item my-2" [routerLinkActive]="'active'">
+            <a class="nav-link" routerLink="../orders">Orders</a>
         </li>
-
-        <li class="nav-item">
-        <a class="nav-link collapsed" routerLink="../purchases" href="#">
-            <span>Purchases</span>
-        </a>
+        <li class="nav-item my-2" [routerLinkActive]="'active'">
+            <a class="nav-link" routerLink="../purchases" href="#">Purchases</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item my-2">
             <div class="accordion" id="accordion">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                       Inventory
                     </button>
                   </h2>
@@ -33,9 +25,9 @@
                     <div class="accordion-body p-0">
                         <ul class="sidebar-nav">
                             <li class="nav-item">
-                                <a routerLink="../bouquets" class="nav-link collapsed my-2"><span class="ps-3">Bouquets</span></a>
-                                <a routerLink="../flowers" class="nav-link collapsed my-2"><span class="ps-3">Flowers</span></a>
-                                <a routerLink="../materials" class="nav-link collapsed my-2"><span class="ps-3">Materials</span></a>
+                                <a routerLink="../bouquets" class="nav-link my-2"><span class="ps-3">Bouquets</span></a>
+                                <a routerLink="../flowers" class="nav-link my-2"><span class="ps-3">Flowers</span></a>
+                                <a routerLink="../materials" class="nav-link my-2"><span class="ps-3">Materials</span></a>
                             </li>
                         </ul>
                     </div>
@@ -43,10 +35,8 @@
                 </div>
             </div>
         </li>
-        <li class="nav-item">
-        <a class="nav-link collapsed" routerLink="webmanagement" href="#">
-            <span>Website Management</span>
-        </a>
+        <li class="nav-item my-2" [routerLinkActive]="'active'">
+            <a class="nav-link" routerLink="../pages" href="#">Pages</a>
         </li>
     </ul>
 </aside>

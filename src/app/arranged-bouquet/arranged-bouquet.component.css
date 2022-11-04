@@ -1,0 +1,46 @@
+.order{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.order h3{
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  padding-left: 150px;
+}
+.bouquet-items img{
+  border-radius: 5%;
+  max-width: 255px;
+}
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adjust{
+  padding-top: 30px;
+}
+.bouquet-container{
+  display: flex;
+  justify-content:space-between;
+  width: 80%;
+}
+.bouquet-column{
+  max-width: 17%;
+  padding-right: 50px;
+}
+.bouquet-details{
+  width: 160%;
+}
+.details-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.confirmation{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+  width: 93%;
+}
+
