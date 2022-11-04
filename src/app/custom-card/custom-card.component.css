@@ -1,5 +1,3 @@
-/* @import '~mdb-ui-kit/css/mdb.min.css'; */
-
 .ml{
   margin-left: 40px;
 }
@@ -29,7 +27,7 @@
 }
 
 #progressbar-2 #step1:before {
-  content: '\f058';
+  content: '\2714';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
@@ -38,14 +36,14 @@
 }
 
 #progressbar-2 #step2:before {
-  content: '\f111';
+  content: '\2714';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
 }
 
 #progressbar-2 #step3:before {
-  content: '\f111';
+  content: '\2714';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
@@ -54,7 +52,7 @@
 }
 
 #progressbar-2 #step4:before {
-  content: '\f111';
+  content: '\0034';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
@@ -63,7 +61,7 @@
 }
 
 #progressbar-2 #step5:before {
-  content: '\f111';
+  content: '\0035';
   font-family: "Font Awesome 5 Free";
   color: #fff;
   width: 37px;
@@ -104,13 +102,13 @@
 #progressbar-2 li:nth-child(3):after {
   left: 1%;
   width: 100%;
-  background: #c5cae9 !important;
+  background: #c5cae9;
 }
 
 #progressbar-2 li:nth-child(4):after {
   left: 1%;
   width: 100%;
-  background: #c5cae9 !important;
+  background: #c5cae9;
 }
 
 #progressbar-2 li:nth-child(5) {
@@ -119,8 +117,9 @@
 }
 
 #progressbar-2 li:nth-child(5):after {
-  left: 0;
-  width: 0;
+  left: 1%;
+  width: 100%;
+  background: #c5cae9 !important;
 }
 
 #progressbar-2 li.active:before,
@@ -128,33 +127,40 @@
   background: #6E85B7;
 }
 
-
-.arranged{
+.custom-card{
 padding-top: 100px;
 }
-
-
+.custom-card h3{
+  display: flex;
+  font-weight: 700;
+  color: #6E85B7;
+  justify-content: flex-start;
+  padding-bottom: 20px;
+  padding-left: 150px;
+  }
 .row-detail{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-width: 92%;
-padding-left: 150px;
-padding-bottom: 5px;
-font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 92%;
+  padding-left: 160px;
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: #39445C;
 }
 .row-detail h5{
-align-items: stretch;
+  align-items: stretch;
 }
 
 .card-mode{
   display: flex;
-  justify-content: center;
-  width: 55%;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .cust{
-  justify-content: space-around;
+  justify-content: center;
+  padding-left: 140px;
 }
 
 .mode-btn{
@@ -163,16 +169,23 @@ align-items: stretch;
 
 .form{
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-top: 30px;
   padding-left: 160px;
   width: 1300px;
 }
 .form-control{
-  width: 500px;
+  width: 600px;
 }
 
 .message{
   height: 200px;
+}
+
+.confirmation{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 93%;
 }

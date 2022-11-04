@@ -1,0 +1,160 @@
+section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 40px 40px 40px 100px;
+  padding-top: 70px;
+}
+
+.orderSum{
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 10% 50% 25% 10%;
+}
+
+#order1pic img{
+  width: 100px;
+  height: 90px;
+  border: 3px solid black;
+  border-radius: 10px;
+
+}
+
+#order2pic img{
+  width: 100px;
+  height: 90px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.orderInfo{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.oi1{
+  margin-top: 10px;
+}
+
+.oi2{
+  margin-top: 36px;
+}
+
+.price{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.price1{
+  margin-top: 25px;
+}
+
+.price2{
+  margin-top: 85px;
+}
+
+.totalInfo{
+   font-size: 12px;
+   font-weight: 500;
+   margin-top: 20px;
+}
+
+.total{
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+.priceTotal{
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+button{
+  width: 575px;
+}
+
+.date{
+   margin-top: 20px;
+}
+
+label{
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+input{
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+ul{
+  display: inline-block;
+  background-color: #D9D9D9;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 6px;
+  width: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.btn{
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  background-color: white;
+}
+
+h2{
+  grid-column: span 2;
+  grid-row: 1;
+}
+
+.column1{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.column2{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.column3{
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.totalAmount{
+  grid-column: span 2;
+  grid-row: 3;
+}
+
+.column3Total{
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.buttonPosition{
+  grid-column: span 3;
+  grid-row: 4;
+}
+
+.ShipandBill{
+  grid-column: 2;
+}

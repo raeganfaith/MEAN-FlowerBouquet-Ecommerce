@@ -1,22 +1,24 @@
-
-.arranged{
+.order{
   padding-top: 100px;
   padding-bottom: 50px;
 }
-.bouquet-items img{
-  border-radius: 5%;
-  max-width: 255px;
-}
-.arranged h3{
+.order h3{
   display: flex;
   justify-content: flex-start;
   padding-bottom: 20px;
   padding-left: 150px;
 }
+.bouquet-items img{
+  border-radius: 5%;
+  max-width: 255px;
+}
 .center-container{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.adjust{
+  padding-top: 30px;
 }
 .bouquet-container{
   display: flex;
@@ -35,25 +37,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
-button{
-  width: 255px;
-}
-.bouquet-container .btn{
-  background-color: #6E85B7;
-  align-items: center;
-  color: white;
-}
-
 .confirmation{
   display: flex;
   justify-content: flex-end;
   padding-top: 50px;
   width: 93%;
 }
-.button{
-  background-color: #6E85B7;
-  color: white;
-  border-color: #6E85B7;
-  padding: 10px;
-  border-radius: 5px;
-}
+

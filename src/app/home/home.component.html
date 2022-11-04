@@ -7,7 +7,7 @@
         <h1 data-aos="fade-up">A bouquet can say it better!</h1>
         <h2 data-aos="fade-up" data-aos-delay="400">Send flower bouquet to your loved ones now.</h2>
         <div data-aos="fade-up" data-aos-delay="800">
-          <a href="#about" class="btn-get-started scrollto">ORDER NOW</a>
+          <a routerLink="/order" class="btn-get-started .btn-general">ORDER NOW</a>
         </div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
@@ -19,9 +19,9 @@
 
 <!-- ======= Bestseller Preview ======= -->
 <section class="sell">
-  <div class="top">
+  <div class="top see-more">
     <h1>Check out our Bestsellers!</h1>
-    <p>See More</p>
+    <a class = "see-more" routerLink="/arranged-bouquet"><p>See More</p></a>
   </div>
   <div class="center-container">
     <div class="bouquet-container">
@@ -35,7 +35,7 @@
             <p>$10</p>
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button class="btn">ADD TO BAG</button>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
         </div>
       </div>
       <div class="bouquet-column">
@@ -48,7 +48,7 @@
             <p>$10</p>
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button class="btn">ADD TO BAG</button>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
         </div>
       </div>
       <div class="bouquet-column">
@@ -61,7 +61,7 @@
             <p>$10</p>
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button class="btn">ADD TO BAG</button>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
         </div>
       </div>
       <div class="bouquet-column">
@@ -74,7 +74,7 @@
             <p>$10</p>
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button class="btn">ADD TO BAG</button>
+          <a routerLink="/arranged-bouquet"><button class="btn-general">add to bag</button></a>
         </div>
       </div>
     </div>
@@ -92,8 +92,8 @@
             Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
           </p>
           <div class="text-center text-lg-start">
-            <a routerLink="aboutpage" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-            <span>Read More</span>
+            <a class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+            <a routerLink="/about"><span>Read More</span></a>
             <i class="bi bi-arrow-right"></i>
             </a>
           </div>

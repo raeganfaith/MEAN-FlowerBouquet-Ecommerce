@@ -3,12 +3,17 @@
 
 
 <main>
+    <div class="row">
+        <div class="col-12 mb-3">
+            <a routerLink="../purchases"><button class="btn btn-primary"><i class="bi bi-caret-left-fill pe-2"></i>Back</button></a>
+        </div>
+    </div>
     <div class="card">
         <h5 class="card-title">Order Details</h5>
         <div class="card-body">
             <div class="row">
                 <div class="col-6">
-                    <h5>Customer Information</h5>
+                    <h5 class="title">Customer Information</h5>
                     <form class="my-4">
                         <div class="mb-3 row">
                             <label for="inputName" class="col-3 col-form-label fw-bold d-flex justify-content-end">Full Name</label>
@@ -35,7 +40,7 @@
                             </div>
                         </div>
                     </form>
-                    <h5>Order Information</h5>
+                    <h5 class="title">Order Information</h5>
                     <form class="my-4">
                         <select class="form-select" aria-label="Default select example" disabled>
                             <option selected>Delivery</option>
@@ -43,31 +48,65 @@
                         </select>
                         <div class="row mt-4">
                             <div class="col-6">
-                                <div class="input-group date" id="datepicker">
-                                    <label for="order-date">Date Ordered</label>
-                                    <input type="text" class="form-control" id="order-date">
-                                    <span class="input-group-text bg-white"><i class="bi bi-calendar"></i></span> 
-                                </div>
+                                <label for="choosedate" class="form-label fw-bold">Date Ordered</label>
+                                <input class="w-100 p-1 rounded border border-2" type="date" name="choosedate" id="choosedate" min="2022-01-01" max="3022-12-31" disabled>
                             </div>
                             <div class="col-6">
-                                <div class="input-group date" id="datepicker">
-                                    <label for="order-complete">Date Completed</label>
-                                    <input type="text" class="form-control" id="order-complete">
-                                    <span class="input-group-text bg-white"><i class="bi bi-calendar"></i></span> 
-                                </div>
+                                <label for="choosedate" class="form-label fw-bold">Date Completed</label>
+                                <input class="w-100 p-1 rounded border border-2" type="date" name="choosedate" id="choosedate" min="2022-01-01" max="3022-12-31" disabled>
                             </div>
                         </div>
                     </form>
-                    <h5>Order Status</h5>
-                    <select class="form-select my-4" aria-label="Default select example" disabled>
-                        <option selected>Pending</option>
-                        <option value="1">Processing</option>
-                        <option value="2">Completed</option>
-                        <option value="3">Reject</option>
-                    </select>
                 </div>
-                <div class="col-6">
-                    <h5>Order Summary</h5>
+                <div class="col-5 offset-1">
+                    <h5 class="title">Order Summary</h5>
+                    <div class="row my-4">
+                        <div class="col-3">
+                            <img src="assets/img/bouquet sample 1.jpg" alt="Flower bouquet picture" class="order-img img-fluid">
+                        </div>
+                        <div class="col-7">
+                            <h5 class="item-name fw-bold">Custom Bouquet</h5>
+                            <h6 class="details">Kraft Paper</h6>
+                            <h6 class="details">Black Ribbon</h6>
+                            <h6 class="details">Printed Card</h6>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <h5 class="fw-bold">₱1700</h5>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-3">
+                            <img src="assets/img/bouquet sample 2.jpg" alt="Flower bouquet picture" class="order-img img-fluid">
+                        </div>
+                        <div class="col-7">
+                            <h5 class="item-name fw-bold">Arranged Bouquet</h5>
+                            <h6 class="details">Clear Plastic</h6>
+                            <h6 class="details">Twine</h6>
+                            <h6 class="details">Handwritten Card</h6>
+                        </div>
+                        <div class="col-2 d-flex justify-content-end">
+                            <h5 class="fw-bold">₱1650</h5>
+                        </div>
+                    </div>
+                    <h5 class="title">Total Amount</h5>
+                    <div class="row mt-4">
+                        <div class="col-12 d-flex justify-content-between">
+                            <h6>Subtotal</h6>
+                            <h6 class="fw-bold">₱3350</h6>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-12 d-flex justify-content-between">
+                            <h6>Delivery Fee</h6>
+                            <h6 class="fw-bold">₱60</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between">
+                            <h6 class="fw-bold">Total</h6>
+                            <h6 class="fw-bold">₱3410</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

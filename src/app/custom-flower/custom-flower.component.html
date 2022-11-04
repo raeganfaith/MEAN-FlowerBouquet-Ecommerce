@@ -1,144 +1,236 @@
 <app-header></app-header>
-<section class="arranged">
+<section class="custom-flower">
+  <!-- Status Bar -->
   <h3>CUSTOMIZE YOUR BOUQUET:</h3>
     <div class="container">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12">
-                <div class="card-stepper text-black" style="border-radius: 16px;">
-
-                    <div class="card-body p-5">
-
-                        <ul id="progressbar-2" class="d-flex justify-content-between mx-0 mt-0 mb-4 px-0 pt-0 pb-0">
-                            <li class="step0 active text-center" id="step1"></li>
-                            <li class="step0 text-center" id="step2"></li>
-                            <li class="step0 text-center" id="step3"></li>
-                            <li class="step0 text-center" id="step4"></li>
-                            <li class="step0 text-muted text-end" id="step5"></li>
-                        </ul>
-
-                        <div class="d-flex justify-content-between mt-0 pt-0">
-                            <div class="">
-                                <p class="">FLOWER</p>
-                            </div>
-                            <div>
-                                <p class="">SLEEVE</p>
-                            </div>
-                            <div>
-                                <p class="ml"> TIE</p>
-                            </div>
-                            <div>
-                                <p class="ml"> CARD</p>
-                            </div>
-                            <div>
-                                <p class="">CONFIRM</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card-stepper text-black" style="border-radius: 16px;">
+            <div class="card-body p-5">
+              <ul id="progressbar-2" class="d-flex justify-content-between mx-0 mt-0 mb-4 px-0 pt-0 pb-0">
+                <li class="step0 active text-center" id="step1"></li>
+                <li class="step0 text-center" id="step2"></li>
+                <li class="step0 text-center" id="step3"></li>
+                <li class="step0 text-center" id="step4"></li>
+                <li class="step0 text-center" id="step5"></li>
+              </ul>
+              <div class="d-flex justify-content-between mt-0 pt-0">
+                <div class="">
+                  <p class="">FLOWER</p>
                 </div>
+                <div>
+                  <p class="">SLEEVE</p>
+                </div>
+                <div>
+                  <p class="ml"> TIE</p>
+                </div>
+                <div>
+                  <p class="ml"> CARD</p>
+                </div>
+                <div>
+                  <p class="">CONFIRM</p>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-
-    <div class="row-detail">
-      <h5>Choose your choice of flowers:</h5>
-      <h5>20</h5>
-    </div>
-    <div class="center-container">
-    <div class="bouquet-container">
-      <div class="bouquet-column">
-        <div class="bouquet-items">
-          <img src="assets/img/flower1.jpg" alt="">
-        </div>
-        <div class="bouquet-details">
-          <div class="details-row">
-            <h4>Rose Bouquet</h4>
-            <p>$10</p>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div class="wrapper">
-            <span class="minus">-</span>
-            <span class="num">01</span>
-            <span class="plus">+</span>
-          </div>
-          <div class="add-btn">
-            <button class="btn-bag">add to bag</button>
           </div>
         </div>
       </div>
-      <div class="bouquet-column">
-        <div class="bouquet-items">
-          <img src="assets/img/flower1.jpg" alt="">
-        </div>
-        <div class="bouquet-details">
-          <div class="details-row">
-            <h4>Rose Bouquet</h4>
-            <p>$10</p>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div class="wrapper">
-            <span class="minus">-</span>
-            <span class="num">01</span>
-            <span class="plus">+</span>
-          </div>
-          <div class="add-btn">
-            <button class="btn-bag">add to bag</button>
-          </div>
-        </div>
-      </div>
-      <div class="bouquet-column">
-        <div class="bouquet-items">
-          <img src="assets/img/flower1.jpg" alt="">
-        </div>
-        <div class="bouquet-details">
-          <div class="details-row">
-            <h4>Rose Bouquet</h4>
-            <p>$10</p>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <div class="wrapper">
-            <span class="minus">-</span>
-            <span class="num">01</span>
-            <span class="plus">+</span>
-          </div>
-          <div class="add-btn">
-            <button class="btn-bag">add to bag</button>
-          </div>
-        </div>
-      </div>
-      <div class="bouquet-column">
-        <div class="bouquet-items">
-          <img src="assets/img/flower1.jpg" alt="">
-        </div>
-        <div class="bouquet-details">
-          <div class="details-row">
-            <h4>Rose Bouquet</h4>
-            <p>$10</p>
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <!-- <button class="btn-count">1</button> -->
-            <div class="wrapper">
-              <span class="minus">-</span>
-              <span class="num">01</span>
-              <span class="plus">+</span>
-            </div>
-            <div class="add-btn">
-              <button class="btn-bag">add to bag</button>
-            </div>
+    </div>
+<!-- Content -->
+<div class="row-category">
+  <div class="pb-5 ps-5">
+    <label for="chooseSize" class="col-2 col-form-label fw-bold d-flex justify-content-end"></label>
+    <div class="col-4">
+        <input type="radio" class="btn-check" name="size-options" id="small" autocomplete="off" checked>
+        <label class="btn btn-label me-2" for="small" onclick="ChangeSmall()">Small</label>
 
-        </div>
+        <input type="radio" class="btn-check" name="size-options" id="medium" autocomplete="off">
+        <label class="btn btn-label me-2" for="medium" onclick="ChangeMedium()">Medium</label>
+        <input type="radio" class="btn-check" name="size-options" id="large" autocomplete="off">
+        <label class="btn btn-label me-2" for="large" onclick="ChangeLarge()">Large</label>
+    </div>
+  </div>
+</div>
+<div class="row-detail">
+  <h5>Choose your choice of flowers:</h5>
+  <h5 id="change">10</h5>
+</div>
+<div class="center-container">
+  <div class="bouquet-container">
+    <div class="bouquet-column">
+      <div class="bouquet-items">
+        <img src="assets/img/flower1.jpg" alt="">
+      </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+      <div class="add-btn">
+        <button class="btn-bag">add to bag</button>
       </div>
     </div>
     </div>
-
-    <div class="confirmation">
-      <a href="custom-sleeve"><button class="button">Next</button></a>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
     </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+      <div class="add-btn">
+        <button class="btn-bag">add to bag</button>
+      </div>
+    </div>
+  </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+      <div class="add-btn">
+        <button class="btn-bag">add to bag</button>
+      </div>
+    </div>
+  </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <!-- <button class="btn-count">1</button> -->
+        <div class="wrapper">
+          <span class="minus">-</span>
+          <span class="num">01</span>
+          <span class="plus">+</span>
+        </div>
+        <div class="add-btn">
+          <button class="btn-bag">add to bag</button>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="center-container adjust">
+  <div class="bouquet-container">
+    <div class="bouquet-column">
+      <div class="bouquet-items">
+        <img src="assets/img/flower1.jpg" alt="">
+      </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+      <div class="add-btn">
+        <button class="btn-bag">add to bag</button>
+      </div>
+    </div>
+    </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+      <div class="add-btn">
+        <button class="btn-bag">add to bag</button>
+      </div>
+    </div>
+  </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="wrapper">
+        <span class="minus">-</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+      <div class="add-btn">
+        <button class="btn-bag">add to bag</button>
+      </div>
+    </div>
+  </div>
+  <div class="bouquet-column">
+    <div class="bouquet-items">
+      <img src="assets/img/flower1.jpg" alt="">
+    </div>
+    <div class="bouquet-details">
+      <div class="details-row">
+        <h4>Rose Bouquet</h4>
+        <p>$10</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <!-- <button class="btn-count">1</button> -->
+        <div class="wrapper">
+          <span class="minus">-</span>
+          <span class="num">01</span>
+          <span class="plus">+</span>
+        </div>
+        <div class="add-btn">
+          <button class="btn-bag">add to bag</button>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="confirmation">
+  <a href="custom-sleeve"><button class="button">Next</button></a>
+</div>
 
-    <!-- //correct but not working -->
-    <script>
+<!-- //correct but not working JS -->
+<!-- <script>
       const plus = document.querySelector(".plus"),
        minus = document.querySelector(".minus"),
        num = document.querySelector(".num");
@@ -156,8 +248,12 @@
            num.innerText = a;
          }
        });
-
-    </script>
+</script> -->
+<!-- <script>
+  document.querySelector("small-category").onclick = function (){
+    document.getElementById("change").innerHTML = "10";
+  }
+</script> -->
 </section>
 <app-footer></app-footer>
 

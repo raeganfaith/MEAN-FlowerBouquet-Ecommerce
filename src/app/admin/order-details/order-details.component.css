@@ -19,3 +19,15 @@ main {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.order-img {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 120px;
+    width: 100%;
+}
+
+.title {
+    font-weight: bold;
+    color: var(--primary-color);
+}

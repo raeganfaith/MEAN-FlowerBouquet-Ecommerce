@@ -13,11 +13,17 @@ import { CustomTieComponent } from './custom-tie/custom-tie.component';
 import { CustomCardComponent } from './custom-card/custom-card.component';
 import { CustomConfirmComponent } from './custom-confirm/custom-confirm.component';
 import { OrderListComponent } from './order-list/order-list.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
   {
     path: 'about',
@@ -40,32 +46,36 @@ const routes: Routes = [
     component: OrderComponent,
   },
   {
-    path:'arranged-bouquet',
+    path: 'arranged-bouquet',
     component: ArrangedBouquetComponent,
   },
   {
-    path:'custom-flower',
+    path: 'custom-flower',
     component: CustomFlowerComponent,
   },
   {
-    path:'custom-sleeve',
+    path: 'custom-sleeve',
     component: CustomSleeveComponent,
   },
   {
-    path:'custom-tie',
+    path: 'custom-tie',
     component: CustomTieComponent,
   },
   {
-    path:'custom-card',
+    path: 'custom-card',
     component: CustomCardComponent,
   },
   {
-    path:'custom-confirm',
+    path: 'custom-confirm',
     component: CustomConfirmComponent,
   },
   {
-    path:'order-list',
+    path: 'order-list',
     component: OrderListComponent,
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent,
   }
 ];
 
