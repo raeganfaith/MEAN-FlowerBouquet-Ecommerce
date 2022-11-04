@@ -4,7 +4,33 @@
 <main>
     <div class="row">
         <div class="col-12 d-flex justify-content-end">
-            <button class="btn btn-success"><i class="bi bi-plus-circle pe-2"></i>Add Flower</button>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#edit-flower">
+                <i class="bi bi-plus-circle pe-2"></i>Add Flower
+            </button>
+            
+            <div class="modal fade" id="edit-flower" tabindex="-1" aria-labelledby="edit-flower-label" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="card p-3 pt-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <a routerLink="../flowers"><i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <i class="bi bi-check-circle" style="color: green; font-size: 5rem;"></i>
+                                        <h4 class="fw-bold">Added!</h4>
+                                        <p class="px-4">You've successfully added a new flower.</p>
+                                        <a routerLink="../flowers"><button type="button" class="btn btn-primary mt-4 mb-2 px-5 shadow" data-bs-dismiss="modal">OK</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row mt-3">
@@ -68,7 +94,36 @@
             </div>
             <div class="row mt-3">
                 <div class="col-6">
-                    <a routerLink="../flowers"><button class="btn btn-outline-danger px-3">Cancel</button></a>
+                    <button type="button" class="btn btn-outline-danger px-3" data-bs-toggle="modal" data-bs-target="#cancel-flower">
+                        Cancel
+                    </button>
+                    
+                    <div class="modal fade" id="cancel-flower" tabindex="-1" aria-labelledby="cancel-flower-label" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="card p-3 pt-0">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 d-flex justify-content-end">
+                                                <i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <i class="bi bi-exclamation-triangle" style="color: red; font-size: 5rem;"></i>
+                                                <h4 class="fw-bold">Are you sure you want to cancel?</h4>
+                                                <p class="px-4">Cancelling will erase all your input, this procedure is irreversible.</p>
+                                                <div class="choices">
+                                                    <a routerLink="../flowers"><button type="button" class="btn btn-danger mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Discard</button></a>
+                                                    <button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Continue</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

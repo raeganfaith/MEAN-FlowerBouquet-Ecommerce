@@ -52,3 +52,11 @@ input[type="file"] {
     cursor: pointer;
 }
 
+.modal-content {
+    border-radius: 10px;
+}
+
+.btn-danger {
+    padding: 10px;
+}
+
