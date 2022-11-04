@@ -229,3 +229,14 @@ button:hover{
   align-items: stretch;
 }
 
+.btn-quantity-num {
+  display: flex;
+}
+.btn-quantity-num .w-25 {
+  margin-right: 5px;
+}
+.btn-quantity-num .w-25 .form-control{
+  width: 65px;
+  border-style: solid;
+  border-radius: 5px;
+}
