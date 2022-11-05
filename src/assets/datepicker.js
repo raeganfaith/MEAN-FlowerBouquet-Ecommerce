@@ -125,3 +125,21 @@ function toggleText() {
   }
 }
 
+// var sPath = window.location.pathname;
+// var sPage = sPath.substring(sPath.lastIndexOf('\\') + 1);
+// var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+// alert(sPage);
+
+var page = document.getElementById("nav-title");
+
+page.innerHTML = location.pathname.substring
+(location.pathname.lastIndexOf("/") + 1);
+
+// var down = document.getElementById('geeks');
+  
+//         function GFG_Fun() {
+//             down.innerHTML = location.pathname.substring
+//             (location.pathname.lastIndexOf("/") + 1);
+//         }
+
+

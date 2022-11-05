@@ -41,6 +41,10 @@ body {
   padding: 10px;
 }
 
+.dropdown-item {
+  cursor: pointer;
+}
+
 /* Default button-template for orders */
 .btn-general {
   font-weight: 500;
