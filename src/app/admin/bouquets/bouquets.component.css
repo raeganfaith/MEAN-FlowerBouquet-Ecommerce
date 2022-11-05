@@ -8,7 +8,7 @@ main {
     }
 }
 
-.card {
+.card-inv {
     border-radius: 15px;
     padding: 10px 10px 0 10px;
     border: none;
@@ -16,7 +16,7 @@ main {
     width: 370px;
 }
 
-.card:hover {
+.card-inv:hover {
     background-color: var(--secondary-color);
     border: none;
 }
@@ -41,6 +41,10 @@ main {
     margin: 1.5rem;
 }
 
+.bg-danger {
+    background-color: red;
+}
+
 .card-body {
     padding: 16px 5px;
 }
@@ -60,3 +64,15 @@ main {
 }
 
 .is-hidden { display: none; }
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.btn-danger {
+    padding: 10px;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}

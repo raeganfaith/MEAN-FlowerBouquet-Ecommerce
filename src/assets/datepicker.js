@@ -109,7 +109,19 @@ function liveSearch() {
   }
 }
 
+
+// online - offline toggle
 function myFunction() {
   var element = document.getElementById("status");
   element.classList.toggle("bg-danger");
 }
+
+function toggleText() {
+  var x = document.querySelector(".textDiv");
+  if (x.innerHTML === "Online") {
+      x.innerHTML = "Offline";
+  } else {
+      x.innerHTML = "Online";
+  }
+}
+
