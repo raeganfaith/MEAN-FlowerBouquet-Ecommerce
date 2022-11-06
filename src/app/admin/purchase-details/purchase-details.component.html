@@ -5,7 +5,7 @@
 <main>
     <div class="row">
         <div class="col-12 mb-3">
-            <a routerLink="../orders"><button class="btn btn-primary"><i class="bi bi-caret-left-fill pe-2"></i>Back</button></a>
+            <a routerLink="../purchases"><button class="btn btn-primary"><i class="bi bi-caret-left-fill pe-2"></i>Back</button></a>
         </div>
     </div>
     <div class="card">
@@ -40,30 +40,23 @@
                             </div>
                         </div>
                     </form>
-                    <h5 class="title">Order Options</h5>
+                    <h5 class="title">Order Information</h5>
                     <form class="my-4">
-                        <div class="row">
-                            <div class="col-4">
-                                <select class="form-select" aria-label="Default select example" disabled>
-                                    <option selected>Delivery</option>
-                                    <option value="1">Pickup</option>
-                                </select>
+                        <select class="form-select" aria-label="Default select example" disabled>
+                            <option selected>Delivery</option>
+                            <option value="1">Pickup</option>
+                        </select>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <label for="choosedate" class="form-label fw-bold">Date Ordered</label>
+                                <input class="w-100 p-1 rounded border border-2" type="date" name="choosedate" id="choosedate" min="2022-01-01" max="3022-12-31" disabled>
                             </div>
-                            <div class="col-8">
-                                <div class="input-group date" id="datepicker">
-                                    <input type="text" class="form-control">
-                                    <span class="input-group-text bg-white"><i class="bi bi-calendar"></i></span> 
-                                </div>
+                            <div class="col-6">
+                                <label for="choosedate" class="form-label fw-bold">Date Completed</label>
+                                <input class="w-100 p-1 rounded border border-2" type="date" name="choosedate" id="choosedate" min="2022-01-01" max="3022-12-31" disabled>
                             </div>
                         </div>
                     </form>
-                    <h5 class="title">Order Status</h5>
-                    <select class="form-select my-4" aria-label="Default select example" disabled>
-                        <option selected>Pending</option>
-                        <option value="1">Processing</option>
-                        <option value="2">Completed</option>
-                        <option value="3">Reject</option>
-                    </select>
                 </div>
                 <div class="col-5 offset-1">
                     <h5 class="title">Order Summary</h5>
@@ -120,11 +113,11 @@
     </div>
     <div class="row mt-3">
         <div class="col-6">                
-            <button type="button" class="btn btn-outline-danger px-3" data-bs-toggle="modal" data-bs-target="#delete-order">
+            <button type="button" class="btn btn-outline-danger px-3" data-bs-toggle="modal" data-bs-target="#delete-purchaseo">
                 Delete
             </button>
             
-            <div class="modal fade" id="delete-order" tabindex="-1" aria-labelledby="delete-order-label" aria-hidden="true">
+            <div class="modal fade" id="delete-purchaseo" tabindex="-1" aria-labelledby="delete-purchaseo-label" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="card p-3 pt-0">
@@ -138,7 +131,7 @@
                                     <div class="col-12 text-center">
                                         <i class="bi bi-exclamation-triangle" style="color: red; font-size: 5rem;"></i>
                                         <h4 class="fw-bold">Are you sure you want to delete?</h4>
-                                        <p class="px-4">You are about to delete this order. This action cannot be undone. Are you sure you want to continue?</p>
+                                        <p class="px-4">You are about to delete this purchase order. This action cannot be undone. Are you sure you want to continue?</p>
                                         <div class="choices">
                                             <button type="button" class="btn btn-danger mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#deleted-successfully">Delete</button>
                                             <button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Cancel</button>
@@ -151,22 +144,22 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="deleted-successfully" tabindex="-1" aria-labelledby="edit-order-label" aria-hidden="true">
+            <div class="modal fade" id="deleted-successfully" tabindex="-1" aria-labelledby="edit-purchases-label" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="card p-3 pt-0">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-12 d-flex justify-content-end">
-                                        <a routerLink="../orders"><i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i></a>
+                                        <a routerLink="../purchases"><i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i></a>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 text-center">
                                         <i class="bi bi-check-circle" style="color: red; font-size: 5rem;"></i>
                                         <h4 class="fw-bold">Deleted!</h4>
-                                        <p class="px-4">You've successfully deleted this order.</p>
-                                        <a routerLink="../orders"><button type="button" class="btn btn-primary mt-4 mb-2 px-5 shadow" data-bs-dismiss="modal">OK</button></a>
+                                        <p class="px-4">You've successfully deleted this purchase order.</p>
+                                        <a routerLink="../purchases"><button type="button" class="btn btn-primary mt-4 mb-2 px-5 shadow" data-bs-dismiss="modal">OK</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -177,5 +170,3 @@
         </div>
     </div>
 </main>
-
-

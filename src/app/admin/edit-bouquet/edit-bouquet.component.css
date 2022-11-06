@@ -44,7 +44,19 @@ main {
     background-color: var(--primary-color);
 }
 
-#custom-btn {
-    width: 100%;
+input[type="file"] {
+    display: none;
+}
+
+.form-input label {
+    cursor: pointer;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.btn-danger {
+    padding: 10px;
 }
 

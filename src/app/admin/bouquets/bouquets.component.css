@@ -8,14 +8,15 @@ main {
     }
 }
 
-.card {
+.card-inv {
     border-radius: 15px;
     padding: 10px 10px 0 10px;
     border: none;
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    width: 370px;
 }
 
-.card:hover {
+.card-inv:hover {
     background-color: var(--secondary-color);
     border: none;
 }
@@ -30,6 +31,18 @@ main {
     height: 350px;
     width: 100%;
     object-fit: cover;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem;
+}
+
+.bg-danger {
+    background-color: red;
 }
 
 .card-body {
@@ -48,4 +61,14 @@ main {
 
 .dropdown-toggle::after {
     content: none;
+}
+
+.is-hidden { display: none; }
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.btn-danger {
+    padding: 10px;
 }

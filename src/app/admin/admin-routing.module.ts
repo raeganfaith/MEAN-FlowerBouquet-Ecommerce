@@ -13,6 +13,7 @@ import { MaterialsComponent } from './materials/materials.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { OrdersComponent } from './orders/orders.component';
 import { PagesComponent } from './pages/pages.component';
+import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { PurchasesComponent } from './purchases/purchases.component';
 import { SigninComponent } from './signin/signin.component';
 import { ViewBouquetComponent } from './view-bouquet/view-bouquet.component';
@@ -47,6 +48,7 @@ const routes: Routes = [
       
       { path: 'orders', component: OrdersComponent },
       { path: 'purchases', component: PurchasesComponent },
+      { path: 'purchase-details', component: PurchaseDetailsComponent },
       { path: 'pages', component: PagesComponent },
       { path: 'order-details', component: OrderDetailsComponent },
     ]
