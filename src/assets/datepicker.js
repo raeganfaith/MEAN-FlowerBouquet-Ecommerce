@@ -125,23 +125,13 @@ function toggleText() {
   }
 }
 
-// var sPath = window.location.pathname;
-// var sPage = sPath.substring(sPath.lastIndexOf('\\') + 1);
-// var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-// alert(sPage);
-
+// change page title -- not working pa lolz
 var page = document.getElementById("nav-title");
 
 page.innerHTML = location.pathname.substring
 (location.pathname.lastIndexOf("/") + 1);
 
-// var down = document.getElementById('geeks');
-  
-//         function GFG_Fun() {
-//             down.innerHTML = location.pathname.substring
-//             (location.pathname.lastIndexOf("/") + 1);
-//         }
-
+// change order status -- not working rin bwahahaha waitz
 function showHide(elem) {
     if(elem.selectedIndex !== 0) {
          //hide the divs
