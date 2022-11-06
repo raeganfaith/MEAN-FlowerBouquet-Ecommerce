@@ -41,12 +41,39 @@
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                                 <li><a class="dropdown-item" routerLink="../order-details">View Details</a></li>
-                                <li><a class="dropdown-item" >Change Status</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#change-stat">Change Status</a></li>
                                 <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-order">Delete</a></li>
                             </ul>
                         </div>
                     </td>   
                 </tr>
+
+                <div class="modal fade" id="change-stat" tabindex="-1" aria-labelledby="change-stat-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="card p-3 pt-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <i class="bi bi-exclamation-triangle" style="color: red; font-size: 5rem;"></i>
+                                            <h4 class="fw-bold">Change this order's status</h4>
+                                            <select class="form-select mb-2 mt-4" id="size_select">
+                                                <option value="option1">Pending</option>
+                                                <option value="option2">Processing</option>
+                                                <option value="option3">Reject</option>
+                                                <option value="option4">Completed</option>
+                                            </select>
+                                            <div class="choices">
+                                                <button type="button" class="btn btn-danger mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">OK</button>
+                                                <button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="modal fade" id="delete-order" tabindex="-1" aria-labelledby="delete-order-label" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
