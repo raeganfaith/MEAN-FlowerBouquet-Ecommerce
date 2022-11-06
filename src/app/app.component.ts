@@ -13,4 +13,10 @@ export class AppComponent {
     document.body.appendChild(this.myScriptElement);
   }
   title = 'flower-bouquet';
+  
+  
+  // function to scroll up when click a new link
+  onActive(){
+    window.scroll(0, 0);
+  }
 }

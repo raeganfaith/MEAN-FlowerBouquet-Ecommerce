@@ -184,38 +184,7 @@ button:hover{
   background-color: #6E85B7;
   color: white;
 }
-.add-btn{
-  padding-top: 10px;
-}
-.wrapper{
-  min-height: 10px;
-  min-width: 255px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  color: #39445C;
-}
-.wrapper span{
-  width: 100%;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  user-select: none;
-  border-radius: 5px;
-}
-.wrapper span:hover{
-  background-color: #6E85B7;
-  border-radius: 5px;
-  color: white;
-}
-.wrapper span.num{
-  font-size: 15px;
-  border-right: 2px solid rgba(0,0,0,0.2);
-  border-left: 2px solid rgba(0,0,0,0.2);
-  pointer-events: none;
-}
+
 .row-detail{
   display: flex;
   flex-direction: row;
@@ -227,4 +196,18 @@ button:hover{
 }
 .row-detail h5{
   align-items: stretch;
+}
+
+.btn-quantity-num {
+  display: flex;
+}
+
+.btn-quantity-num .w-25 {
+  margin-right: 5px;
+}
+
+.btn-quantity-num .w-25 .form-control{
+  width: 65px;
+  border-style: solid;
+  border-radius: 5px;
 }
