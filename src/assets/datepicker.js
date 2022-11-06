@@ -239,20 +239,11 @@ var page = document.getElementById("nav-title");
 page.innerHTML = location.pathname.substring
 (location.pathname.lastIndexOf("/") + 1);
 
-// change order status -- not working rin bwahahaha waitz
-function showHide(elem) {
-	if(elem.selectedIndex !== 0) {
-		//hide the divs
-		for(var i=0; i < divsO.length; i++) {
-			divsO[i].style.display = 'none';
-		}
-		//unhide the selected div
-		document.getElementById(elem.value).style.display = 'block';
-	}
-}
-   
+// var down = document.getElementById('geeks');
   
-window.onload=function() {
-	//get the divs to show/hide
-	divsO = document.getElementById("hockey").getElementsByClassName('show-hide');
-};
+//         function GFG_Fun() {
+//             down.innerHTML = location.pathname.substring
+//             (location.pathname.lastIndexOf("/") + 1);
+//         }
+
+
