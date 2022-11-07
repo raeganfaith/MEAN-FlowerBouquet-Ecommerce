@@ -1,3 +1,18 @@
+// Bouquet JSON na hindi nagana
+// $(document).ready(function(){
+//   $getJSON("bouquet.json", function(data){
+//     console.log(data)
+
+//     $('.name').html(data.name);
+//     $('.price').html(data.price);
+//     $('.description').html(data.description);
+//     $('.imgSrc').html(data.imgSrc);
+
+//   }).fail(function(){
+//     console.log("Error");
+//   })
+// })
+
 // custom-flower JavaScript
 function ChangeSmall() {
   document.getElementById("change").innerHTML = "10";
@@ -149,7 +164,7 @@ function showPreview(event){
 				});
 			});
 		}
-	
+
 		function _onSelectEvent(e) {
 			_select = e.target;
 			var tables = document.getElementsByClassName(_select.getAttribute('data-table'));
@@ -161,14 +176,14 @@ function showPreview(event){
 		}
 
 		function _filter(row) {
-	
+
 			var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
 			row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
 
 		}
-	
+
 		function _filterSelect(row) {
-	
+
 			var text_select = row.textContent.toLowerCase(), val_select = _select.options[_select.selectedIndex].value.toLowerCase();
 			row.style.display = text_select.indexOf(val_select) === -1 ? 'none' : 'table-row';
 
@@ -240,7 +255,7 @@ page.innerHTML = location.pathname.substring
 (location.pathname.lastIndexOf("/") + 1);
 
 // var down = document.getElementById('geeks');
-  
+
 //         function GFG_Fun() {
 //             down.innerHTML = location.pathname.substring
 //             (location.pathname.lastIndexOf("/") + 1);
