@@ -27,8 +27,8 @@ body {
   padding: 10px;
 }
 
-.btn-primary:focus, .btn-primary:active {
-  background-color: var(--primary-color);
+.btn-primary:hover {
+  background-color: var(--dark-text);
   border: none;
   padding: 10px;
 }
@@ -39,6 +39,17 @@ body {
 
 .btn-success {
   padding: 10px;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border: var(--primary-color) solid 1px;
+}
+
+.btn-outline-primary:hover {
+  color: white;
+  background-color: var(--primary-color);
+  border: var(--primary-color) solid 1px;
 }
 
 .dropdown-item {
