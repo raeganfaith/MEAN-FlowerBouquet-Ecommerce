@@ -18,7 +18,8 @@ import { CustomCardComponent } from './custom-card/custom-card.component';
 import { CustomConfirmComponent } from './custom-confirm/custom-confirm.component';
 import { OrderListComponent } from './order-list/order-list.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-
+// Import for JSON
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    AdminModule
+    AdminModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
