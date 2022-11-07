@@ -3,8 +3,22 @@
 <app-navbar></app-navbar>
 
 <main>
+    <div class="row mb-3">
+        <div class="col-4">
+            <input type="search" class="form-control light-table-filter" data-table="order-table" placeholder="Search">
+        </div>
+        <div class="col-6"></div>
+        <div class="col-2">
+            <select type="search" class="form-select select-table-filter" aria-label="Default select example" data-table="order-table">
+                <option value="">All</option>
+                <option value="Pending">Pending</option>
+                <option value="Processing">Processing</option>
+                <option value="Reject">Reject</option>
+            </select>
+        </div>
+    </div>
     <div class="card">
-        <table class="table table-hover">
+        <table class="table table-hover order-table">
             <thead>
                 <tr class="text-uppercase">
                     <th scope="col">Order Number</th>
@@ -17,8 +31,8 @@
             <tbody>
                 <tr class="align-middle">
                     <th scope="row">20221234</th>
-                    <td>Custom Bouquet, Handwritten Card</td>
-                    <td><span class="badge bg-warning">Pending</span></td>
+                    <td>First Entry</td>
+                    <td><span id="processing" class="badge bg-success">Processing</span></td>
                     <td>2016-05-25</td>
                     <td>
                         <div class="dropdown">
@@ -26,19 +40,96 @@
                                 <i class="bi bi-three-dots-vertical"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" routerLink="../order-details">View Details</a></li>
-                            <li><a class="dropdown-item" href="#">Processing</a></li>
-                            <li><a class="dropdown-item" href="#">Completed</a></li>
-                            <li><a class="dropdown-item" href="#">Reject</a></li>
-                            <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
+                                <li><a class="dropdown-item" routerLink="../order-details">View Details</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#change-stat">Change Status</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete-order">Delete</a></li>
                             </ul>
                         </div>
                     </td>   
                 </tr>
+
+                <div class="modal fade" id="change-stat" tabindex="-1" aria-labelledby="change-stat-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="card p-3 pt-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <i class="bi bi-exclamation-triangle" style="color: red; font-size: 5rem;"></i>
+                                            <h4 class="fw-bold">Change this order's status</h4>
+                                            <select class="form-select mb-2 mt-4" id="size_select">
+                                                <option value="option1">Pending</option>
+                                                <option value="option2">Processing</option>
+                                                <option value="option3">Reject</option>
+                                                <option value="option4">Completed</option>
+                                            </select>
+                                            <div class="choices">
+                                                <button type="button" class="btn btn-danger mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">OK</button>
+                                                <button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="delete-order" tabindex="-1" aria-labelledby="delete-order-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="card p-3 pt-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <i class="bi bi-exclamation-triangle" style="color: red; font-size: 5rem;"></i>
+                                            <h4 class="fw-bold">Are you sure you want to delete?</h4>
+                                            <p class="px-4">You are about to delete this order. This action cannot be undone. Are you sure you want to continue?</p>
+                                            <div class="choices">
+                                                <button type="button" class="btn btn-danger mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#deleted-successfully">Delete</button>
+                                                <button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="deleted-successfully" tabindex="-1" aria-labelledby="edit-bouquet-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="card p-3 pt-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <i class="bi bi-check-circle" style="color: red; font-size: 5rem;"></i>
+                                            <h4 class="fw-bold">Deleted!</h4>
+                                            <p class="px-4">You've successfully deleted this order.</p>
+                                            <button type="button" class="btn btn-primary mt-4 mb-2 px-5 shadow" data-bs-dismiss="modal">OK</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <tr class="align-middle">
                     <th scope="row">20221234</th>
-                    <td>Custom Bouquet, Handwritten Card</td>
-                    <td><span class="badge bg-warning">Pending</span></td>
+                    <td>Second Entry</td>
+                    <td><span class="badge bg-success">Processing</span></td>
                     <td>2014-12-05</td>
                     <td>
                         <div class="dropdown">
@@ -46,18 +137,16 @@
                                 <i class="bi bi-three-dots-vertical"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">View Details</a></li>
-                            <li><a class="dropdown-item" href="#">Processing</a></li>
-                            <li><a class="dropdown-item" href="#">Completed</a></li>
-                            <li><a class="dropdown-item" href="#">Reject</a></li>
-                            <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">View Details</a></li>
+                                <li><a class="dropdown-item" href="#">Change Status</a></li>
+                                <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
                             </ul>
                         </div>
                     </td>   
                 </tr>
                 <tr class="align-middle">
                     <th scope="row">20221234</th>
-                    <td>Custom Bouquet, Handwritten Card</td>
+                    <td>Third Entry</td>
                     <td><span class="badge bg-warning">Pending</span></td>
                     <td>2011-08-12</td>
                     <td>
@@ -66,18 +155,16 @@
                                 <i class="bi bi-three-dots-vertical"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">View Details</a></li>
-                            <li><a class="dropdown-item" href="#">Processing</a></li>
-                            <li><a class="dropdown-item" href="#">Completed</a></li>
-                            <li><a class="dropdown-item" href="#">Reject</a></li>
-                            <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">View Details</a></li>
+                                <li><a class="dropdown-item" href="#">Change Status</a></li>
+                                <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
                             </ul>
                         </div>
                     </td>   
                 </tr>
                 <tr class="align-middle">
                     <th scope="row">20221234</th>
-                    <td>Custom Bouquet, Handwritten Card</td>
+                    <td>Fourth Entry</td>
                     <td><span class="badge bg-warning">Pending</span></td>
                     <td>2012-06-11</td>
                     <td>
@@ -86,11 +173,9 @@
                                 <i class="bi bi-three-dots-vertical"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">View Details</a></li>
-                            <li><a class="dropdown-item" href="#">Processing</a></li>
-                            <li><a class="dropdown-item" href="#">Completed</a></li>
-                            <li><a class="dropdown-item" href="#">Reject</a></li>
-                            <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">View Details</a></li>
+                                <li><a class="dropdown-item" href="#">Change Status</a></li>
+                                <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
                             </ul>
                         </div>
                     </td>   
@@ -106,11 +191,9 @@
                                 <i class="bi bi-three-dots-vertical"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">View Details</a></li>
-                            <li><a class="dropdown-item" href="#">Processing</a></li>
-                            <li><a class="dropdown-item" href="#">Completed</a></li>
-                            <li><a class="dropdown-item" href="#">Reject</a></li>
-                            <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">View Details</a></li>
+                                <li><a class="dropdown-item" href="#">Change Status</a></li>
+                                <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
                             </ul>
                         </div>
                     </td>   
@@ -118,7 +201,7 @@
                 <tr class="align-middle">
                     <th scope="row">20221234</th>
                     <td>Custom Bouquet, Handwritten Card</td>
-                    <td><span class="badge bg-warning">Pending</span></td>
+                    <td><span class="badge bg-danger">Reject</span></td>
                     <td>2011-04-19</td>
                     <td>
                         <div class="dropdown">
@@ -126,11 +209,9 @@
                                 <i class="bi bi-three-dots-vertical"></i>
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">View Details</a></li>
-                            <li><a class="dropdown-item" href="#">Processing</a></li>
-                            <li><a class="dropdown-item" href="#">Completed</a></li>
-                            <li><a class="dropdown-item" href="#">Reject</a></li>
-                            <li><a class="dropdown-item" routerLink="admin">Delete</a></li>
+                                <li><a class="dropdown-item" href="#">View Details</a></li>
+                                <li><a class="dropdown-item" href="#">Change Status</a></li>
+                                <li><a class="dropdown-item">Delete</a></li>
                             </ul>
                         </div>
                     </td>   

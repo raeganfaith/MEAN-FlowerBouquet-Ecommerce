@@ -46,35 +46,35 @@ const routes: Routes = [
     component: OrderComponent,
   },
   {
-    path: 'arranged-bouquet',
+    path: 'order/arranged-bouquet',
     component: ArrangedBouquetComponent,
   },
   {
-    path: 'custom-flower',
+    path: 'order/custom-flower',
     component: CustomFlowerComponent,
   },
   {
-    path: 'custom-sleeve',
+    path: 'order/custom-sleeve',
     component: CustomSleeveComponent,
   },
   {
-    path: 'custom-tie',
+    path: 'order/custom-tie',
     component: CustomTieComponent,
   },
   {
-    path: 'custom-card',
+    path: 'order/custom-card',
     component: CustomCardComponent,
   },
   {
-    path: 'custom-confirm',
+    path: 'order/custom-confirm',
     component: CustomConfirmComponent,
   },
   {
-    path: 'order-list',
+    path: 'order/order-list',
     component: OrderListComponent,
   },
   {
-    path: 'checkout',
+    path: 'order/checkout',
     component: CheckoutComponent,
   }
 ];

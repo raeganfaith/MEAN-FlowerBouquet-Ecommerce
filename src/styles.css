@@ -41,6 +41,10 @@ body {
   padding: 10px;
 }
 
+.dropdown-item {
+  cursor: pointer;
+}
+
 /* Default button-template for orders */
 .btn-general {
   font-weight: 500;
@@ -156,4 +160,16 @@ body {
 .popup.active .pop-content {
   transition: all 300ms ease-in-out;
   transform: translate(-50%, -50%) scale(1);
+}
+
+/* Retain quantity number up and down arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+   opacity: 1;
+}
+
+.no-effect:hover{
+  background-color: white;
+  color: var(--primary-color);
+  
 }

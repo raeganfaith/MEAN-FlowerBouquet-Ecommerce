@@ -20,25 +20,13 @@ section{
 
 }
 
-#order2pic img{
-  width: 100px;
-  height: 90px;
-  border: 3px solid black;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
 .orderInfo{
   font-size: 12px;
   font-weight: 500;
 }
 
 .oi1{
-  margin-top: 10px;
-}
-
-.oi2{
-  margin-top: 36px;
+  margin-top: 16px;
 }
 
 .price{
@@ -57,19 +45,19 @@ section{
 .totalInfo{
    font-size: 12px;
    font-weight: 500;
-   margin-top: 20px;
+   margin-top: 1px;
 }
 
 .total{
   font-size: 12px;
   font-weight: 900;
-  margin-top: 20px;
+  margin-top: 1px;
 }
 
 .priceTotal{
   font-size: 12px;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 button{
