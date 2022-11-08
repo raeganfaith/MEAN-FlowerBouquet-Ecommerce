@@ -1,0 +1,18 @@
+{
+  "signinUsers": [
+    {
+      "email": "admin@gmail.com",
+      "password": "gagiyokona"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
