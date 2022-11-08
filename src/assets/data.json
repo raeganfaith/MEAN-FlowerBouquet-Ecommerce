@@ -1,14 +1,43 @@
 {
-    "bouquet":[
+  "bouquet": [
+    {
+      "name": "Pinky pinks",
+      "price": 2500,
+      "description": "What do we say when you want to treat your loved ones like a princess? We say go pink!",
+      "imgSrc": "assets/img/pinky pinks.png"
+    },
+    {
+      "name": "Summer treat",
+      "price": 4000,
+      "description": "A combination of purple orange and pink hues all in one en grande bouquet. Grab one now and make someone's heart grow even bigger!",
+      "imgSrc": "assets/img/summer treat.png"
+    },
+    {
+      "name": "Spring-y",
+      "price": 3000,
+      "description": "Pastel colored flowers all in one bouquet, make them blush like those roses!",
+      "imgSrc": "assets/img/spring-y.png"
+    },
+    {
+      "name": "Sunny surprise",
+      "price": 2900,
+      "description": "Isn't it all hot in here?! Well, a sunny day inspired arrangement of flowers might be the coolest way to spice things up with your loved ones any day. ",
+      "imgSrc": "assets/img/sunny surprise.png"
+    }
+  ],
+  "flower": [
+    {
 
-    ],
-    "flowers":[
+    }
+  ],
+  "materials": [
+    {
 
-    ],
-    "materials":[
+    }
+  ],
+  "transaction": [
+    {
 
-    ],
-    "transaction":[
-
-    ]
+    }
+  ]
 }
