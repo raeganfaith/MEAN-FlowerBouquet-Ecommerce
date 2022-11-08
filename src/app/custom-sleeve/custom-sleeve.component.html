@@ -1,8 +1,9 @@
 <app-header></app-header>
+
 <section class="custom-sleeve">
   <!-- Status Bar -->
-    <div class="container">
-      <h3>CUSTOMIZE YOUR BOUQUET:</h3>
+    <div class="container mt-5">
+      <h1>CUSTOMIZE YOUR BOUQUET:</h1>
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12">
           <div class="card-stepper text-black" style="border-radius: 16px;">
@@ -36,118 +37,115 @@
         </div>
       </div>
     </div>
-<!-- Content -->
-<div class="row-detail">
-  <h5>Choose your choice of sleeve:</h5>
-  <h5>2</h5>
-</div>
-<div class="center-container">
-<div class="bouquet-container">
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/kraft paper.png" alt="">
-    </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>Kraft paper</h4>
-        <p>₱52</p>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="d-flex justify-content-between my-5">
+        <h5 class="fw-bold">Choose your choice of sleeve:</h5>
+        <h4 id="change" class="fw-bold">2</h4>
       </div>
-      <p>Kraft paper is not only good for the environment.....<a class="see-more" onclick="PopUpSleeve1()">See More</a></p>
-        <button class="btn-general">add to bag</button>
-    </div>
-  </div>
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/plastic wrapper.png" alt="">
-    </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>Plastic wrapper</h4>
-        <p>₱42</p>
+      <div class="items"> 
+        <div class="bouquet-item">
+            <a class="see-more" onclick="PopUpSleeve1()">
+                <img src="assets/img/kraft paper.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Kraft Paper</h5>
+                    <h6>₱52</h6>
+                </div>
+                <p>Kraft paper is not only good for the environment...</p>
+            </a>
+            <button class="btn btn-outline-primary w-100">add to bag</button>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" onclick="PopUpSleeve2()">
+                <img src="assets/img/plastic wrapper.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Plastic Wrapper</h5>
+                    <h6>₱42</h6>
+                </div>
+                <p>Simple is more. Make your bouquets flex...</p>
+            </a>
+            <button class="btn btn-outline-primary w-100">add to bag</button>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" onclick="PopUpSleeve3()">
+                <img src="assets/img/pink paper.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Pink Paper</h5>
+                    <h6>₱36</h6>
+                </div>
+                <p>What's even sweeter than the color pink? Wrap...</p>
+            </a>
+            <button class="btn btn-outline-primary w-100">add to bag</button>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" onclick="PopUpSleeve4()">
+                <img src="assets/img/cellophane.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Cellophane</h5>
+                    <h6>₱45</h6>
+                </div>
+                <p>Do you want your bouquet to stand out more by...</p>
+            </a>
+            <button class="btn btn-outline-primary w-100">add to bag</button>
+        </div>
       </div>
-      <p>Simple is more. Make your bouquets flex.....<a class="see-more" onclick="PopUpSleeve2()">See More</a></p>
-        <button class="btn-general">add to bag</button>
-    </div>
-  </div>
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/pink paper.png" alt="">
-    </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>Pink paper</h4>
-        <p>₱36</p>
+    
+      <div class="confirmation mt-5 d-flex justify-content-between">
+        <a routerLink="/order/custom-flower"><button class="btn btn-outline-primary">Back</button></a>
+        <a routerLink="/order/custom-tie"><button class="btn btn-outline-primary">Next</button></a>
       </div>
-      <p>What's even sweeter than the color pink? Wrap.....<a class="see-more" onclick="PopUpSleeve3()">See More</a></p>
-        <button class="btn-general">add to bag</button>
     </div>
-  </div>
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/cellophane.png" alt="">
-    </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>Cellophane</h4>
-        <p>₱45</p>
-      </div>
-      <p>Do you want your bouquet to stand out more by.....<a class="see-more" onclick="PopUpSleeve4()">See More</a></p>
-          <button class="btn-general">add to bag</button>
-    </div>
-  </div>
-</div>
-</div>
-<div class="confirmation">
-  <a routerLink="/order/custom-tie"><button class="btn-general">Next</button></a>
-</div>
+
 <!-- Sleeves Popups -->
 <!-- Sleeve #1 -->
-<div class="popup" id="popup-sleeve-1">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpSleeve1()">&times;</div>
-    <h1 class="page-title">Kraft paper</h1>
-    <div class="pop-row">
-      <img src="assets/img/kraft paper.png">
-      <p>Kraft paper is not only good for the environment because it will also give a good classic and formal look on your bouquet of flowers making it even sexier! Wrap them in it NOW.</p>
+  <div class="popup" id="popup-sleeve-1">
+    <div class="overlay"></div>
+    <div class="pop-content">
+      <div class="close-btn" onclick="PopUpSleeve1()">&times;</div>
+      <h1 class="page-title">Kraft paper</h1>
+      <div class="pop-row">
+        <img src="assets/img/kraft paper.png">
+        <p>Kraft paper is not only good for the environment because it will also give a good classic and formal look on your bouquet of flowers making it even sexier! Wrap them in it NOW.</p>
+      </div>
     </div>
   </div>
-</div>
-<!-- Sleeve #2 -->
-<div class="popup" id="popup-sleeve-2">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpSleeve2()">&times;</div>
-    <h1 class="page-title">Transparent plastic wrapper</h1>
-    <div class="pop-row">
-      <img src="assets/img/plastic wrapper.png">
-      <p>Simple is more. Make your bouquets flex its fresh flowers inside with this transparent plastic wrapper. Oh! what we meant will instantly be clear once you see the final product.</p>
+  <!-- Sleeve #2 -->
+  <div class="popup" id="popup-sleeve-2">
+    <div class="overlay"></div>
+    <div class="pop-content">
+      <div class="close-btn" onclick="PopUpSleeve2()">&times;</div>
+      <h1 class="page-title">Transparent plastic wrapper</h1>
+      <div class="pop-row">
+        <img src="assets/img/plastic wrapper.png">
+        <p>Simple is more. Make your bouquets flex its fresh flowers inside with this transparent plastic wrapper. Oh! what we meant will instantly be clear once you see the final product.</p>
+      </div>
     </div>
   </div>
-</div>
-<!-- Sleeve #3 -->
-<div class="popup" id="popup-sleeve-3">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpSleeve3()">&times;</div>
-    <h1 class="page-title">Pink wrapping paper</h1>
-    <div class="pop-row">
-      <img src="assets/img/pink paper.png">
-      <p>What's even sweeter than the color pink?! I'll tell you what... nothing. Wrap your beautiful bouquets in this pink flower wrapping paper and show someone how sweet you can be.</p>
+  <!-- Sleeve #3 -->
+  <div class="popup" id="popup-sleeve-3">
+    <div class="overlay"></div>
+    <div class="pop-content">
+      <div class="close-btn" onclick="PopUpSleeve3()">&times;</div>
+      <h1 class="page-title">Pink wrapping paper</h1>
+      <div class="pop-row">
+        <img src="assets/img/pink paper.png">
+        <p>What's even sweeter than the color pink?! I'll tell you what... nothing. Wrap your beautiful bouquets in this pink flower wrapping paper and show someone how sweet you can be.</p>
+      </div>
     </div>
   </div>
-</div>
-<!-- Sleeve #4 -->
-<div class="popup" id="popup-sleeve-4">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpSleeve4()">&times;</div>
-    <h1 class="page-title">Clear rainbow cellophane</h1>
-    <div class="pop-row">
-      <img src="assets/img/cellophane.png">
-      <p>Do you want your bouquet to stand out more by it being stylish? Style them with this rainbow colored clear cellophane and show 'em who's got it.</p>
+  <!-- Sleeve #4 -->
+  <div class="popup" id="popup-sleeve-4">
+    <div class="overlay"></div>
+    <div class="pop-content">
+      <div class="close-btn" onclick="PopUpSleeve4()">&times;</div>
+      <h1 class="page-title">Clear rainbow cellophane</h1>
+      <div class="pop-row">
+        <img src="assets/img/cellophane.png">
+        <p>Do you want your bouquet to stand out more by it being stylish? Style them with this rainbow colored clear cellophane and show 'em who's got it.</p>
+      </div>
     </div>
   </div>
-</div>
 </section>
+
 <app-footer></app-footer>
