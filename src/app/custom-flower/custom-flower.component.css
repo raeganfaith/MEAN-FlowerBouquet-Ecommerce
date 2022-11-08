@@ -111,103 +111,42 @@
 }
 
 /* Custom Content CSS */
-.row-category{
-  display: flex;
-  width: 100%;
-  padding-left: 100px;
-  flex-direction: column;
-}
-.custom-flower{
+
+.custom-flower {
   padding-top: 100px;
   padding-bottom: 50px;
 }
-.bouquet-items img{
-  border-radius: 5%;
-  max-width: 255px;
+
+.custom-flower h1 {
+  color: var(--primary-color);
+  font-weight: bold;
 }
-.custom-flower h3{
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.bouquet-item {
+  width: 100%;
+  height: 100%;
   display: flex;
-  font-weight: 700;
-  color: #6E85B7;
-  justify-content: flex-start;
-  padding-bottom: 20px;
-  padding-left: 150px;
-}
-.center-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.bouquet-container{
-  display: flex;
-  justify-content:space-between;
-  width: 80%;
-}
-.bouquet-column{
-  max-width: 17%;
-  padding-right: 50px;
-}
-.bouquet-details{
-  width: 160%;
-}
-.details-row{
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-}
-.bouquet-container .btn{
-  align-items: center;
-  color: white;
-}
-.adjust{
-  padding-top: 30px;
-}
-/* Button CSS */
-.confirmation{
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 50px;
-  width: 93%;
-}
-button{
-  width: 255px;
-  height: 40px;
-  background-color: white;
-  border-color: #6E85B7;
-  border-width: 2px;
-  align-items: center;
-  color: #6E85B7;
-  font-weight: 500;
-  border-radius: 5px;
-}
-button:hover{
-  background-color: #6E85B7;
-  color: white;
+  flex-direction: column;
 }
 
-.row-detail{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 92%;
-  padding-left: 150px;
-  padding-bottom: 5px;
-  font-weight: 500;
-}
-.row-detail h5{
-  align-items: stretch;
+.order-img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
 }
 
-.btn-quantity-num {
-  display: flex;
+input[type=number] {
+  border: 1px solid var(--primary-color);
 }
 
-.btn-quantity-num .w-25 {
-  margin-right: 5px;
-}
-
-.btn-quantity-num .w-25 .form-control{
-  width: 65px;
-  border-style: solid;
-  border-radius: 5px;
+.confirmation .btn {
+  text-transform: uppercase;
+  padding: 8px 100px;
 }
