@@ -127,7 +127,24 @@
   background: #6E85B7;
 }
 
-.custom-card{
+/* Content */
+
+.custom-card {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.custom-card h1 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.confirmation .btn {
+  text-transform: uppercase;
+  padding: 8px 100px;
+}
+
+/* .custom-card{
   padding-top: 100px;
 }
 .custom-card h3{
@@ -184,4 +201,4 @@
   padding-top: 50px;
   padding-bottom: 50px;
   width: 93%;
-}
+} */

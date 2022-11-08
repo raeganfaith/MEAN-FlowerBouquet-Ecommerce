@@ -1,8 +1,8 @@
 <app-header></app-header>
 <section class="custom-tie">
   <!-- Status Bar -->
-  <h3>CUSTOMIZE YOUR BOUQUET:</h3>
-  <div class="container">
+  <div class="container mt-5">
+    <h1>CUSTOMIZE YOUR BOUQUET</h1>
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12">
         <div class="card-stepper text-black" style="border-radius: 16px;">
@@ -36,70 +36,66 @@
       </div>
     </div>
   </div>
+
   <!-- Content -->
-  <div class="row-detail">
-  <h5>Choose your choice of tie:</h5>
-  <h5>1</h5>
-  </div>
-  <div class="center-container">
-<div class="bouquet-container">
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/twine.png" alt="">
+  <div class="container">
+    <div class="d-flex justify-content-between my-5">
+      <h5 class="fw-bold">Choose your choice of tie:</h5>
+      <h4 id="change" class="fw-bold">1</h4>
     </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>Twine</h4>
-        <p>₱12</p>
+    <div class="items"> 
+      <div class="bouquet-item">
+          <a class="see-more" onclick="PopUpTie1()">
+              <img src="assets/img/twine.png" alt="" class="img-fluid order-img">
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                  <h5 class="name fw-bold">Twine</h5>
+                  <h6>₱12</h6>
+              </div>
+              <p>Bind your flowers with this twine thread for...</p>
+          </a>
+          <button class="btn btn-outline-primary w-100">add to bag</button>
       </div>
-      <p>Bind your flowers with this twine thread for.....<a class="see-more" onclick="PopUpTie1()">See More</a></p>
-        <button class="btn-general">add to bag</button>
-    </div>
-  </div>
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/white ribbon.png" alt="">
-    </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>White ribbon</h4>
-        <p>₱6</p>
+      <div class="bouquet-item">
+          <a class="see-more" onclick="PopUpTie2()">
+              <img src="assets/img/white ribbon.png" alt="" class="img-fluid order-img">
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                  <h5 class="name fw-bold">White Ribbon</h5>
+                  <h6>₱6</h6>
+              </div>
+              <p>Can't decide? Go for a simple clean looking white...</p>
+          </a>
+          <button class="btn btn-outline-primary w-100">add to bag</button>
       </div>
-      <p>Can't decide? Go for a simple clean looking white.....<a class="see-more" onclick="PopUpTie2()">See More</a></p>
-        <button class="btn-general">add to bag</button>
-    </div>
-  </div>
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/pink ribbon.png" alt="">
-    </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>Pink ribbon</h4>
-        <p>₱6</p>
+      <div class="bouquet-item">
+          <a class="see-more" onclick="PopUpTie3()">
+              <img src="assets/img/pink ribbon.png" alt="" class="img-fluid order-img">
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                  <h5 class="name fw-bold">Pink Ribbon</h5>
+                  <h6>₱6</h6>
+              </div>
+              <p>Are you kidding me?! You want something looking...</p>
+          </a>
+          <button class="btn btn-outline-primary w-100">add to bag</button>
       </div>
-      <p>Are you kidding me?! you want something looking.....<a class="see-more" onclick="PopUpTie3()">See More</a></p>
-        <button class="btn-general">add to bag</button>
-    </div>
-  </div>
-  <div class="bouquet-column">
-    <div class="bouquet-items">
-      <img src="assets/img/black ribbon.png" alt="">
-    </div>
-    <div class="bouquet-details">
-      <div class="details-row">
-        <h4>Black ribbon</h4>
-        <p>₱6</p>
+      <div class="bouquet-item">
+          <a class="see-more" onclick="PopUpTie4()">
+              <img src="assets/img/black ribbon.png" alt="" class="img-fluid order-img">
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                  <h5 class="name fw-bold">Black Ribbon</h5>
+                  <h6>₱6</h6>
+              </div>
+              <p>What color brings more finesse in everything than...</p>
+          </a>
+          <button class="btn btn-outline-primary w-100">add to bag</button>
       </div>
-      <p>What color brings more finesse in everything than.....<a class="see-more" onclick="PopUpTie4()">See More</a></p>
-          <button class="btn-general">add to bag</button>
+    </div>
+  
+    <div class="confirmation mt-5 d-flex justify-content-between">
+      <a routerLink="/order/custom-sleeve"><button class="btn btn-outline-primary">Back</button></a>
+      <a routerLink="/order/custom-card"><button class="btn btn-outline-primary">Next</button></a>
     </div>
   </div>
-</div>
-  </div>
-  <div class="confirmation">
-  <a routerLink="/order/custom-card"><button class="btn-general">Next</button></a>
-</div>
+
 <!-- Tie Popups -->
 <!-- Tie #1 -->
 <div class="popup" id="popup-tie-1">

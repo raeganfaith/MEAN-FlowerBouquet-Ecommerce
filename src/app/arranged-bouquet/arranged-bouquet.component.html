@@ -1,65 +1,72 @@
 <app-header></app-header>
+
 <section class="order">
-  <h3 class="page-title">CHOOSE FROM OUR ALREADY ARRANGED BOUQUETS:</h3>
-  <div class="center-container">
-  <div class="bouquet-container">
-    <div class="bouquet-column">
-      <div class="bouquet-items">
-        <img src="assets/img/pinky pinks.png" alt="">
-      </div>
-      <div class="bouquet-details">
-        <div class="details-row">
-          <h4 class = "name">Pinky pinks</h4>
-          <p class = "price">₱2,500</p>
+    <div class="container mt-5">
+        <h1>CHOOSE FROM OUR ALREADY ARRANGED BOUQUETS</h1>
+        <div class="items mt-5">
+            <div class="bouquet-item">
+                <a class="see-more" onclick="PopUpBouquet1()">
+                    <img src="assets/img/pinky pinks.png" alt="" class="img-fluid order-img">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <h5 class="name fw-bold">Pinky Pinks</h5>
+                        <h6>₱2,500</h6>
+                    </div>
+                    <p>What do we say when you want to treat your...</p>
+                </a>
+                <div class="d-flex">
+                  <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+                  <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+                </div>
+            </div>
+            <div class="bouquet-item">
+                <a class="see-more" onclick="PopUpBouquet2()">
+                    <img src="assets/img/summer treat.png" alt="" class="img-fluid order-img">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <h5 class="name fw-bold">Summer Treat</h5>
+                        <h6>₱4,000</h6>
+                    </div>
+                    <p>A combination of purple orange and pink...</p>
+                </a>
+                <div class="d-flex">
+                  <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+                  <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+                </div>
+            </div>
+            <div class="bouquet-item">
+                <a class="see-more" onclick="PopUpBouquet3()">
+                    <img src="assets/img/spring-y.png" alt="" class="img-fluid order-img">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <h5 class="name fw-bold">Spring-y</h5>
+                        <h6>₱3,000</h6>
+                    </div>
+                    <p>Pastel colored flowers all in one bouquet, make...</p>
+                </a>
+                <div class="d-flex">
+                  <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+                  <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+                </div>
+            </div>
+            <div class="bouquet-item">
+                <a class="see-more" onclick="PopUpBouquet4()">
+                    <img src="assets/img/sunny surprise.png" alt="" class="img-fluid order-img">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <h5 class="name fw-bold">Sunny Surprise</h5>
+                        <h6>₱2,900</h6>
+                    </div>
+                    <p>Isn't it all hot in here?! Well, a sunny day...</p>
+                </a>
+                <div class="d-flex">
+                  <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+                  <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+                </div>
+            </div>
         </div>
-        <p class = "description">What do we say when you want to treat your.....<a class="see-more" onclick="PopUpBouquet1()">See More</a></p>
-        <button class="btn-general">add to bag</button>
-      </div>
-    </div>
-    <div class="bouquet-column">
-      <div class="bouquet-items">
-        <img src="assets/img/summer treat.png" alt="">
-      </div>
-      <div class="bouquet-details">
-        <div class="details-row">
-          <h4>Summer treat</h4>
-          <p>₱4,000</p>
+        <div class="confirmation mt-5 d-flex justify-content-between">
+            <a routerLink="/order"><button class="btn btn-outline-primary">Back</button></a>
+            <a routerLink="/order/order-list"><button class="btn btn-outline-primary">Go to Bag</button></a>
         </div>
-        <p>A combination of purple orange and pink.....<a class="see-more" onclick="PopUpBouquet2()">See More</a></p>
-        <button class="btn-general">add to bag</button>
-      </div>
     </div>
-    <div class="bouquet-column">
-      <div class="bouquet-items">
-        <img src="assets/img/spring-y.png" alt="">
-      </div>
-      <div class="bouquet-details">
-        <div class="details-row">
-          <h4>Spring-y</h4>
-          <p>₱3,000</p>
-        </div>
-        <p>Pastel colored flowers all in one bouquet, make.....<a class="see-more" onclick="PopUpBouquet3()">See More</a></p>
-        <button class="btn-general">add to bag</button>
-      </div>
-    </div>
-    <div class="bouquet-column">
-      <div class="bouquet-items">
-        <img src="assets/img/sunny surprise.png" alt="">
-      </div>
-      <div class="bouquet-details">
-        <div class="details-row">
-          <h4>Sunny surprise</h4>
-          <p>₱2,900</p>
-        </div>
-        <p>Isn't it all hot in here?! Well, a sunny day.....<a class="see-more" onclick="PopUpBouquet4()">See More</a></p>
-        <button class="btn-general">add to bag</button>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="confirmation">
-    <a routerLink="/order/order-list"><button class="btn-general">Confirm Order</button></a>
-  </div>
+  
 <!-- Bouquet Popups -->
 <!-- Bouquet #1 -->
 <div class="popup" id="popup-bouquet-1">
