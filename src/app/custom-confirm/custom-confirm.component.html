@@ -151,9 +151,36 @@
     </div>
     <div class="confirmation mt-5 d-flex justify-content-end">
       <a routerLink="/order"><button class="btn btn-outline-primary me-3">Cancel</button></a>
-      <a routerLink="/order/order-list"><button class="btn btn-outline-primary">Make Bouquet</button></a>
+      <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#make-bouquet">Make Bouquet</button>
     </div>
   </div>
+
+  <div class="modal fade" id="make-bouquet" tabindex="-1" aria-labelledby="make-bouquet-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="card p-3 pt-0">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-end">
+                            <a routerLink="../view-bouquet"><i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <i class="bi bi-check-circle" style="color: green; font-size: 5rem;"></i>
+                            <h4 class="fw-bold">Added to bag!</h4>
+                            <p class="px-4">You've successfully made your customized bouquet.</p>
+                            <div class="">
+                              <a routerLink="/order"><button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Continue Shopping</button></a>
+                              <a routerLink="/order/order-list"><button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Go to Bag</button></a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
   
 <!-- Flower Popups -->
 <!-- Flower #1 -->

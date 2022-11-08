@@ -150,3 +150,7 @@ input[type=number] {
   text-transform: uppercase;
   padding: 8px 100px;
 }
+
+.modal-content {
+  border-radius: 10px;
+}
