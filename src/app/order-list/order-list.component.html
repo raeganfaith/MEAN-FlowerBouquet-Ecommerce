@@ -4,29 +4,29 @@
   <div class="container">
     <div class="d-flex justify-content-between my-5">
       <h1>Your Bag</h1>
-      <h4>Total Amount: <span class="fw-bold">₱4,485</span></h4>
+      <h4>Total Amount: <span class="fw-bold cart-price">₱4,485</span></h4>
     </div>
-    <div class="items">
-      <div class="bouquet-item">
+    <div class="items cart-row">
+      <div class="bouquet-item cart-items">
         <a class="see-more" onclick="PopUpBouquet1()">
             <img src="assets/img/pinky pinks.png" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
-                <h5 class="name fw-bold">Pinky Pinks</h5>
-                <h6>₱2,500</h6>
+                <h5 class="name fw-bold cart-item-title">Pinky Pinks</h5>
+                <h6 class = "cart-price">₱2,500</h6>
             </div>
             <p>What do we say when you want to treat your...</p>
         </a>
-        <div class="d-flex">
+        <div class="d-flex cart-quantity">
           <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="1" disabled>
-          <button class="btn btn-outline-primary w-75 ms-3">remove</button>
+          <button class="btn btn-outline-primary w-75 ms-3 btn-remove">remove</button>
         </div>
       </div>
-      <div class="bouquet-item">
+      <!-- <div class="bouquet-item cart-items">
         <a class="see-more" data-bs-toggle="modal" data-bs-target="#view-bouquet">
             <img src="assets/img/customized-b.png" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
-                <h5 class="name fw-bold">Custom Bouquet</h5>
-                <h6>₱1,985</h6>
+                <h5 class="name fw-bold cart-item-title">Custom Bouquet</h5>
+                <h6 class = "cart-price">₱1,985</h6>
             </div>
             <p>Custom bouquet #20221345</p>
         </a>
@@ -34,10 +34,10 @@
           <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="1" disabled>
           <button class="btn btn-outline-primary w-75 ms-3">remove</button>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="confirmation my-5 text-end">
-      <a routerLink="/order/checkout"><button class="btn btn-outline-primary">Checkout</button></a>
+      <a routerLink="/order/checkout"><button class="btn btn-outline-primary btn-purchase" onclick="purchaseClicked()">Checkout</button></a>
     </div>
   </div>
 </section>
