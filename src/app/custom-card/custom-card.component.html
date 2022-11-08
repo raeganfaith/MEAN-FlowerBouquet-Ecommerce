@@ -1,7 +1,7 @@
 <app-header></app-header>
 <section class="custom-card">
-  <h3>CUSTOMIZE YOUR BOUQUET:</h3>
   <div class="container">
+    <h1>CUSTOMIZE YOUR BOUQUET</h1>
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12">
         <div class="card-stepper text-black" style="border-radius: 16px;">
@@ -35,21 +35,21 @@
       </div>
     </div>
   </div>
+
 <!-- Content -->
-  <div class="row-detail">
-    <h5>Choose your type of card:</h5>
-    <h5>1</h5>
-  </div>
-  <div class="card-mode">
+
+  <div class="container">
+    <div class="d-flex justify-content-between my-5">
+      <h5 class="fw-bold">Choose your type of card:</h5>
+      <h4 id="change" class="fw-bold">1</h4>
+    </div>
     <div class="cust">
       <input type="radio" class="btn-check" name="size-options" id="small" autocomplete="off" checked>
       <label class="btn btn-label me-2" for="small">Printed</label>
       <input type="radio" class="btn-check" name="size-options" id="medium" autocomplete="off">
       <label class="btn btn-label me-2" for="medium" style="width: 120px;">Handwritten</label>
     </div>
-  </div>
-  <div class="form">
-    <form>
+    <form class="mt-4">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">To</label>
         <input type="text" class="form-control">
@@ -61,13 +61,15 @@
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Message</label>
-        <input type="text" class="form-control message" >
+        <textarea class="form-control message" name="message" rows="3"></textarea>
         <div id="emailHelp" class="form-text">Limit your message into 50 words.</div>
       </div>
     </form>
-  </div>
-  <div class="confirmation">
-    <a routerLink="/order/custom-confirm"><button class="btn-general">Next</button></a>
+    <div class="confirmation mt-5 d-flex justify-content-between">
+      <a routerLink="/order/custom-tie"><button class="btn btn-outline-primary">Back</button></a>
+      <a routerLink="/order/custom-confirm"><button class="btn btn-outline-primary">Next</button></a>
+    </div>
   </div>
 </section>
+
 <app-footer></app-footer>
