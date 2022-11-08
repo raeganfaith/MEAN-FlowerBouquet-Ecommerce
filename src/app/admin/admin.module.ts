@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AdminRoutingModule } from './admin-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PurchasesComponent } from './purchases/purchases.component';
@@ -21,8 +22,10 @@ import { EditMaterialComponent } from './edit-material/edit-material.component';
 import { AddMaterialComponent } from './add-material/add-material.component';
 import { ViewMaterialComponent } from './view-material/view-material.component';
 import { OrdersComponent } from './orders/orders.component';
+// import { PagesComponent } from './pages/pages.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -46,13 +49,17 @@ import { PurchaseDetailsComponent } from './purchase-details/purchase-details.co
     EditMaterialComponent,
     AddMaterialComponent,
     ViewMaterialComponent,
+    // PagesComponent,
     OrderDetailsComponent,
     PurchaseDetailsComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class AdminModule { }
