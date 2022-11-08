@@ -5,6 +5,8 @@
 //   ready()
 // }
 
+// const { idText } = require("typescript");
+
 // function ready() {
 //   var removeCartItemButtons = document.getElementsByClassName('btn-remove')
 //   for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -125,34 +127,34 @@
 //   document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 // }
 
-let http = new XMLHttpRequest();
-http.open('get', 'bouquet.json', true);
+// let http = new XMLHttpRequest();
+// http.open('get', 'bouquet.json', true);
 
-http.onload = function () {
-  if (this.readyState == 4 && this.status == 200) {
-    let data = JSON.parse(http.responseText);
-    let output = '';
-    for (let item of bouquet-items){
-      output += `
-          <div class="bouquet-item">
-            <a class="see-more" onclick="PopUpBouquet2()">
-              <img src="${item.image}" alt="" class="img-fluid order-img shop-item-image">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                <h5 class="name fw-bold shop-item-title">${item.bouquetName}</h5>
-                <h6 class="shop-item-price">${item.price}</h6>
-              </div>
-              <p>${item.description}</p>
-            </a>
-            <div class="d-flex">
-              <input type="number" min="0" step="1" class="form-control no-effect w-25 cart-quantity-input" id="amountInput" value="0">
-              <button class="btn btn-outline-primary w-75 ms-3 shop-item-button">add to bag</button>
-            </div>
-          </div>
-      `;
-    }
-    document.querySelector(".bouquet-items").innerHTML = output;
-  }
-}
+// http.onload = function () {
+//   if (this.readyState == 4 && this.status == 200) {
+//     let data = JSON.parse(http.responseText);
+//     let output = '';
+//     for (let item of bouquet-items){
+//       output += `
+//           <div class="bouquet-item">
+//             <a class="see-more" onclick="PopUpBouquet2()">
+//               <img src="${item.image}" alt="" class="img-fluid order-img shop-item-image">
+//               <div class="d-flex justify-content-between align-items-center mt-3">
+//                 <h5 class="name fw-bold shop-item-title">${item.bouquetName}</h5>
+//                 <h6 class="shop-item-price">${item.price}</h6>
+//               </div>
+//               <p>${item.description}</p>
+//             </a>
+//             <div class="d-flex">
+//               <input type="number" min="0" step="1" class="form-control no-effect w-25 cart-quantity-input" id="amountInput" value="0">
+//               <button class="btn btn-outline-primary w-75 ms-3 shop-item-button">add to bag</button>
+//             </div>
+//           </div>
+//       `;
+//     }
+//     document.querySelector(".bouquet-items").innerHTML = output;
+//   }
+// }
 
 // custom-flower JavaScript
 function ChangeSmall() {
@@ -169,6 +171,7 @@ function ChangeLarge() {
 
 // PopUps JavaScript
 // PopUps for Custom Flower
+
 function PopUpFlower1(){
   document.getElementById("popup-flower-1").classList.toggle("active");
   window.scrollTo(0,0);
@@ -202,7 +205,33 @@ function PopUpFlower8(){
   window.scrollTo(0,0);
 }
 
-// PopUps for Arranged Flower Bouquet
+// PopUps for Arranged Flower Bouquet --- HINDI PA NAGANAAA
+function DynamicPopUpBouquet() {
+  // const myObj = JSON.getAttribute("bouquet.json");
+  // x = myObj["bouquetName"];
+  //var content = JSON.getAttribute("bouquet.json"); //read the response
+  //content = JSON.parse(content);
+  //myJSON = 'bouquet.json';
+  // const myObj = JSON.parse(myJSON);
+  // x = myObj["bouquetName"];
+
+  // let value = Object.bouquetName;
+
+  if({bouquetName : 'Pinky Pinks'} ) {
+    document.getElementById("popup-bouquet-1").classList.toggle("active");
+    window.scrollTo(0,0);
+  } else if({bouquetName : 'Summer Treat'}) {
+    document.getElementById("popup-bouquet-2").classList.toggle("active");
+    window.scrollTo(0,0);
+  } else if({bouquetName : 'Spring-y'}){
+    document.getElementById("popup-bouquet-3").classList.toggle("active");
+    window.scrollTo(0,0);
+  } else if({bouquetName : 'Sunny Surprise'}){
+    document.getElementById("popup-bouquet-4").classList.toggle("active");
+    window.scrollTo(0,0);
+  }
+}
+
 function PopUpBouquet1(){
   document.getElementById("popup-bouquet-1").classList.toggle("active");
   window.scrollTo(0,0);

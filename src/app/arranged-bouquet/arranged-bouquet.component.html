@@ -3,8 +3,8 @@
     <div class="container mt-5">
         <h1>CHOOSE FROM OUR ALREADY ARRANGED BOUQUETS</h1>
         <div class="items mt-5 bouquet-items">
-          <div  *ngFor="let bouquet of bouquets" class="bouquet-item">
-            <a class="see-more" onclick="PopUpBouquet3()">
+          <div  *ngFor="let bouquet of bouquets" class="bouquet-item DynaminPopUp">
+            <a class="see-more" onclick="DynamicPopUpBouquet()">
                 <img src="{{bouquet.image}}" alt="" class="img-fluid order-img shop-item-image">
                 <div class="d-flex justify-content-between align-items-center mt-3">
                     <h5 class="name fw-bold shop-item-title">{{bouquet.bouquetName}}</h5>

@@ -20,5 +20,5 @@ export class ArrangedBouquetComponent implements OnInit {
 
   bouquets:Bouquet[]=orderData;
 
-  
+
 }
