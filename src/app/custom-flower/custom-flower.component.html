@@ -38,241 +38,143 @@
     </div>
 <!-- Content -->
 
-<div class="container">
-  <div>
-    <input type="radio" class="btn-check" name="size-options" id="small" autocomplete="off" checked>
-    <label class="btn btn-label me-2" for="small" onclick="ChangeSmall()">Small</label>
-    <input type="radio" class="btn-check" name="size-options" id="medium" autocomplete="off">
-    <label class="btn btn-label me-2" for="medium" onclick="ChangeMedium()">Medium</label>
-    <input type="radio" class="btn-check" name="size-options" id="large" autocomplete="off">
-    <label class="btn btn-label me-2" for="large" onclick="ChangeLarge()">Large</label>
-  </div>
-  <div class="d-flex justify-content-between my-5">
-    <h5 class="fw-bold">Choose your choice of flowers:</h5>
-    <h4 id="change" class="fw-bold">10</h4>
-  </div>
+  <div class="container">
+    <div>
+      <input type="radio" class="btn-check" name="size-options" id="small" autocomplete="off" checked>
+      <label class="btn btn-label me-2" for="small" onclick="ChangeSmall()">Small</label>
+      <input type="radio" class="btn-check" name="size-options" id="medium" autocomplete="off">
+      <label class="btn btn-label me-2" for="medium" onclick="ChangeMedium()">Medium</label>
+      <input type="radio" class="btn-check" name="size-options" id="large" autocomplete="off">
+      <label class="btn btn-label me-2" for="large" onclick="ChangeLarge()">Large</label>
+    </div>
+    <div class="d-flex justify-content-between my-5">
+      <h5 class="fw-bold">Choose your choice of flowers:</h5>
+      <h4 id="change" class="fw-bold">10</h4>
+    </div>
 
-  <div class="items"> 
-      <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpFlower1()">
-              <img src="assets/img/tulip.png" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name fw-bold">Single Stem Tulip</h5>
-                  <h6>₱210</h6>
-              </div>
-              <p>Tulips are a common choice for bridal flowers.</p>
-          </a>
-          <div class="d-flex">
-            <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
-            <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
-          </div>
-      </div>
-      <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpFlower2()">
-              <img src="assets/img/rose.png" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name fw-bold">Single Stem Rose</h5>
-                  <h6>₱100</h6>
-              </div>
-              <p>Roses are symbol for appreciation.</p>
-          </a>
-          <div class="d-flex">
-            <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
-            <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
-          </div>
-      </div>
-      <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpFlower3()">
-              <img src="assets/img/lily.jpg" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name fw-bold">Single Stem Lily</h5>
-                  <h6>₱232</h6>
-              </div>
-              <p>Looking for a gift on someone's baby shower?</p>
-          </a>
-          <div class="d-flex">
-            <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
-            <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
-          </div>
-      </div>
-      <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpFlower4()">
-              <img src="assets/img/sunflower.png" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name fw-bold">Sunflower</h5>
-                  <h6>₱260</h6>
-              </div>
-              <p>Really, there is never a good moment or place...</p>
-          </a>
-          <div class="d-flex">
-            <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
-            <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
-          </div>
-      </div>
-      <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpFlower5()">
-              <img src="assets/img/marigold.jpg" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name fw-bold">Marigold</h5>
-                  <h6>₱290</h6>
-              </div>
-              <p>Marigolds are a symbol of joy.</p>
-          </a>
-          <div class="d-flex">
-            <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
-            <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
-          </div>
-      </div>
-      <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpFlower6()">
-              <img src="assets/img/pansy.jpg" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name fw-bold">Pansy Flower</h5>
-                  <h6>₱307</h6>
-              </div>
-              <p>Got a little crush on someone? Pansy!</p>
-          </a>
-          <div class="d-flex">
-            <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
-            <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
-          </div>
-      </div>
-      <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpFlower7()">
-              <img src="assets/img/dianthus.jpg" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name fw-bold">Dianthus Flower</h5>
-                  <h6>₱145</h6>
-              </div>
-              <p>Ah, sweet williams...</p>
-          </a>
-          <div class="d-flex">
-            <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
-            <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
-          </div>
-      </div>
-      <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpFlower8()">
-              <img src="assets/img/daisy.png" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name fw-bold">Daisy</h5>
-                  <h6>₱232</h6>
-              </div>
-              <p>A daisy can be given to someone on...</p>
-          </a>
-          <div class="d-flex">
-            <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
-            <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
-          </div>
-      </div>
-  </div>
+    <div class="items"> 
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-1">
+                <img src="assets/img/tulip.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Single Stem Tulip</h5>
+                    <h6>₱210</h6>
+                </div>
+                <p>Tulips are a common choice for bridal flowers.</p>
+            </a>
+            <div class="d-flex">
+              <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+              <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+            </div>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-2">
+                <img src="assets/img/rose.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Single Stem Rose</h5>
+                    <h6>₱100</h6>
+                </div>
+                <p>Roses are symbol for appreciation.</p>
+            </a>
+            <div class="d-flex">
+              <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+              <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+            </div>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-3">
+                <img src="assets/img/lily.jpg" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Single Stem Lily</h5>
+                    <h6>₱232</h6>
+                </div>
+                <p>Looking for a gift on someone's baby shower?</p>
+            </a>
+            <div class="d-flex">
+              <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+              <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+            </div>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-4">
+                <img src="assets/img/sunflower.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Sunflower</h5>
+                    <h6>₱260</h6>
+                </div>
+                <p>Really, there is never a good moment or place...</p>
+            </a>
+            <div class="d-flex">
+              <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+              <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+            </div>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-5">
+                <img src="assets/img/marigold.jpg" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Marigold</h5>
+                    <h6>₱290</h6>
+                </div>
+                <p>Marigolds are a symbol of joy.</p>
+            </a>
+            <div class="d-flex">
+              <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+              <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+            </div>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-6">
+                <img src="assets/img/pansy.jpg" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Pansy Flower</h5>
+                    <h6>₱307</h6>
+                </div>
+                <p>Got a little crush on someone? Pansy!</p>
+            </a>
+            <div class="d-flex">
+              <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+              <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+            </div>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-7">
+                <img src="assets/img/dianthus.jpg" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Dianthus Flower</h5>
+                    <h6>₱145</h6>
+                </div>
+                <p>Ah, sweet williams...</p>
+            </a>
+            <div class="d-flex">
+              <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+              <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+            </div>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-8">
+                <img src="assets/img/daisy.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Daisy</h5>
+                    <h6>₱232</h6>
+                </div>
+                <p>A daisy can be given to someone on...</p>
+            </a>
+            <div class="d-flex">
+              <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="0">
+              <button class="btn btn-outline-primary w-75 ms-3">add to bag</button>
+            </div>
+        </div>
+    </div>
 
-  <div class="confirmation mt-5 d-flex justify-content-between">
-    <a routerLink="/order"><button class="btn btn-outline-primary">Back</button></a>
-    <a routerLink="/order/custom-sleeve"><button class="btn btn-outline-primary">Next</button></a>
-  </div>
-</div>
-
-<!-- Flower Popups -->
-<!-- Flower #1 -->
-<div class="popup" id="popup-flower-1">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower1()">&times;</div>
-    <h1 class="page-title">Single stem tulip</h1>
-    <div class="pop-row">
-      <img src="assets/img/tulip.png">
-      <p>Tulips are a common choice for bridal flowers. Would you like to give your loved ones a very sweet like a wedding surprise? You might be looking for a tulip!</p>
+    <div class="confirmation mt-5 d-flex justify-content-between">
+      <a routerLink="/order"><button class="btn btn-outline-primary">Back</button></a>
+      <a routerLink="/order/custom-sleeve"><button class="btn btn-outline-primary">Next</button></a>
     </div>
   </div>
-</div>
-<!-- Flower #2 -->
-<div class="popup" id="popup-flower-2">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower2()">&times;</div>
-    <h1 class="page-title">Single stem rose</h1>
-    <div class="pop-row">
-      <img src="assets/img/rose.png">
-      <p>Roses are symbol for appreciation. Want to express your gratitude to someone but are unsure of the best way to do so? What are you waiting for then? Buy them a rose!
-      </p>
-    </div>
-  </div>
-</div>
-<!-- Flower #3 -->
-<div class="popup" id="popup-flower-3">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower3()">&times;</div>
-    <h1 class="page-title">Single stem lily</h1>
-    <div class="pop-row">
-      <img src="assets/img/lily.jpg">
-      <p>Looking for a gift on someone's baby shower? graduation? anniversary? Well, lily symbolizes good will, prosperity and happiness. Get them one... or two... or a hundred now!</p>
-    </div>
-  </div>
-</div>
-<!-- Flower #4 -->
-<div class="popup" id="popup-flower-4">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower4()">&times;</div>
-    <h1 class="page-title">Sunflower</h1>
-    <div class="pop-row">
-      <img src="assets/img/sunflower.png">
-      <p>Really, there is never a good moment or place to gift someone a sunflower. You consider someone to be cute? Give them a sunflower! Do you want to cheer someone up? Buy a sunflower for them!</p>
-    </div>
-  </div>
-</div>
-<!-- Flower #5 -->
-<div class="popup" id="popup-flower-5">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower5()">&times;</div>
-    <h1 class="page-title">Marigold</h1>
-    <div class="pop-row">
-      <img src="assets/img/marigold.jpg">
-      <p>Marigolds are a symbol of joy, they can be sent as a gift on practically any occasion. You can never go wrong with warm shades of marigold.</p>
-    </div>
-  </div>
-</div>
-<!-- Flower #6 -->
-<div class="popup" id="popup-flower-6">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower6()">&times;</div>
-    <h1 class="page-title">Pansy flower</h1>
-    <div class="pop-row">
-      <img src="assets/img/pansy.jpg">
-      <p>Has a secret message for someone? Well, wouldn't it be "pansy" to let them know using a flower? Pansy flower is used by forbidden lovers to convey secret messages. grab one and let someone know you love and think of them.</p>
-    </div>
-  </div>
-</div>
-<!-- Flower #7 -->
-<div class="popup" id="popup-flower-7">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower7()">&times;</div>
-    <h1 class="page-title">Dianthus flower</h1>
-    <div class="pop-row">
-      <img src="assets/img/dianthus.jpg">
-      <p>Dianthus flower also known as sweet williams or pinks can be gifted in any special occasion. You don't have a special someone to give it to? No need to worry, they are edible!</p>
-    </div>
-  </div>
-</div>
-<!-- Flower #8 -->
-<div class="popup" id="popup-flower-8">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower8()">&times;</div>
-    <h1 class="page-title">Daisy</h1>
-    <div class="pop-row">
-      <img src="assets/img/daisy.png">
-      <p>A daisy can be given to someone on circumstances other than pleasant or romantic ones, such as when expressing heartfelt sympathy.</p>
-    </div>
-  </div>
-</div>
 </section>
 
+<app-modals></app-modals>
 <app-footer></app-footer>
 
 

@@ -43,7 +43,7 @@
     <h5 class="fw-bold">Selected Flowers</h5>
     <div class="items">
       <div class="bouquet-item">
-        <a class="see-more" onclick="PopUpFlower1()">
+        <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-1">
             <img src="assets/img/tulip.png" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <h5 class="name fw-bold">Single Stem Tulip</h5>
@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="bouquet-item">
-        <a class="see-more" onclick="PopUpFlower2()">
+        <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-3">
             <img src="assets/img/lily.jpg" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <h5 class="name fw-bold">Single Stem Lily</h5>
@@ -71,7 +71,7 @@
         </div>
       </div>
       <div class="bouquet-item">
-        <a class="see-more" onclick="PopUpFlower3()">
+        <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-7">
             <img src="assets/img/dianthus.jpg" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <h5 class="name fw-bold">Dianthus Flower</h5>
@@ -85,7 +85,7 @@
         </div>
       </div>
       <div class="bouquet-item">
-        <a class="see-more" onclick="PopUpFlower4()">
+        <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-5">
             <img src="assets/img/marigold.jpg" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <h5 class="name fw-bold">Marigold</h5>
@@ -103,7 +103,7 @@
     <h5 class="fw-bold mt-5">Selected Sleeves</h5>
     <div class="items">
       <div class="bouquet-item">
-        <a class="see-more" onclick="PopUpSleeve2()">
+        <a class="see-more" data-bs-toggle="modal" data-bs-target="#sleeve-2">
             <img src="assets/img/plastic wrapper.png" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <h5 class="name fw-bold">Plastic Wrapper</h5>
@@ -117,7 +117,7 @@
         </div>
       </div>
       <div class="bouquet-item">
-        <a class="see-more" onclick="PopUpSleeve1()">
+        <a class="see-more" data-bs-toggle="modal" data-bs-target="#sleeve-1">
             <img src="assets/img/kraft paper.png" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <h5 class="name fw-bold">Kraft Paper</h5>
@@ -135,7 +135,7 @@
     <h5 class="fw-bold mt-5">Selected Tie</h5>
     <div class="items">
       <div class="bouquet-item">
-        <a class="see-more" onclick="PopUpTie1()">
+        <a class="see-more" data-bs-toggle="modal" data-bs-target="#tie-4">
             <img src="assets/img/black ribbon.png" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
                 <h5 class="name fw-bold">Black Ribbon</h5>
@@ -154,126 +154,7 @@
       <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#make-bouquet">Make Bouquet</button>
     </div>
   </div>
-
-  <div class="modal fade" id="make-bouquet" tabindex="-1" aria-labelledby="make-bouquet-label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="card p-3 pt-0">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-end">
-                <a routerLink="/order"><i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i></a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 text-center">
-                <i class="bi bi-check-circle" style="color: green; font-size: 5rem;"></i>
-                <h4 class="fw-bold">Added to bag!</h4>
-                <p class="px-4">You've successfully made your customized bouquet.</p>
-                <div class="">
-                  <a routerLink="/order"><button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Continue Shopping</button></a>
-                  <a routerLink="/order/order-list"><button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Go to Bag</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </section>
-  
-<!-- Flower Popups -->
-<!-- Flower #1 -->
-<div class="popup" id="popup-flower-1">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower1()">&times;</div>
-    <h1 class="page-title">Single stem tulip</h1>
-    <div class="pop-row">
-      <img src="assets/img/tulip.png">
-      <p>Tulips are a common choice for bridal flowers. Would you like to give your loved ones a very sweet like a wedding surprise? You might be looking for a tulip!</p>
-    </div>
-  </div>
-</div>
-<!-- Flower #2 -->
-<div class="popup" id="popup-flower-2">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower2()">&times;</div>
-    <h1 class="page-title">Single stem lily</h1>
-    <div class="pop-row">
-      <img src="assets/img/lily.jpg">
-      <p>Looking for a gift on someone's baby shower? graduation? anniversary? Well, lily symbolizes good will, prosperity and happiness. Get them one... or two... or a hundred now!
-      </p>
-    </div>
-  </div>
-</div>
-<!-- Flower #3 -->
-<div class="popup" id="popup-flower-3">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower3()">&times;</div>
-    <h1 class="page-title">Dianthus flower</h1>
-    <div class="pop-row">
-      <img src="assets/img/dianthus.jpg">
-      <p>Dianthus flower also known as sweet williams or pinks can be gifted in any special occasion. You don't have a special someone to give it to? No need to worry, they are edible!</p>
-    </div>
-  </div>
-</div>
-<!-- Flower #4 -->
-<div class="popup" id="popup-flower-4">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpFlower4()">&times;</div>
-    <h1 class="page-title">Marigold</h1>
-    <div class="pop-row">
-      <img src="assets/img/marigold.jpg">
-      <p>Marigolds are a symbol of joy, they can be sent as a gift on practically any occasion. You can never go wrong with warm shades of marigold.</p>
-    </div>
-  </div>
-</div>
 
-<!-- Sleeves Popups -->
-<!-- Sleeve #1 -->
-<div class="popup" id="popup-sleeve-1">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpSleeve1()">&times;</div>
-    <h1 class="page-title">Kraft paper</h1>
-    <div class="pop-row">
-      <img src="assets/img/kraft paper.png">
-      <p>Kraft paper is not only good for the environment because it will also give a good classic and formal look on your bouquet of flowers making it even sexier! Wrap them in it NOW.</p>
-    </div>
-  </div>
-</div>
-<!-- Sleeve #2 -->
-<div class="popup" id="popup-sleeve-2">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpSleeve2()">&times;</div>
-    <h1 class="page-title">Transparent plastic wrapper</h1>
-    <div class="pop-row">
-      <img src="assets/img/plastic wrapper.png">
-      <p>Simple is more. Make your bouquets flex its fresh flowers inside with this transparent plastic wrapper. Oh! what we meant will instantly be clear once you see the final product.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Tie Popups -->
-<!-- Tie #1 -->
-<div class="popup" id="popup-tie-1">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpTie1()">&times;</div>
-    <h1 class="page-title">Black satin ribbon</h1>
-    <div class="pop-row">
-      <img src="assets/img/black ribbon.png">
-      <p>What color brings more finesse in everything than the color black? Bind your arranged flower with this ribbon!</p>
-    </div>
-  </div>
-</div>
-
-
+<app-modals></app-modals>
 <app-footer></app-footer>

@@ -5,7 +5,7 @@
         <h1>CHOOSE FROM OUR ALREADY ARRANGED BOUQUETS</h1>
         <div class="items mt-5">
             <div class="bouquet-item">
-                <a class="see-more" onclick="PopUpBouquet1()">
+                <a class="see-more" data-bs-toggle="modal" data-bs-target="#bouquet-1">
                     <img src="assets/img/pinky pinks.png" alt="" class="img-fluid order-img">
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         <h5 class="name fw-bold">Pinky Pinks</h5>
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="bouquet-item">
-                <a class="see-more" onclick="PopUpBouquet2()">
+                <a class="see-more" data-bs-toggle="modal" data-bs-target="#bouquet-2">
                     <img src="assets/img/summer treat.png" alt="" class="img-fluid order-img">
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         <h5 class="name fw-bold">Summer Treat</h5>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="bouquet-item">
-                <a class="see-more" onclick="PopUpBouquet3()">
+                <a class="see-more" data-bs-toggle="modal" data-bs-target="#bouquet-3">
                     <img src="assets/img/spring-y.png" alt="" class="img-fluid order-img">
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         <h5 class="name fw-bold">Spring-y</h5>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="bouquet-item">
-                <a class="see-more" onclick="PopUpBouquet4()">
+                <a class="see-more" data-bs-toggle="modal" data-bs-target="#bouquet-4">
                     <img src="assets/img/sunny surprise.png" alt="" class="img-fluid order-img">
                     <div class="d-flex justify-content-between align-items-center mt-3">
                         <h5 class="name fw-bold">Sunny Surprise</h5>
@@ -66,56 +66,7 @@
             <a routerLink="/order/order-list"><button class="btn btn-outline-primary">Go to Bag</button></a>
         </div>
     </div>
-  
-<!-- Bouquet Popups -->
-<!-- Bouquet #1 -->
-<div class="popup" id="popup-bouquet-1">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpBouquet1()">&times;</div>
-    <h1 class="page-title">Pinky pinks</h1>
-    <div class="pop-row">
-      <img src="assets/img/pinky pinks.png">
-      <p>What do we say when you want to treat your loved ones like a princess? We say "go pink!"</p>
-    </div>
-  </div>
-</div>
-<!-- Bouquet #2 -->
-<div class="popup" id="popup-bouquet-2">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpBouquet2()">&times;</div>
-    <h1 class="page-title">Summer treat</h1>
-    <div class="pop-row">
-      <img src="assets/img/summer treat.png">
-      <p>A combination of purple orange and pink hues all in one en grande bouquet. Grab one now and make someone's heart grow even bigger!</p>
-    </div>
-  </div>
-</div>
-<!-- Bouquet #3 -->
-<div class="popup" id="popup-bouquet-3">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpBouquet3()">&times;</div>
-    <h1 class="page-title">Spring-y</h1>
-    <div class="pop-row">
-      <img src="assets/img/spring-y.png">
-      <p>Pastel colored flowers all in one bouquet, make them blush like those roses!</p>
-    </div>
-  </div>
-</div>
-<!-- Bouquet #4 -->
-<div class="popup" id="popup-bouquet-4">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpBouquet4()">&times;</div>
-    <h1 class="page-title">Sunny surprise</h1>
-    <div class="pop-row">
-      <img src="assets/img/sunny surprise.png">
-      <p>Isn't it all hot in here?! Well, a sunny day inspired arrangement of flowers might be the coolest way to spice things up with your loved ones any day.
-      </p>
-    </div>
-  </div>
-</div>
 </section>
+
+<app-modals></app-modals>
 <app-footer></app-footer>

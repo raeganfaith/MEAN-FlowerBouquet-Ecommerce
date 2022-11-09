@@ -45,7 +45,7 @@
     </div>
     <div class="items"> 
       <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpTie1()">
+          <a class="see-more" data-bs-toggle="modal" data-bs-target="#tie-1">
               <img src="assets/img/twine.png" alt="" class="img-fluid order-img">
               <div class="d-flex justify-content-between align-items-center mt-3">
                   <h5 class="name fw-bold">Twine</h5>
@@ -56,7 +56,7 @@
           <button class="btn btn-outline-primary w-100">add to bag</button>
       </div>
       <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpTie2()">
+          <a class="see-more" data-bs-toggle="modal" data-bs-target="#tie-2">
               <img src="assets/img/white ribbon.png" alt="" class="img-fluid order-img">
               <div class="d-flex justify-content-between align-items-center mt-3">
                   <h5 class="name fw-bold">White Ribbon</h5>
@@ -67,7 +67,7 @@
           <button class="btn btn-outline-primary w-100">add to bag</button>
       </div>
       <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpTie3()">
+          <a class="see-more" data-bs-toggle="modal" data-bs-target="#tie-3">
               <img src="assets/img/pink ribbon.png" alt="" class="img-fluid order-img">
               <div class="d-flex justify-content-between align-items-center mt-3">
                   <h5 class="name fw-bold">Pink Ribbon</h5>
@@ -78,7 +78,7 @@
           <button class="btn btn-outline-primary w-100">add to bag</button>
       </div>
       <div class="bouquet-item">
-          <a class="see-more" onclick="PopUpTie4()">
+          <a class="see-more" data-bs-toggle="modal" data-bs-target="#tie-4">
               <img src="assets/img/black ribbon.png" alt="" class="img-fluid order-img">
               <div class="d-flex justify-content-between align-items-center mt-3">
                   <h5 class="name fw-bold">Black Ribbon</h5>
@@ -95,55 +95,7 @@
       <a routerLink="/order/custom-card"><button class="btn btn-outline-primary">Next</button></a>
     </div>
   </div>
-
-<!-- Tie Popups -->
-<!-- Tie #1 -->
-<div class="popup" id="popup-tie-1">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpTie1()">&times;</div>
-    <h1 class="page-title">Twine</h1>
-    <div class="pop-row">
-      <img src="assets/img/twine.png">
-      <p>Bind your flowers with this twine thread for a vintage-inspired, yet elegant, look.</p>
-    </div>
-  </div>
-</div>
-<!-- Tie #2 -->
-<div class="popup" id="popup-tie-2">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpTie2()">&times;</div>
-    <h1 class="page-title">White satin ribbon</h1>
-    <div class="pop-row">
-      <img src="assets/img/white ribbon.png">
-      <p>Can't decide? Go for a simple clean looking white ribbon for your flowers. Nothing can ever go wrong with white, right?</p>
-    </div>
-  </div>
-</div>
-<!-- Tie #3 -->
-<div class="popup" id="popup-tie-3">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpTie3()">&times;</div>
-    <h1 class="page-title">Pink satin ribbon</h1>
-    <div class="pop-row">
-      <img src="assets/img/pink ribbon.png">
-      <p>Are you kidding me?! you want something looking sweet and cute? Then, choose this pink ribbon for your flowers.</p>
-    </div>
-  </div>
-</div>
-<!-- Tie #4 -->
-<div class="popup" id="popup-tie-4">
-  <div class="overlay"></div>
-  <div class="pop-content">
-    <div class="close-btn" onclick="PopUpTie4()">&times;</div>
-    <h1 class="page-title">Black satin ribbon</h1>
-    <div class="pop-row">
-      <img src="assets/img/black ribbon.png">
-      <p>What color brings more finesse in everything than the color black? Bind your arranged flower with this ribbon!</p>
-    </div>
-  </div>
-</div>
 </section>
+
+<app-modals></app-modals>
 <app-footer></app-footer>

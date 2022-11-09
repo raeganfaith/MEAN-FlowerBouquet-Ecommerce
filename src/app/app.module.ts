@@ -20,6 +20,8 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 // Import for JSON
 import {HttpClientModule} from '@angular/common/http';
+import { ModalsComponent } from './modals/modals.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +38,8 @@ import {HttpClientModule} from '@angular/common/http';
     CustomCardComponent,
     CustomConfirmComponent,
     OrderListComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    ModalsComponent,
   ],
   imports: [
     BrowserModule,

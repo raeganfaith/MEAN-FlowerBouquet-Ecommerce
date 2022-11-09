@@ -46,7 +46,7 @@
       </div>
       <div class="items"> 
         <div class="bouquet-item">
-            <a class="see-more" onclick="PopUpSleeve1()">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#sleeve-1">
                 <img src="assets/img/kraft paper.png" alt="" class="img-fluid order-img">
                 <div class="d-flex justify-content-between align-items-center mt-3">
                     <h5 class="name fw-bold">Kraft Paper</h5>
@@ -57,7 +57,7 @@
             <button class="btn btn-outline-primary w-100">add to bag</button>
         </div>
         <div class="bouquet-item">
-            <a class="see-more" onclick="PopUpSleeve2()">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#sleeve-2">
                 <img src="assets/img/plastic wrapper.png" alt="" class="img-fluid order-img">
                 <div class="d-flex justify-content-between align-items-center mt-3">
                     <h5 class="name fw-bold">Plastic Wrapper</h5>
@@ -68,7 +68,7 @@
             <button class="btn btn-outline-primary w-100">add to bag</button>
         </div>
         <div class="bouquet-item">
-            <a class="see-more" onclick="PopUpSleeve3()">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#sleeve-3">
                 <img src="assets/img/pink paper.png" alt="" class="img-fluid order-img">
                 <div class="d-flex justify-content-between align-items-center mt-3">
                     <h5 class="name fw-bold">Pink Paper</h5>
@@ -79,7 +79,7 @@
             <button class="btn btn-outline-primary w-100">add to bag</button>
         </div>
         <div class="bouquet-item">
-            <a class="see-more" onclick="PopUpSleeve4()">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#sleeve-4">
                 <img src="assets/img/cellophane.png" alt="" class="img-fluid order-img">
                 <div class="d-flex justify-content-between align-items-center mt-3">
                     <h5 class="name fw-bold">Cellophane</h5>
@@ -97,55 +97,7 @@
       </div>
     </div>
 
-<!-- Sleeves Popups -->
-<!-- Sleeve #1 -->
-  <div class="popup" id="popup-sleeve-1">
-    <div class="overlay"></div>
-    <div class="pop-content">
-      <div class="close-btn" onclick="PopUpSleeve1()">&times;</div>
-      <h1 class="page-title">Kraft paper</h1>
-      <div class="pop-row">
-        <img src="assets/img/kraft paper.png">
-        <p>Kraft paper is not only good for the environment because it will also give a good classic and formal look on your bouquet of flowers making it even sexier! Wrap them in it NOW.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Sleeve #2 -->
-  <div class="popup" id="popup-sleeve-2">
-    <div class="overlay"></div>
-    <div class="pop-content">
-      <div class="close-btn" onclick="PopUpSleeve2()">&times;</div>
-      <h1 class="page-title">Transparent plastic wrapper</h1>
-      <div class="pop-row">
-        <img src="assets/img/plastic wrapper.png">
-        <p>Simple is more. Make your bouquets flex its fresh flowers inside with this transparent plastic wrapper. Oh! what we meant will instantly be clear once you see the final product.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Sleeve #3 -->
-  <div class="popup" id="popup-sleeve-3">
-    <div class="overlay"></div>
-    <div class="pop-content">
-      <div class="close-btn" onclick="PopUpSleeve3()">&times;</div>
-      <h1 class="page-title">Pink wrapping paper</h1>
-      <div class="pop-row">
-        <img src="assets/img/pink paper.png">
-        <p>What's even sweeter than the color pink?! I'll tell you what... nothing. Wrap your beautiful bouquets in this pink flower wrapping paper and show someone how sweet you can be.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Sleeve #4 -->
-  <div class="popup" id="popup-sleeve-4">
-    <div class="overlay"></div>
-    <div class="pop-content">
-      <div class="close-btn" onclick="PopUpSleeve4()">&times;</div>
-      <h1 class="page-title">Clear rainbow cellophane</h1>
-      <div class="pop-row">
-        <img src="assets/img/cellophane.png">
-        <p>Do you want your bouquet to stand out more by it being stylish? Style them with this rainbow colored clear cellophane and show 'em who's got it.</p>
-      </div>
-    </div>
-  </div>
 </section>
 
+<app-modals></app-modals>
 <app-footer></app-footer>
