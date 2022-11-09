@@ -206,7 +206,7 @@ function PopUpFlower8(){
 }
 
 // PopUps for Arranged Flower Bouquet --- HINDI PA NAGANAAA
-function DynamicPopUpBouquet() {
+// function DynamicPopUpBouquet() {
   // const myObj = JSON.getAttribute("bouquet.json");
   // x = myObj["bouquetName"];
   //var content = JSON.getAttribute("bouquet.json"); //read the response
@@ -216,21 +216,20 @@ function DynamicPopUpBouquet() {
   // x = myObj["bouquetName"];
 
   // let value = Object.bouquetName;
-
-  if({bouquetName : 'Pinky Pinks'} ) {
-    document.getElementById("popup-bouquet-1").classList.toggle("active");
-    window.scrollTo(0,0);
-  } else if({bouquetName : 'Summer Treat'}) {
-    document.getElementById("popup-bouquet-2").classList.toggle("active");
-    window.scrollTo(0,0);
-  } else if({bouquetName : 'Spring-y'}){
-    document.getElementById("popup-bouquet-3").classList.toggle("active");
-    window.scrollTo(0,0);
-  } else if({bouquetName : 'Sunny Surprise'}){
-    document.getElementById("popup-bouquet-4").classList.toggle("active");
-    window.scrollTo(0,0);
-  }
-}
+//   var samp = document.getElementsByClassName("bouquet-title");
+//   if(  samp = 1) {
+//     PopUpBouquet1();
+//   }
+//   if(samp = 2) {
+//     PopUpBouquet2();
+//   }
+//   if(samp = 3) {
+//     PopUpBouquet3();
+//   }
+//   if(samp = 4) {
+//     PopUpBouquet4();
+//   }
+// }
 
 function PopUpBouquet1(){
   document.getElementById("popup-bouquet-1").classList.toggle("active");
@@ -323,7 +322,7 @@ function showPreview(event){
 	var LightTableFilter = (function(Arr) {
 
 		var _input;
-	var _select;
+	  var _select;
 
 		function _onInputEvent(e) {
 			_input = e.target;

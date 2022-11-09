@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import orderData from '../bouquet.json';
+import bouquetData from '../bouquet.json';
 interface Bouquet {
   image: string;
   bouquetName: string;
@@ -18,7 +18,7 @@ export class ArrangedBouquetComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  bouquets:Bouquet[]=orderData;
+  bouquets:Bouquet[]=bouquetData;
 
 
 }
