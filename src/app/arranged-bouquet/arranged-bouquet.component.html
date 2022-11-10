@@ -2,11 +2,11 @@
 <section class="order">
     <div class="container mt-5">
         <h1>CHOOSE FROM OUR ALREADY ARRANGED BOUQUETS</h1>
+      
         <div class="items mt-5 bouquet-items">
           <div *ngFor="let item of bouquetList" class="bouquet-item DynaminPopUp">
             <a class="see-more" onclick="DynamicPopUpBouquet()">
                 <img src="{{item.image}}" alt="" class="img-fluid order-img shop-item-image">
-
                 <div class="d-flex justify-content-between align-items-center mt-3">
                     <h5 class="name fw-bold">{{item.bouquetName}}</h5>
                     <h6 class="shop-item-price">{{item.price}}</h6>
@@ -18,8 +18,6 @@
               <button class="btn btn-outline-primary w-100 shop-item-button" (click)=addtocart(item)>add to bag</button>
             </div>
           </div>
-          <!-- Pop UP -->
-          
         </div>
         <div class="confirmation mt-5 d-flex justify-content-between">
             <a routerLink="/order"><button class="btn btn-outline-primary">Back</button></a>
