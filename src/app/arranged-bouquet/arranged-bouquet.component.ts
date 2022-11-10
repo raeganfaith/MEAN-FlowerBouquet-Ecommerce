@@ -20,5 +20,16 @@ export class ArrangedBouquetComponent implements OnInit {
 
   bouquets:Bouquet[]=bouquetData;
 
+  // addToCart(bouquet: Bouquet) {
+  //   this.bouquets.push(bouquet);
+  // }
 
+  // getItems() {
+  //   return this.bouquets;
+  // }
+
+  // clearCart() {
+  //   this.bouquets = [];
+  //   return this.bouquets;
+  // }
 }

@@ -1,4 +1,28 @@
-// // Bouquet JS
+
+
+// const ProductList = document.querySelector(".product-list");
+
+// eventListeners();
+
+// function eventListeners() {
+//   window.addEventListener('DOMContentLoaded', () => {
+//     loadJSON();
+//     console.log('DOM Loaded');
+//   })
+// }
+
+// //load JSON
+// function loadJSON(){
+//   fetch('../bouquet.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     let html = '';
+//     data.forEach(product => {
+//       console.log(product);
+//     })
+//   })
+// }
+
 // if (document.readyState == 'loading') {
 //   document.addEventListener('DOMContentLoaded', ready)
 // } else {
@@ -171,6 +195,10 @@ function ChangeLarge() {
 
 // PopUps JavaScript
 // PopUps for Custom Flower
+function PopUpFlower(){
+  document.getElementById("popup-flower-1").classList.toggle("active");
+  window.scrollTo(0,0);
+}
 
 function PopUpFlower1(){
   document.getElementById("popup-flower-1").classList.toggle("active");
@@ -230,7 +258,28 @@ function PopUpFlower8(){
 //     PopUpBouquet4();
 //   }
 // }
+let http = new XMLHttpRequest();
+http.open('get', 'bouquet.json', true);
 
+function PopUpBouquet(){
+  let output = '';
+    for (let bouquet of bouquets){
+      output += `
+      <div class="popup" id="popup-bouquet-1">
+      <div class="overlay"></div>
+      <div class="pop-content">
+        <div class="close-btn" onclick="">&times;</div>
+        <h1 class="page-title">${bouquet.bouquetName}</h1>
+        <div class="pop-row">
+          <img src="${bouquet.image}">
+          <p>What do we say when you want to treat your loved ones like a princess? We say "go pink!"</p>
+        </div>
+      </div>
+    </div>
+      `;
+    }
+    document.querySelector(".bouquet-items").innerHTML = output;
+}
 function PopUpBouquet1(){
   document.getElementById("popup-bouquet-1").classList.toggle("active");
   window.scrollTo(0,0);

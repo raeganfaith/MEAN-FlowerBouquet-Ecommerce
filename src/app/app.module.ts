@@ -36,7 +36,7 @@ import {HttpClientModule} from '@angular/common/http';
     CustomCardComponent,
     CustomConfirmComponent,
     OrderListComponent,
-    CheckoutComponent
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
