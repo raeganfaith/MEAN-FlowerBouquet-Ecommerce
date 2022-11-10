@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../service/api.service';
+import { BagService } from '../service/bag.service';
 
 @Component({
   selector: 'app-order-list',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderListComponent implements OnInit {
 
-  constructor() { }
+  public bouquets : any =[];
+  public grandTotal !: number;
+  constructor(private bag : BagService, private api : ApiService) { }
 
   ngOnInit(): void {
+    this.bag.getProducts()
+    .subscribe(res=>{
+      this.bouquets = res;
+      this.grandTotal = this.bag.getTotalPrice();
+    })
   }
-
+  removeItem(item : any){
+    this.bag.removeBagItem(item);
+  }
 }

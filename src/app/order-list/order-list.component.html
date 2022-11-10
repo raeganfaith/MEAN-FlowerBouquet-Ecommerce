@@ -7,18 +7,18 @@
       <h4>Total Amount: <span class="fw-bold cart-price">₱4,485</span></h4>
     </div>
     <div class="items cart-row">
-      <div class="bouquet-item cart-items">
-        <a class="see-more" onclick="PopUpBouquet1()">
-            <img src="assets/img/pinky pinks.png" alt="" class="img-fluid order-img">
+      <div *ngFor="let item of bouquets; let i = index" class="bouquet-item cart-items">
+        <a class="see-more" onclick="DynamicPopUpBouquet()">
+            <img src="{{item.image}}" alt="" class="img-fluid order-img">
             <div class="d-flex justify-content-between align-items-center mt-3">
-                <h5 class="name fw-bold cart-item-title">Pinky Pinks</h5>
-                <h6 class = "cart-price">₱2,500</h6>
+                <h5 class="name fw-bold cart-item-title">{{item.bouquetName}}</h5>
+                <h6 class = "cart-price">{{item.price}}</h6>
             </div>
-            <p>What do we say when you want to treat your...</p>
+            <p>{{item.description}}</p>
         </a>
         <div class="d-flex cart-quantity">
           <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="1" disabled>
-          <button class="btn btn-outline-primary w-75 ms-3 btn-remove">remove</button>
+          <button class="btn btn-outline-primary w-75 ms-3 btn-remove" (click)="removeItem(item)">remove</button>
         </div>
       </div>
       <!-- <div class="bouquet-item cart-items">
