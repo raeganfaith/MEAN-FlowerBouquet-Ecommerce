@@ -1,0 +1,26 @@
+[
+  {
+    "image": "assets/img/pinky pinks.png",
+    "bouquetName": "Pinky Pinks",
+    "price": "₱2,500",
+    "description": "What do we say when you want to treat your..."
+  },
+  {
+    "image": "assets/img/summer treat.png",
+    "bouquetName": "Summer Treat",
+    "price": "₱4,000",
+    "description": "A combination of purple orange and pink..."
+  },
+  {
+    "image": "assets/img/spring-y.png",
+    "bouquetName": "Spring-y",
+    "price": "₱3,000",
+    "description": "Pastel colored flowers all in one bouquet, make..."
+  },
+  {
+    "image": "assets/img/sunny surprise.png",
+    "bouquetName": "Sunny Surprise",
+    "price": "₱2,900",
+    "description": "Isn't it all hot in here?! Well, a sunny day..."
+  }
+]

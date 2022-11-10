@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../service/api.service';
-import { BagService } from '../service/bag.service';
+import bouquetData from '../bouquet.json';
 interface Bouquet {
   image: string;
   bouquetName: string;
@@ -15,21 +14,22 @@ interface Bouquet {
 })
 export class ArrangedBouquetComponent implements OnInit {
 
-  public bouquetList : any;
-  constructor(private api : ApiService, private bag : BagService) { }
+  constructor() { }
 
+  ngOnInit(): void { }
 
-  ngOnInit(): void { 
-    this.api.getProduct()
-    .subscribe(res=>{
-      this.bouquetList = res;
+  bouquets:Bouquet[]=bouquetData;
 
-      this.bouquetList.forEach((a:any) => {
-        Object.assign(a,{quantity:1, total:a.price});
-      });
-    })
-  }
-  addtocart(item : any){
-    this.bag.addtoBag(item);
-  }
+  // addToCart(bouquet: Bouquet) {
+  //   this.bouquets.push(bouquet);
+  // }
+
+  // getItems() {
+  //   return this.bouquets;
+  // }
+
+  // clearCart() {
+  //   this.bouquets = [];
+  //   return this.bouquets;
+  // }
 }
