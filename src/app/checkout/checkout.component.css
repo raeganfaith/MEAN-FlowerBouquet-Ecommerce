@@ -28,43 +28,6 @@
   flex-direction: column;
 }
 
-
-.order-list h1 {
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-.items {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.bouquet-item {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.order-img {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 10px;
-}
-
-input[type=number] {
-  border: 1px solid var(--primary-color);
-}
-
-.confirmation .btn {
-  text-transform: uppercase;
-  padding: 8px 100px;
-}
-
-
-
 /* section{
   display: grid;
   grid-template-columns: 50% 50%;

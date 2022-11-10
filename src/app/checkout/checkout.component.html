@@ -1,35 +1,5 @@
 <app-header></app-header>
 <section class="checkout">
-        <div class="container">
-            <h2>Order Summary</h2>
-            <div class="items cart-row">
-        <div *ngFor="let item of bouquets; let i = index" class="bouquet-item cart-items">
-          <a class="see-more" onclick="DynamicPopUpBouquet()">
-              <img src="{{item.image}}" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name cart-item-title">{{item.bouquetName}}<label for="quantiy">(1)</label></h5>
-                  <h6 class = "cart-price">{{item.price}}</h6>
-              </div>
-          </a>
-          <div class="d-flex cart-quantity">
-          </div>
-        </div>
-        <!-- <div class="bouquet-item cart-items">
-          <a class="see-more" data-bs-toggle="modal" data-bs-target="#view-bouquet">
-              <img src="assets/img/customized-b.png" alt="" class="img-fluid order-img">
-              <div class="d-flex justify-content-between align-items-center mt-3">
-                  <h5 class="name fw-bold cart-item-title">Custom Bouquet</h5>
-                  <h6 class = "cart-price">₱1,985</h6>
-              </div>
-              <p>Custom bouquet #20221345</p>
-          </a>
-          <div class="d-flex">
-            <input type="number" min="0" step="1" class="form-control no-effect w-25" id="amountInput" value="1" disabled>
-            <button class="btn btn-outline-primary w-75 ms-3">remove</button>
-          </div>
-        </div> -->
-      </div>
-        </div>
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 col-lg-6 pe-5">
@@ -70,7 +40,7 @@
                 <input class="form-control mt-4" type="text" name="paymentOpt" id="paymentOpt" value="Cash On Delivery" readonly>
             </div>
             <div class="col-12 col-lg-6 position-relative">
-                <!-- <h2>Order Summary</h2>
+                <h2>Order Summary</h2>
                 <div class="row my-4">
                     <div class="col-3">
                         <img src="assets/img/pinky pinks.png" alt="Flower bouquet picture" class="order-img img-fluid">
@@ -95,12 +65,13 @@
                         <h6 class="details">Tulip, Lily, Dianthus, Marigold</h6>
                         <h6 class="details">Plastic Wrapper, Kraft Paper</h6>
                         <h6 class="details">Black Ribbon</h6>
+                        <!-- <h6 class="details">Handwritten Card</h6> -->
                     </div>
                     <div class="col-2 d-flex justify-content-end">
                         <h5 class="fw-bold">₱1,985</h5>
                     </div>
-                </div> -->
-                <div>
+                </div>
+                <div class="total-a position-absolute bottom-0">
                     <h2>Total Amount</h2>
                     <div class="row mt-4">
                         <div class="col-12 d-flex justify-content-between">
