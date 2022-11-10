@@ -19,7 +19,7 @@ export class ArrangedBouquetComponent implements OnInit {
   constructor(private api : ApiService, private bag : BagService) { }
 
 
-  ngOnInit(): void { 
+  ngOnInit(): void {
     this.api.getProduct()
     .subscribe(res=>{
       this.bouquetList = res;
@@ -31,5 +31,6 @@ export class ArrangedBouquetComponent implements OnInit {
   }
   addtocart(item : any){
     this.bag.addtoBag(item);
+    // alert("Added to cart");
   }
 }
