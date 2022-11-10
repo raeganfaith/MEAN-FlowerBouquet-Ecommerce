@@ -18,7 +18,6 @@ export class ArrangedBouquetComponent implements OnInit {
   public bouquetList : any;
   constructor(private api : ApiService, private bag : BagService) { }
 
-
   ngOnInit(): void {
     this.api.getProduct()
     .subscribe(res=>{

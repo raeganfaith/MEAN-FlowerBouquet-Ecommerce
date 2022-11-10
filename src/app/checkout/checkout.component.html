@@ -4,13 +4,11 @@
     <h2>Order Summary</h2>
     <div class="items cart-row">
 <div *ngFor="let item of bouquets; let i = index" class="bouquet-item cart-items">
-  <a class="see-more" onclick="DynamicPopUpBouquet()">
       <img src="{{item.image}}" alt="" class="img-fluid order-img">
       <div class="d-flex justify-content-between align-items-center mt-3">
           <h5 class="name cart-item-title">{{item.bouquetName}}<label for="quantiy">(1)</label></h5>
           <h6 class = "cart-price">{{item.price}}</h6>
       </div>
-  </a>
   <div class="d-flex cart-quantity">
   </div>
 </div>
