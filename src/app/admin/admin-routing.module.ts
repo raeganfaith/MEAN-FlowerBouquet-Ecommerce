@@ -23,13 +23,13 @@ const routes: Routes = [
   {
     path: 'admin',
     component: SigninComponent,
-    
+
   },
   {
     path: 'admin',
     children: [
       { path: 'dashboard', component: DashboardComponent },
-      
+
       { path: 'bouquets', component: BouquetsComponent },
       { path: 'add-bouquet', component: AddBouquetComponent },
       { path: 'view-bouquet', component: ViewBouquetComponent },
@@ -44,11 +44,12 @@ const routes: Routes = [
       { path: 'add-material', component: AddMaterialComponent },
       { path: 'view-material', component: ViewMaterialComponent },
       { path: 'edit-material', component: EditMaterialComponent },
-      
+
       { path: 'orders', component: OrdersComponent },
       { path: 'purchases', component: PurchasesComponent },
       { path: 'purchase-details', component: PurchaseDetailsComponent },
       { path: 'order-details', component: OrderDetailsComponent },
+
     ]
   }
 ];
