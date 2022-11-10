@@ -18,7 +18,7 @@
       "image": "assets/img/summer treat.png",
       "bouquetName": "Summer Treat",
       "price": "₱4,000",
-      "description": "A combination of purple orange and pink hues all in one en grande bouquet. Grab one now and make someone's heart grow even bigger!"
+      "description": "A combination of purple orange and pink hues all in one en grande bouquet."
     },
     {
       "id": 3,
@@ -32,7 +32,7 @@
       "image": "assets/img/sunny surprise.png",
       "bouquetName": "Sunny Surprise",
       "price": "₱2,900",
-      "description": "A sunny day inspired arrangement of flowers might be the coolest way to spice things up with your loved ones any day."
+      "description": "A sunny day inspired arrangement of flowers might be the coolest way to spice things up with your loved ones."
     }
   ],
   "profile": {
