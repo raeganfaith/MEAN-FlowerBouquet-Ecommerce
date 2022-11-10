@@ -20,6 +20,8 @@ import { OrderListComponent } from './order-list/order-list.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 // Import for JSON
 import {HttpClientModule} from '@angular/common/http';
+
+import {CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +47,7 @@ import {HttpClientModule} from '@angular/common/http';
     AdminModule,
     HttpClientModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
