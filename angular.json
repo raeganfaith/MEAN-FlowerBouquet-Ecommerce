@@ -26,8 +26,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/datepicker.js",
-              "src/assets/Customer.js"
+              "src/assets/datepicker.js"
             ]
           },
           "configurations": {

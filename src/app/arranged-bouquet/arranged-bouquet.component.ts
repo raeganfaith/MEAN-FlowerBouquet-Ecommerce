@@ -31,6 +31,6 @@ export class ArrangedBouquetComponent implements OnInit {
   }
   addtocart(item : any){
     this.bag.addtoBag(item);
-    // alert("Added to cart");
+    alert("Added to cart");
   }
 }
