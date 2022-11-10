@@ -1,0 +1,63 @@
+.card {
+  border-radius: 20px;
+  box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  height: 450px;
+}
+
+.custom-card-1 {
+  background: linear-gradient(to left top, rgba(110, 133, 183,.5), rgba(12, 24, 49, 0.8)),
+              url('/assets/img/custom-b.jpg') no-repeat center center / cover;
+  transition: ease-in-out 0.5s;
+}
+
+.custom-card-1:hover {
+  background: linear-gradient(to left bottom, rgba(110, 133, 183, .5), rgba(12, 24, 49, 1)),
+              url('/assets/img/custom-b.jpg') no-repeat center center / cover;
+}
+
+.custom-card-2 {
+  background: linear-gradient(to left top, rgba(110, 133, 183,.5), rgba(12, 24, 49, 0.8)),
+              url('/assets/img/arranged-b.jpg') no-repeat center center / cover;
+}
+
+.custom-card-2:hover {
+  background: linear-gradient(to left bottom, rgba(110, 133, 183, .5), rgba(12, 24, 49, 1)),
+              url('/assets/img/arranged-b.jpg') no-repeat center center / cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  padding: 0 5%;
+  transition: ease-in-out 0.5s;
+}
+
+.content:hover {
+  bottom: 0;
+}
+
+@media (max-width: 1199px) {
+  .content {
+    bottom: -25%;
+  }
+}
+
+@media (max-width: 991px) {
+  .card {
+    height: 350px;
+  }
+
+  .content {
+    bottom: 0;
+  }
+}
+
+

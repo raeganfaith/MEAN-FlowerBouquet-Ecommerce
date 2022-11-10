@@ -1,0 +1,151 @@
+<app-header></app-header>
+
+<section class="custom-sleeve">
+  <!-- Status Bar -->
+    <div class="container mt-5">
+      <h1>CUSTOMIZE YOUR BOUQUET</h1>
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card-stepper text-black" style="border-radius: 16px;">
+            <div class="card-body p-5">
+              <ul id="progressbar-2" class="d-flex justify-content-between mx-0 mt-0 mb-4 px-0 pt-0 pb-0">
+                <li class="step0 active text-center" id="step1"></li>
+                <li class="step0 active text-center" id="step2"></li>
+                <li class="step0 text-center" id="step3"></li>
+                <li class="step0 text-center" id="step4"></li>
+                <li class="step0 text-center" id="step5"></li>
+              </ul>
+              <div class="d-flex justify-content-between mt-0 pt-0">
+                <div class="">
+                  <p class="">FLOWER</p>
+                </div>
+                <div>
+                  <p class="">SLEEVE</p>
+                </div>
+                <div>
+                  <p class="ml"> TIE</p>
+                </div>
+                <div>
+                  <p class="ml"> CARD</p>
+                </div>
+                <div>
+                  <p class="">CONFIRM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="d-flex justify-content-between my-5">
+        <h5 class="fw-bold">Choose your choice of sleeve:</h5>
+        <h4 id="change" class="fw-bold">2</h4>
+      </div>
+      <div class="items"> 
+        <div class="bouquet-item">
+            <a class="see-more" onclick="PopUpSleeve1()">
+                <img src="assets/img/kraft paper.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Kraft Paper</h5>
+                    <h6>₱52</h6>
+                </div>
+                <p>Kraft paper is not only good for the environment...</p>
+            </a>
+            <button class="btn btn-outline-primary w-100">add to bag</button>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" onclick="PopUpSleeve2()">
+                <img src="assets/img/plastic wrapper.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Plastic Wrapper</h5>
+                    <h6>₱42</h6>
+                </div>
+                <p>Simple is more. Make your bouquets flex...</p>
+            </a>
+            <button class="btn btn-outline-primary w-100">add to bag</button>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" onclick="PopUpSleeve3()">
+                <img src="assets/img/pink paper.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Pink Paper</h5>
+                    <h6>₱36</h6>
+                </div>
+                <p>What's even sweeter than the color pink? Wrap...</p>
+            </a>
+            <button class="btn btn-outline-primary w-100">add to bag</button>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" onclick="PopUpSleeve4()">
+                <img src="assets/img/cellophane.png" alt="" class="img-fluid order-img">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">Cellophane</h5>
+                    <h6>₱45</h6>
+                </div>
+                <p>Do you want your bouquet to stand out more by...</p>
+            </a>
+            <button class="btn btn-outline-primary w-100">add to bag</button>
+        </div>
+      </div>
+    
+      <div class="confirmation mt-5 d-flex justify-content-between">
+        <a routerLink="/order/custom-flower"><button class="btn btn-outline-primary">Back</button></a>
+        <a routerLink="/order/custom-tie"><button class="btn btn-outline-primary">Next</button></a>
+      </div>
+    </div>
+
+<!-- Sleeves Popups -->
+<!-- Sleeve #1 -->
+  <div class="popup" id="popup-sleeve-1">
+    <div class="overlay"></div>
+    <div class="pop-content">
+      <div class="close-btn" onclick="PopUpSleeve1()">&times;</div>
+      <h1 class="page-title">Kraft paper</h1>
+      <div class="pop-row">
+        <img src="assets/img/kraft paper.png">
+        <p>Kraft paper is not only good for the environment because it will also give a good classic and formal look on your bouquet of flowers making it even sexier! Wrap them in it NOW.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Sleeve #2 -->
+  <div class="popup" id="popup-sleeve-2">
+    <div class="overlay"></div>
+    <div class="pop-content">
+      <div class="close-btn" onclick="PopUpSleeve2()">&times;</div>
+      <h1 class="page-title">Transparent plastic wrapper</h1>
+      <div class="pop-row">
+        <img src="assets/img/plastic wrapper.png">
+        <p>Simple is more. Make your bouquets flex its fresh flowers inside with this transparent plastic wrapper. Oh! what we meant will instantly be clear once you see the final product.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Sleeve #3 -->
+  <div class="popup" id="popup-sleeve-3">
+    <div class="overlay"></div>
+    <div class="pop-content">
+      <div class="close-btn" onclick="PopUpSleeve3()">&times;</div>
+      <h1 class="page-title">Pink wrapping paper</h1>
+      <div class="pop-row">
+        <img src="assets/img/pink paper.png">
+        <p>What's even sweeter than the color pink?! I'll tell you what... nothing. Wrap your beautiful bouquets in this pink flower wrapping paper and show someone how sweet you can be.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Sleeve #4 -->
+  <div class="popup" id="popup-sleeve-4">
+    <div class="overlay"></div>
+    <div class="pop-content">
+      <div class="close-btn" onclick="PopUpSleeve4()">&times;</div>
+      <h1 class="page-title">Clear rainbow cellophane</h1>
+      <div class="pop-row">
+        <img src="assets/img/cellophane.png">
+        <p>Do you want your bouquet to stand out more by it being stylish? Style them with this rainbow colored clear cellophane and show 'em who's got it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

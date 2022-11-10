@@ -1,0 +1,80 @@
+<app-header></app-header>
+<section class="order">
+    <div class="container mt-5">
+        <h1>CHOOSE FROM OUR ALREADY ARRANGED BOUQUETS</h1>
+        <div class="items mt-5 bouquet-items">
+          <div  *ngFor="let bouquet of bouquets" class="bouquet-item DynaminPopUp">
+            <a class="see-more" onclick="PopUpBouquet()">
+                <img src="{{bouquet.image}}" alt="" class="img-fluid order-img shop-item-image">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">{{bouquet.bouquetName}}</h5>
+                    <h6 class="shop-item-price">{{bouquet.price}}</h6>
+                </div>
+                <p>{{bouquet.description}}</p>
+            </a>
+            <div class="d-flex">
+              <input type="number" min="0" step="1" class="form-control no-effect w-25 cart-quantity-input" id="amountInput" value="0">
+              <button class="btn btn-outline-primary w-75 ms-3 ">add to bag</button>
+            </div>
+          </div>
+          <!-- Pop UP -->
+          
+        </div>
+        <div class="confirmation mt-5 d-flex justify-content-between">
+            <a routerLink="/order"><button class="btn btn-outline-primary">Back</button></a>
+            <a routerLink="/order/order-list"><button class="btn btn-outline-primary">Go to Bag</button></a>
+        </div>
+    </div>
+    <!-- <script src="src\assets\datepicker.js"></script> -->
+<!-- Bouquet Popups -->
+<!-- Bouquet #1 -->
+<div class="popup" id="popup-bouquet-1">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet1()">&times;</div>
+    <h1 class="page-title">Pinky pinks</h1>
+    <div class="pop-row">
+      <img src="assets/img/pinky pinks.png">
+      <p>What do we say when you want to treat your loved ones like a princess? We say "go pink!"</p>
+    </div>
+  </div>
+</div>
+<!-- Bouquet #2 -->
+<div class="popup" id="popup-bouquet-2">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet2()">&times;</div>
+    <h1 class="page-title">Summer treat</h1>
+    <div class="pop-row">
+      <img src="assets/img/summer treat.png">
+      <p>A combination of purple orange and pink hues all in one en grande bouquet. Grab one now and make someone's heart grow even bigger!</p>
+    </div>
+  </div>
+</div>
+<!-- Bouquet #3 -->
+<div class="popup" id="popup-bouquet-3">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet3()">&times;</div>
+    <h1 class="page-title">Spring-y</h1>
+    <div class="pop-row">
+      <img src="assets/img/spring-y.png">
+      <p>Pastel colored flowers all in one bouquet, make them blush like those roses!</p>
+    </div>
+  </div>
+</div>
+<!-- Bouquet #4 -->
+<div class="popup" id="popup-bouquet-4">
+  <div class="overlay"></div>
+  <div class="pop-content">
+    <div class="close-btn" onclick="PopUpBouquet4()">&times;</div>
+    <h1 class="page-title">Sunny surprise</h1>
+    <div class="pop-row">
+      <img src="assets/img/sunny surprise.png">
+      <p>Isn't it all hot in here?! Well, a sunny day inspired arrangement of flowers might be the coolest way to spice things up with your loved ones any day.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+<app-footer></app-footer>

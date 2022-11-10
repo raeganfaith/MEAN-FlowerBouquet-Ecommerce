@@ -1,0 +1,22 @@
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+            <a routerLink="/home" style="text-decoration: none;">
+                <li class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <img src="assets/img/mema-logo-blue.png" alt="" height="42"  width="40">
+                    <h3 class="fw-bold ps-3 mb-0" style="color: var(--primary-color);">Bloom Inc.</h3>
+                </li>
+            </a>
+        </div>
+        <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="nav-link scrollto" [routerLinkActive]="'active'" routerLink="/home">Home</a></li>
+            <li><a class="nav-link scrollto" [routerLinkActive]="'active'" routerLink="/about">About</a></li>
+            <li><a class="nav-link scrollto" [routerLinkActive]="'active'" routerLink="/order">Order</a></li>
+            <li><a class="nav-link scrollto" [routerLinkActive]="'active'" routerLink="/contact">Contact Us</a></li>
+            <li><a class="getstarted scrollto" routerLink="/order/order-list"><img src="assets/img/bag.png"></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+    </div>
+</header>

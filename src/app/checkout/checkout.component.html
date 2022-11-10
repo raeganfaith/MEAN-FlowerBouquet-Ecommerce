@@ -1,0 +1,125 @@
+<app-header></app-header>
+<section class="checkout">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-lg-6 pe-5">
+                <h2>Shipping and Billing to</h2>
+                <form class="my-4 me-4">
+                    <div class="form-group mb-3">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname" required size="70" class="form-control">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="phonenum">Phone Number</label>
+                        <input class="form-control" type="tel" name="mobile" id="mobile" size="70" pattern="(0-9){4}-(0-9){3}-(0-9){4}" placeholder="0000-000-0000" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="address">Address</label>
+                        <textarea class="form-control" name="address" rows="3" size="70"></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" name="email" id="email" size="70" required>
+                    </div>
+                </form>
+                <h2>Order Options</h2>
+                <div class="order-o my-4">
+                    <input type="radio" class="btn-check" name="order-options" id="delivery" autocomplete="off" checked>
+                    <label class="btn btn-label me-2" for="delivery">Deliver</label>
+
+                    <input type="radio" class="btn-check" name="order-options" id="pickup" autocomplete="off">
+                    <label class="btn btn-label me-2" for="pickup">Pick-up</label>
+                </div>
+                <form>
+                    <div class="form-group mb-4">
+                        <label for="birthday">Choose Date</label>
+                        <input class="form-control" type="date" name="choosedate" id="choosedate" min="2022-01-01" max="3022-12-31" required>
+                    </div>
+                </form>
+                <h2>Payment Options</h2>
+                <input class="form-control mt-4" type="text" name="paymentOpt" id="paymentOpt" value="Cash On Delivery" readonly>
+            </div>
+            <div class="col-12 col-lg-6 position-relative">
+                <h2>Order Summary</h2>
+                <div class="row my-4">
+                    <div class="col-3">
+                        <img src="assets/img/pinky pinks.png" alt="Flower bouquet picture" class="order-img img-fluid">
+                    </div>
+                    <div class="col-7">
+                        <h5 class="item-name fw-bold">Pinky Pinks</h5>
+                        <h6 class="details">Lily</h6>
+                        <h6 class="details">Kraft Paper</h6>
+                        <h6 class="details">Black Ribbon</h6>
+                        <h6 class="details">Printed Card</h6>
+                    </div>
+                    <div class="col-2 d-flex justify-content-end">
+                        <h5 class="fw-bold">₱2,500</h5>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-3">
+                        <img src="assets/img/customized-b.png" alt="Flower bouquet picture" class="order-img img-fluid">
+                    </div>
+                    <div class="col-7">
+                        <h5 class="item-name fw-bold">Custom Bouquet</h5>
+                        <h6 class="details">Tulip, Lily, Dianthus, Marigold</h6>
+                        <h6 class="details">Plastic Wrapper, Kraft Paper</h6>
+                        <h6 class="details">Black Ribbon</h6>
+                        <!-- <h6 class="details">Handwritten Card</h6> -->
+                    </div>
+                    <div class="col-2 d-flex justify-content-end">
+                        <h5 class="fw-bold">₱1,985</h5>
+                    </div>
+                </div>
+                <div class="total-a position-absolute bottom-0">
+                    <h2>Total Amount</h2>
+                    <div class="row mt-4">
+                        <div class="col-12 d-flex justify-content-between">
+                            <h6>Subtotal</h6>
+                            <h6 class="fw-bold">₱4,485</h6>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-12 d-flex justify-content-between">
+                            <h6>Delivery Fee</h6>
+                            <h6 class="fw-bold">₱60</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between">
+                            <h6 class="fw-bold">Total</h6>
+                            <h6 class="fw-bold">₱4,545</h6>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-primary w-100 mt-5 py-2" data-bs-toggle="modal" data-bs-target="#place-order">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="place-order" tabindex="-1" aria-labelledby="place-order-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="card p-3 pt-0">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-end">
+                            <a routerLink="/order"><i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <i class="bi bi-check-circle" style="color: green; font-size: 5rem;"></i>
+                            <h4 class="fw-bold">Your order has been placed!</h4>
+                            <p class="px-4">Thank you for shopping with us! Sit back and relax as we make your bouquet. We'll contact you to keep you updated.</p>
+                            <a routerLink="/order"><button type="button" class="btn btn-primary mt-4 mb-2 mx-2 px-5 shadow" data-bs-dismiss="modal">Continue Shopping</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

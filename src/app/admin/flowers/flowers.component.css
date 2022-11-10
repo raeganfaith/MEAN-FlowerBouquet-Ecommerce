@@ -1,0 +1,75 @@
+main {
+    padding: 20px 30px 20px 350px;
+}
+
+@media (max-width: 1199px) {
+    main {
+        padding-left: 20px;
+    }
+}
+
+.card-inv {
+    border-radius: 15px;
+    padding: 10px 10px 0 10px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    width: 370px;
+}
+
+.card-inv:hover {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.inventory-item {
+    text-decoration: none;
+    color: black;
+}
+
+.card-img-top {
+    border-radius: 10px;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem;
+}
+
+.bg-danger {
+    background-color: red;
+}
+
+.card-body {
+    padding: 16px 5px;
+}
+
+.card-footer {
+    background: none;
+    padding: 5px;
+}
+
+.btn-light {
+    background: none;
+    border: none;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.is-hidden { display: none; }
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.btn-danger {
+    padding: 10px;
+}
+
