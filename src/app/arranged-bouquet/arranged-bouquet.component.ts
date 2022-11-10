@@ -18,12 +18,10 @@ export class ArrangedBouquetComponent implements OnInit {
   public bouquetList : any;
   constructor(private api : ApiService, private bag : BagService) { }
 
-
-  ngOnInit(): void { 
+  ngOnInit(): void {
     this.api.getProduct()
     .subscribe(res=>{
       this.bouquetList = res;
-
       this.bouquetList.forEach((a:any) => {
         Object.assign(a,{quantity:1, total:a.price});
       });
