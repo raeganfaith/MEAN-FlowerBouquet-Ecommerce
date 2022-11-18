@@ -1,0 +1,190 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+
+
+<main>
+    <div class="row align-items-center">
+        <div class="col-4">
+            <input type="search" class="form-control light-table-filter" data-table="order-table" placeholder="Search">
+        </div>
+        <div class="col-8 d-flex justify-content-end">
+            <button type="button" (click)="clickFlower()" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add-flower" >
+                <i class="bi bi-plus-circle pe-2"></i>Add Flower </button>
+                <div class="modal fade" id="add-flower" tabindex="-1" aria-labelledby="add-flower-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="card p-3 pt-0">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 d-flex justify-content-end px-0">
+                                                <i class="bi bi-x" data-bs-dismiss="modal"></i>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-15 ">
+                                                <h2 class="modal-title text-center" id="exampleModalLabel" *ngIf="Add">Add New flower </h2>
+                                                <h2 class="modal-title text-center" id="exampleModalLabel" *ngIf="View">View Bouquet </h2>
+                                                <h2 class="modal-title text-center" id="exampleModalLabel" *ngIf="Update">Edit flower </h2>
+                                                <form [formGroup]="formValue" class="text-left">   
+                                                    <div class="form-group mb-2" *ngIf= "ID" (click)="UpdateFlowerDetails()">
+                                                        <label for="FlowerID" class="col-form-label">Flower ID</label>
+                                                        <input class="form-control" id="FlowerID" type="text"  placeholder="Automatic Flower ID" disabled *ngIf="View" >
+                                                        <input disabled class="form-control" id="FlowerID" type="text"  placeholder="Automatic Flower ID" readonly *ngIf="Add">
+                                                    </div>
+                                                    <div class="form-group mb-2">
+                                                        <label for="FlowerName" class="col-form-label">Flower Name</label>
+                                                        <input type="type" formControlName="FlowerName" class="form-control" id="FlowerName"  *ngIf="Add">
+                                                        <input type="type" formControlName="FlowerName" class="form-control" id="FlowerName"  *ngIf="Update">
+                                                        <input type="type" formControlName="FlowerName" class="form-control" id="name"  *ngIf="View" readonly >
+                                                    </div>
+                                                    <div class="form-group mb-2">
+                                                        <label for="FlowerDesc" class="col-form-label">Flower Description</label>
+                                                        <textarea class="form-control" formControlName="FlowerDesc" id="FlowerDesc" rows="3" placeholder="Enter Description (e.g) of the flower "  *ngIf="Add"></textarea >
+                                                        <textarea class="form-control" formControlName="FlowerDesc" id="FlowerDesc" rows="3" placeholder="Enter Description (e.g) of the flower "  *ngIf="Update"></textarea >
+                                                        <textarea class="form-control" formControlName="FlowerDesc" id="FlowerDesc" rows="3" required *ngIf="View" readonly></textarea>
+                                                    </div> 
+                                                    <div class="form-group mb-2">
+                                                        <label for="FlowerPrice" class="col-form-label">Price</label>
+                                                        <input type="number" formControlName="FlowerPrice" class="form-control" id="FlowersPrice" *ngIf="Add">
+                                                        <input type="number" formControlName="FlowerPrice" class="form-control" id="FlowersPrice" *ngIf="Update">
+                                                        <input type="text" formControlName="FlowerPrice" id="FlowerPrice" class="form-control" readonly *ngIf="View">
+                                                    </div> 
+                                                    <div class="form-group mb-2">
+                                                        <label for="FlowerStock" class="col-form-label">Stock</label>
+                                                        <input type="number" formControlName="FlowerStock" class="form-control" id="FlowersStock" *ngIf="Add">
+                                                        <input type="number" formControlName="FlowerStock" class="form-control" id="FlowersStock" *ngIf="Update">
+                                                        <input type="text" formControlName="FlowerStock" id="FlowerStock" class="form-control" readonly *ngIf="View">
+                                                    </div> 
+                                                    <div class="d-flex justify-content-end mt-4">
+                                                        <button type="button" 
+                                                                *ngIf="Add" 
+                                                                (click)="postAddFlowerDetails()" 
+                                                                class="btn btn-primary px-5 shadow text-center"
+                                                                data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#added-f">ADD</button>
+                                                        <button type="button" 
+                                                                *ngIf="Update" 
+                                                                (click)="UpdateFlowerDetails()" 
+                                                                class="btn btn-primary px-5 shadow text-center"
+                                                                data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#edited-f">UPDATE</button>
+                                                        <button type="button" 
+                                                                *ngIf="View"  
+                                                                class="btn btn-primary px-5 shadow text-center" 
+                                                                data-bs-dismiss="modal">OK</button> 
+                                                        <button type="button" 
+                                                                *ngIf="Cancel" 
+                                                                class="btn btn-secondary px-5 shadow text-center" 
+                                                                data-bs-dismiss="modal">CANCEL</button>
+                                                    </div>
+                                                </form>           
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <br>
+    
+    <div class="card">
+        <table class="table table-hover order-table">
+            <thead>
+            <tr class="text-uppercase">
+                <th scope="col">Flower ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr class="align-middle" *ngFor="let row of FlowerData">
+                    <th scope="row">{{row.id}}</th>
+                    <td>{{row.name}}</td>
+                    <td>₱{{row.price}}</td>
+                    <td>{{row.stock}}</td>
+                    <td class="text-center">
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" (click)="onView(row)" data-bs-toggle="modal" data-bs-target="#add-flower">View Details</a></li>
+                                <li><a class="dropdown-item" (click)="FlowerEdit(row)" data-bs-toggle="modal" data-bs-target="#add-flower">Edit Details</a></li>
+                                <li><a class="dropdown-item" (click)="deleteFlower(row)" data-bs-target="#delete-flower">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td> 
+                    <!-- <td>
+                        <div class="col-10 d-flex justify-content-end">
+                            <button  type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#add-flower" (click)="onView(row)">
+                                    <i class="bi bi-pencil-square pe-1"></i>View</button>
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add-flower" (click)="FlowerEdit(row)" >
+                                    <i class="bi bi-pencil-square pe-1"></i>Edit </button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete-flower" (click)="deleteFlower(row)" >
+                                    <i class="bi bi-x-circle pe-2"></i>Delete </button>
+                         </div>
+                    </td>   -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade" id="added-f" tabindex="-1" aria-labelledby="added-f-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card p-3 pt-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-end">
+                                    <i class="bi bi-x" data-bs-dismiss="modal"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <i class="bi bi-check-circle" style="color: green; font-size: 5rem;"></i>
+                                    <h2 class="fw-bold">Added!</h2>
+                                    <p class="px-4">You've successfully added a new flower.</p>
+                                    <button type="button" class="btn btn-primary mt-4 mb-2 px-5 shadow" data-bs-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="edited-f" tabindex="-1" aria-labelledby="edited-f-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card p-3 pt-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-end">
+                                    <i class="bi bi-x" data-bs-dismiss="modal"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <i class="bi bi-check-circle" style="color: green; font-size: 5rem;"></i>
+                                    <h2 class="fw-bold">Updated!</h2>
+                                    <p class="px-4">You've successfully updated this flower's details.</p>
+                                    <button type="button" class="btn btn-primary mt-4 mb-2 px-5 shadow" data-bs-dismiss="modal">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+

@@ -1,0 +1,29 @@
+<app-header></app-header>
+<section class="order">
+    <div class="container mt-5">
+        <h1>CHOOSE FROM OUR ALREADY ARRANGED BOUQUETS</h1>
+        <div class="items mt-5 bouquet-items">
+          <div *ngFor="let item of bouquetList" class="bouquet-item">
+            <a class="see-more" routerLink="/gallery" fragment="bouquets">
+                <img src="{{item.image}}" alt="" class="img-fluid order-img shop-item-image">
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="name fw-bold">{{item.name}}</h5>
+                    <h6 class="shop-item-price">₱{{item.price}}</h6>
+                </div>
+                <p>{{item.description}}</p>
+            </a>
+            <div class="d-flex">
+              <!-- <input type="number" min="0" step="1" class="form-control no-effect w-25 cart-quantity-input" id="amountInput" value="0"> -->
+              <button class="btn btn-outline-primary w-100 shop-item-button" (click)=addtobag(item)>add to bag</button>
+            </div>
+        </div>
+        </div>
+        <div class="confirmation mt-5 d-flex justify-content-between">
+            <a routerLink="/order"><button class="btn btn-outline-primary">Back</button></a>
+            <a routerLink="/order/order-list"><button class="btn btn-outline-primary">Go to Bag</button></a>
+        </div>
+    </div>
+    <!-- <script src="src\assets\datepicker.js"></script> -->
+
+</section>
+<app-footer></app-footer>

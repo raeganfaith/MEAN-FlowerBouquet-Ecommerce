@@ -1,0 +1,229 @@
+{
+  "signinUsers": [
+    {
+      "email": "admin@gmail.com",
+      "password": "gagiyokona"
+    }
+  ],
+  "bouquets": [
+    {
+      "image": "assets/img/pinky pinks.png",
+      "id": 1,
+      "name": "Pinky Pinks",
+      "description": "What do we say when you want to treat your...",
+      "price": 2500,
+      "stock": 50
+    },
+    {
+      "image": "assets/img/summer treat.png",
+      "id": 2,
+      "name": "Summer Treat",
+      "description": "A combination of purple orange and pink...",
+      "price": 4000,
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "image": "assets/img/spring-y.png",
+      "name": "Spring-y",
+      "price": 3000,
+      "stock": 50,
+      "description": "Pastel colored flowers all in one bouquet, make..."
+    },
+    {
+      "id": 4,
+      "image": "assets/img/sunny surprise.png",
+      "name": "Sunny Surprise",
+      "price": 2900,
+      "stock": 50,
+      "description": "Isn't it all hot in here?! Well, a sunny day..."
+    }
+  ],
+  "flowers": [
+    {
+      "id": 5,
+      "image": "assets/img/tulip.png",
+      "name": "Single Stem Tulip",
+      "description": "Tulips are a common choice for bridal flowers...",
+      "price": 210,
+      "stock": 50
+    },
+    {
+      "id": 6,
+      "image": "assets/img/rose.png",
+      "name": "Single Stem Rose",
+      "price": 100,
+      "stock": 50,
+      "description": "Roses are symbol for appreciation..."
+    },
+    {
+      "id": 7,
+      "image": "assets/img/lily.jpg",
+      "name": "Single Stem Lily",
+      "price": 232,
+      "stock": 50,
+      "description": "Looking for a gift on someone's baby shower?..."
+    },
+    {
+      "id": 8,
+      "image": "assets/img/sunflower.png",
+      "name": "Sunflower",
+      "price": 260,
+      "stock": 50,
+      "description": "Really, there is never a good moment or place..."
+    },
+    {
+      "id": 9,
+      "image": "assets/img/marigold.jpg",
+      "name": "Marigold",
+      "price": 290,
+      "stock": 50,
+      "description": "Marigolds are a symbol of joy, they can be sent..."
+    },
+    {
+      "id": 10,
+      "image": "assets/img/pansy.jpg",
+      "name": "Pansy Flower",
+      "price": "307",
+      "stock": 50,
+      "description": "Has a secret message for someone?..."
+    },
+    {
+      "id": 11,
+      "image": "assets/img/dianthus.jpg",
+      "name": "Dianthus Flower",
+      "price": 145,
+      "stock": 50,
+      "description": "Dianthus flower also known as sweet williams or pinks can..."
+    },
+    {
+      "id": 12,
+      "image": "assets/img/daisy.png",
+      "name": "Daisy",
+      "price": 232,
+      "stock": 50,
+      "description": "A daisy can be given to someone on..."
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "order-details": [
+    {
+      "id": 1,
+      "fullName": "Jennie Kim",
+      "contact": "09123456789",
+      "address": "99 BGC, Taguig",
+      "email": "jenniek@gmail.com",
+      "orders": "Pinky Pinks, ",
+      "date": "2022-11-12",
+      "total": 8600,
+      "status": "Reject"
+    },
+    {
+      "id": 2,
+      "fullName": "Lisa Manobal",
+      "contact": "09432156789",
+      "address": "768 Hulo, Mandaluyong",
+      "email": "lalala@gmail.com",
+      "orders": "Pinky Pinks, Summer Treat, ",
+      "date": "2022-11-15",
+      "total": 5960,
+      "status": "Processing"
+    },
+    {
+      "id": 3,
+      "fullName": "Jisoo Kim",
+      "contact": "09987654321",
+      "address": "74 Poblacion, Makati",
+      "email": "kimjisoo@gmail.com",
+      "orders": "Pinky Pinks, Spring-y, ",
+      "date": "2022-11-20",
+      "total": 560,
+      "status": "Processing"
+    },
+    {
+      "id": 4,
+      "fullName": "Rosie Park",
+      "contact": "09567891234",
+      "address": "234 Sta. Mesa, Manila",
+      "email": "parkc@gmail.com",
+      "orders": "Sunny Surprise, Single Stem Rose, ",
+      "date": "2022-11-15",
+      "total": 10060,
+      "status": "Processing"
+    },
+    {
+      "id": 5,
+      "fullName": "Abcde Cruz",
+      "contact": "09885665412",
+      "address": "J.P. Rizal St., Brgy., Olympia Makati City",
+      "email": "abcde@gmail.com",
+      "orders": "Sunny Surprise, ",
+      "date": "2022-11-24",
+      "total": 5900,
+      "status": "Completed"
+    },
+    {
+      "id": 6,
+      "fullName": "Syl Santos",
+      "contact": "09554123658",
+      "address": " 3rd Floor Paramount Building, 434 Q. Paredes Street, Binondo",
+      "email": "ss55@gmail.com",
+      "orders": "Single Stem Tulip, Single Stem Rose, ",
+      "date": "2022-11-25",
+      "total": 4060,
+      "status": "Completed"
+    }
+  ],
+  "history": [
+    {
+      "id": 5,
+      "fullName": "Raegan Paguirigan",
+      "contact": "09123456789",
+      "address": "Manila, Metro Manila",
+      "email": "raegan@gmail.com",
+      "date": "2022-11-12"
+    },
+    {
+      "id": 6,
+      "fullName": "Niel Mendoza",
+      "contact": "09432156789",
+      "address": "Sta. Maria, Bulacan",
+      "email": "niel@gmail.com",
+      "date": "2022-11-15"
+    },
+    {
+      "id": 7,
+      "fullName": "Gabby David",
+      "contact": "09987654321",
+      "address": "Plainview, Mandaluyong",
+      "email": "gabby@gmail.com",
+      "date": "2022-11-20"
+    },
+    {
+      "id": 8,
+      "fullName": "Patricia Bucala",
+      "contact": "09567891234",
+      "address": "Quezon City",
+      "email": "patricia@gmail.com",
+      "date": "2022-11-15"
+    },
+    {
+      "id": 9,
+      "fullName": "Syl Santos",
+      "contact": "09554123658",
+      "address": " 3rd Floor Paramount Building, 434 Q. Paredes Street, Binondo",
+      "email": "ss55@gmail.com",
+      "date": "2022-11-25"
+    },
+    {
+      "id": 10,
+      "fullName": "Abcde Cruz",
+      "contact": "09885665412",
+      "address": "J.P. Rizal St., Brgy., Olympia Makati City",
+      "email": "abcde@gmail.com",
+      "date": "2022-11-24"
+    }
+  ]
+}

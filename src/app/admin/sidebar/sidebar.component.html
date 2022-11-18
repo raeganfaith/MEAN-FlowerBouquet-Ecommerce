@@ -1,0 +1,44 @@
+<aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav mt-3" id="sidebar-nav">
+        <li class="d-flex align-items-center ms-3 mb-4">
+            <img src="assets/img/mema-logo-blue.png" alt="" height="43"  width="40">
+            <h3 class="fw-bold ps-3" style="color: var(--primary-color);">Bloom Inc.</h3>
+        </li>
+        <li class="nav-item my-2" [routerLinkActive]="'active'" onclick="changeTitleDashboard()">
+            <a class="nav-link" routerLink="../dashboard" >Dashboard</a>
+        </li>
+        <li class="nav-item my-2" [routerLinkActive]="'active'" onclick="changeTitleOrders()">
+            <a class="nav-link" routerLink="../orders" >Orders</a>
+        </li>
+        <li class="nav-item my-2" [routerLinkActive]="'active'" onclick="changeTitleOrderHistory()">
+            <a class="nav-link" routerLink="../history" href="#">Order History</a>
+        </li>
+        <li class="nav-item my-2">
+            <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne" onclick="changeTitleInventory()">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+                      Inventory
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                    <div class="accordion-body p-0">
+                        <ul class="sidebar-nav">
+                            <li class="nav-item" onclick="changeTitleBouquet()">
+                                <a routerLink="../inventory-bouquet" class="nav-link my-2"><span class="ps-3">Bouquets</span></a>
+                            </li>
+                            <li class="nav-item" onclick="changeTitleFlower()">
+                                <a routerLink="../inventory-flowers" class="nav-link my-2"><span class="ps-3">Flowers</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</aside>
+
+<router-outlet></router-outlet>
+
+

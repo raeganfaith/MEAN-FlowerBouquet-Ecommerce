@@ -1,0 +1,54 @@
+.footer {
+  background: #f6f9ff;
+  font-size: 15px;
+  color: #39445c;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-top {
+    background-position: center bottom;
+  }
+}
+
+.footer .footer-top .social-links a {
+  font-size: 20px;
+  display: inline-block;
+  color: rgba(1, 41, 112, 0.5);
+  line-height: 0;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .footer-top .social-links a:hover {
+  color: #39445C;
+}
+
+.footer .footer-top h5 {
+  font-weight: bold;
+  color: #6E85B7;
+}
+
+.footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  padding: 5px 0;
+}
+
+.footer-links ul a {
+  color: #6E85B7;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.footer-links ul a:hover {
+  color: #39445C;
+}
+
+.footer-contact p {
+  line-height: 26px;
+}

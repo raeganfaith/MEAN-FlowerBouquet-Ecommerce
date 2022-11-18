@@ -1,0 +1,115 @@
+<app-header></app-header>
+<!-- Sample -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1 data-aos="fade-up">A bouquet can say it better.</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">Make the people you love feel special, send them a flower bouquet right away!</h2>
+                <div data-aos="fade-up" data-aos-delay="800">
+                <a routerLink="/order" class="btn-get-started .btn-general">ORDER NOW</a>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+</section><!-- End Hero -->
+
+<!-- Temporary Banner -->
+<section id="bestsellers" class="bestsellers pt-5 pb-5 mt-5">
+  <div class="container text-center px-5">
+    <h1 class="fw-bold mb-3">Why receiving flowers is important?</h1>
+    <p>
+      The biggest reason we give flowers as gifts is to connect with an emotion. Whether its love, joy, affection, appreciation, sympathy, romance or apologies; flower giving communicates the deepest feelings in the most elegant manner. In today's society, flowers are given to loved ones to help communicate human emotions. Whether it be to express your undying love or gratitude for a friend, flowers can be given to anyone at anytime. Chek out our gallery for more information.
+    </p>
+    <div class="items my-5">
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#bouquet-1">
+                <div class="card shadow">
+                    <div class="card-body text-start">
+                        <img src="assets/img/pinky pinks.png" alt="" class="img-fluid order-img">
+                        <h5 class="mt-3 fw-bold">Pinky Pinks</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-6">
+                <div class="card shadow">
+                    <div class="card-body text-start">
+                        <img src="assets/img/pansy.jpg" alt="" class="img-fluid order-img">
+                        <h5 class="mt-3 fw-bold">Pansy Flower</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#bouquet-2">
+                <div class="card shadow">
+                    <div class="card-body text-start">
+                        <img src="assets/img/sunny surprise.png" alt="" class="img-fluid order-img">
+                        <h5 class="mt-3 fw-bold">Sunny Surprise</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="bouquet-item">
+            <a class="see-more" data-bs-toggle="modal" data-bs-target="#flower-8">
+                <div class="card shadow">
+                    <div class="card-body text-start">
+                        <img src="assets/img/daisy.png" alt="" class="img-fluid order-img">
+                        <h5 class="mt-3 fw-bold">Daisy</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <a routerLink="/gallery"><button class="btn btn-outline-primary  px-5 py-2 flower-gallery-btn" >View Gallery</button></a>
+    <!-- <div class="row m-5">
+      <div class="col-12 col-md-4">
+        <i class="bi bi-spellcheck" style="font-size: 70px;"></i>
+        <h5>Easy and Convenient</h5>
+      </div>
+      <div class="col-12 col-md-4 my-5 my-md-0">
+        <i class="bi bi-person-hearts" style="font-size: 70px;"></i>
+        <h5>User-friendly</h5>
+      </div>
+      <div class="col-12 col-md-4">
+        <i class="bi bi-sliders" style="font-size: 70px;"></i>
+        <h5>Allows customization of flower bouquets</h5>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about my-5 py-5">
+    <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="content">
+                    <h3>About Us</h3>
+                    <h2>Bloom Inc. is a website created for an easy and convenient way of buying flowers for your loved ones on a special occassion or just any old day!</h2>
+                    <p>
+                        Bloom Inc. was recently launched by students from INF202. The best thing about Bloom Inc. is that it is absolutely FREE for customers! That's right, the company is a 100% customer focused website which looks at making shopping an easy task for the consumer.
+                    </p>
+                    <div class="text-center text-lg-start">
+                        <a class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                        <a routerLink="/about"><span>Read More</span></a>
+                        <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                <img src="assets/img/about-hero.png" class="img-fluid about-hero" alt="">
+            </div>
+        </div>
+    </div>
+</section><!-- End About Section -->
+
+<app-modals></app-modals>
+<app-footer></app-footer>

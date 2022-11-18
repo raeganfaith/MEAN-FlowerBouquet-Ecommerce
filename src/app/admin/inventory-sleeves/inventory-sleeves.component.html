@@ -1,0 +1,112 @@
+<app-sidebar></app-sidebar>
+<app-navbar></app-navbar>
+
+<main>
+    <div class="row align-items-center">
+        <div class="col-4">
+            <input type="search" class="form-control light-table-filter" data-table="order-table" placeholder="Search">
+        </div>
+        <div class="col-8 d-flex justify-content-end">
+            <button type="button" (click)="clickSleeve()" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add-material" >
+                <i class="bi bi-plus-circle pe-2"></i>Add Sleeve </button>
+                <div class="modal fade" id="add-material" tabindex="-1" aria-labelledby="add-material-label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="card p-3 pt-0">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-end">
+                                            <a routerLink="../inventory-sleeves"><i class="bi bi-x" data-bs-dismiss="modal" style="font-size: 2rem; color: black;"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-15 ">
+                                            <h5 class="modal-title text-center" id="exampleModalLabel" *ngIf="Add">Add New Sleeve </h5>
+                                            <h5 class="modal-title text-center" id="exampleModalLabel" *ngIf="Update">Edit Sleeve </h5>
+                                            <div class="modal-body">
+                                                <form [formGroup]="formValue" class="text-left">   
+                                                    <div class="form-group " *ngIf= "ID" (click)="UpdateSleeveDetails()">
+                                                      <label for="SleeveID" class="col-5 col-form-label">Sleeve ID</label>
+                                                      <input class="form-control" id="SleeveID" type="text"  placeholder="Automatic Sleeve ID" disabled *ngIf="View" >
+                                                      <input disabled class="form-control" id="SleeveID" type="text"  placeholder="Automatic Sleeve ID" readonly *ngIf="Add">
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="SleeveName" class="col-5 col-form-label">Sleeve Name</label>
+                                                      <input type="type" formControlName="SleeveName" class="form-control" id="SleeveName"  *ngIf="Add">
+                                                      <input type="type" formControlName="SleeveName" class="form-control" id="SleeveName"  *ngIf="Update">
+                                                      <input type="type" formControlName="SleeveName" class="form-control" id="name"  *ngIf="View" readonly >
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="SleeveDescription" class="col-5 col-form-label">Sleeve Description</label>
+                                                        <textarea class="form-control" formControlName="SleeveDescription" id="SleeveDescription" rows="3" placeholder="Enter Description (e.g) of the flower "  *ngIf="Add"></textarea >
+                                                        <textarea class="form-control" formControlName="SleeveDescription" id="SleeveDescription" rows="3" placeholder="Enter Description (e.g) of the flower "  *ngIf="Update"></textarea >
+                                                        <textarea class="form-control" formControlName="SleeveDescription" id="SleeveDescription" rows="3" required *ngIf="View" readonly></textarea>
+                                                    </div> 
+                                                    <div class="form-group">
+                                                        <label for="SleeveStock" class="col-5 col-form-label">Stock</label>
+                                                        <input type="number" formControlName="SleeveStock" class="form-control" id="SleeveStock" *ngIf="Add">
+                                                        <input type="number" formControlName="SleeveStock" class="form-control" id="SleeveStock" *ngIf="Update">
+                                                        <input type="text" formControlName="SleeveStock" id="SleeveStock" class="form-control" readonly *ngIf="View">
+                                                      </div> 
+                                                  <div class="form-group">
+                                                    <label for="SleevePrice" class="col-5 col-form-label">Price</label>
+                                                    <input type="number" formControlName="SleevePrice" class="form-control" id="SleevePrice" *ngIf="Add">
+                                                    <input type="number" formControlName="SleevePrice" class="form-control" id="SleevePrice" *ngIf="Update">
+                                                    <input type="text" formControlName="SleevePrice" id="SleevePrice" class="form-control" readonly *ngIf="View">
+                                                  </div> 
+                                                <div class="modal-footer " >
+                                                    <button type="button "  *ngIf= "Add" (click)="postAddSleeveDetails()" class="btn btn-primary mt-4 mb-2 px-5 shadow text-center" data-bs-dismiss="modal" >ADD</button> 
+                                                    <a routerLink="../inventory-sleeves"><button type="button "*ngIf= "Update" (click)="UpdateSleeveDetails()" class="btn btn-primary mt-4 mb-2 px-5 shadow text-center" data-bs-dismiss="modal" >UPDATE</button></a> 
+                                                    <a routerLink="../inventory-sleeves"><button type="button "*ngIf= "View"  class="btn btn-primary mt-4 mb-2 px-5 shadow text-center" data-bs-dismiss="modal" >OK</button></a>   
+                                                    <a routerLink="../inventory-sleeves"><button type="button " *ngIf= "Cancel" class="btn btn-secondary mt-4 mb-2 px-5 shadow text-center" data-bs-dismiss="modal">CANCEL</button></a>
+                                                    
+                                                </div>
+                                                </form>
+                                            </div>                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <br>
+    
+    <div class="card">
+        <table class="table table-hover order-table">
+            <thead>
+            <tr class="text-uppercase">
+                <th scope="col">Sleeve ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Stock </th>
+                <th scope="col">Price </th>
+                <!-- <th scope="col">Visibility</th> -->
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr class="align-middle" *ngFor="let row of SleevesData">
+                    <th scope="row">{{row.id}}</th>
+                    <td>{{row.name}}</td>
+                    <td>{{row.stock}}</td>
+                    <td>{{row.price}}</td>
+                    <!-- <td><span class="badge bg-success">Active</span></td> -->
+                    <td>
+                        <div class="col-10 d-flex justify-content-end">
+                            <button  type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#add-material" (click)="onView(row)">
+                                    <i class="bi bi-pencil-square pe-1"></i>View</button>
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#add-material" (click)="SleeveEdit(row)" >
+                                    <i class="bi bi-pencil-square pe-1"></i>Edit </button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete-material" (click)="deleteSleeve(row)" >
+                                    <i class="bi bi-x-circle pe-2"></i>Delete </button>
+                         </div>
+                    </td>  
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+
