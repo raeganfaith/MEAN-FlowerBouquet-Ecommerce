@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/flower_bouquet",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
