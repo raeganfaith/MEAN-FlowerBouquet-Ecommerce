@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🌸 BLOOMINC.: E-COMMERCE FOR BOUQUETS AND FLOWERS</h1>
+  <h1>🌸 BLOOM INC.: E-COMMERCE FOR BOUQUETS AND FLOWERS</h1>
 </div>
 
 <div align="center">
