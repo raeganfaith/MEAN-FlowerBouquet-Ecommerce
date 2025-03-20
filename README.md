@@ -8,7 +8,6 @@
 [![Objectives](https://img.shields.io/badge/Objectives-green?style=for-the-badge)](#objectives)
 [![Significance](https://img.shields.io/badge/Significance-yellow?style=for-the-badge)](#significance)
 [![Scope and Limitation](https://img.shields.io/badge/Scope%20and%20Limitation-red?style=for-the-badge)](#scope-and-limitation)
-[![UI Preview](https://img.shields.io/badge/UI%20Preview-gray?style=for-the-badge)](#ui-preview)
 [![Conclusion and Recommendation](https://img.shields.io/badge/Conclusion%20and%20Recommendation-pink?style=for-the-badge)](#conclusion-and-recommendation)
 
 </div>
