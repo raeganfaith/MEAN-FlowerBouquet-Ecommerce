@@ -37,12 +37,6 @@ The **BloomInc.** e-commerce application is designed specifically for floral bus
 
 While the application is designed for desktop, mobile versions and apps are not part of the current scope. Future enhancements may expand its capabilities to include other business operations such as customer reviews, product recommendations, and more advanced payment options.
 
-## UI Preview <a name="ui-preview"></a>
-
-You can access the deployed version of the BloomInc. system here:
-
-<a href="https://bloominc-1c74a.web.app" target="_blank">Deployed System - BloomInc</a>
-
 ## Conclusion and Recommendation <a name="conclusion-and-recommendation"></a>
 
 ### Conclusion
